@@ -2,3 +2,9 @@ h1{
   text-align: center;
   font-size:3rem;
 }
+
+.footerContainer{
+  height: 110vh;
+  width:100vw;
+  border: 1px solid white;
+}

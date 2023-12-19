@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import Footer from "./footer"
 
 const LandingPage = () => {
     return(
@@ -17,6 +18,8 @@ const LandingPage = () => {
             <button>
                 <Link to="/Events">Events</Link>
             </button>
+
+            <Footer/>
         </>
     )
 }
