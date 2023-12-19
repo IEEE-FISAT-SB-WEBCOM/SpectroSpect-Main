@@ -20,7 +20,28 @@ h1{
 }
 
 .footerBoxContainer{
+  display: flex;
   height:18vh;
   width:70vw;
   border: 1px solid white;
+}
+
+.footer-Box{
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#fb1{
+  width: 22%;
+}
+
+#fb2,#fb3{
+  width: 39%;
+}
+
+.fb2-icons{
+  height: 5vh;
+  margin-left: 5%;
 }
