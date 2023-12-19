@@ -14,8 +14,8 @@ const Footer = () => {
                     Logo
                 </div>
                 <div className="footer-Box" id="fb2">
-                    <img src={fb} alt="FB" className="fb2-icons"></img>
-                    <img src={ig} alt="IG" className="fb2-icons"></img>
+                    <a href="https://www.facebook.com/ieeefisat/"><img src={fb} alt="FB" className="fb2-icons"></img></a>
+                    <a href="https://www.instagram.com/ieeefisatsb/?hl=en"><img src={ig} alt="IG" className="fb2-icons"></img></a>
                     <img src={gm} alt="Mail" className="fb2-icons"></img>
                 </div>
                 <div className="footer-Box" id="fb3">
