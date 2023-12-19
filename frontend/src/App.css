@@ -4,7 +4,23 @@ h1{
 }
 
 .footerContainer{
-  height: 110vh;
+  height: 120vh;
   width:100vw;
+  border: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerBeASponsor{
+  height:50vh;
+  width:100vw;
+  border: 1px solid white;
+}
+
+.footerBoxContainer{
+  height:18vh;
+  width:70vw;
   border: 1px solid white;
 }
