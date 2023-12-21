@@ -4,7 +4,7 @@ import Footer from "./footer"
 const LandingPage = () => {
     return(
         <>
-            <h1>SPECTROSPECT🪫🔌</h1>
+            {/* <h1>SPECTROSPECT🪫🔌</h1>
             <button>
                 <Link to="/Workshops">Workshops</Link>
             </button>
@@ -17,7 +17,7 @@ const LandingPage = () => {
 
             <button>
                 <Link to="/Events">Events</Link>
-            </button>
+            </button> */}
 
             <Footer/>
         </>

@@ -1,10 +1,11 @@
+
 h1{
   text-align: center;
   font-size:3rem;
 }
 
 .footerContainer{
-  height: 120vh;
+  height: 156vh;
   width:100vw;
   display: flex;
   flex-direction: column;
@@ -50,4 +51,14 @@ h1{
 .fb2-icons{
   height: 5vh;
   margin-left: 5%;
+}
+
+.fb1-icons{
+  height: 5vh;
+  margin-left: -15%;
+}
+
+.fb3-icons{
+  height: 5vh;
+  margin-left: 27%;
 }
