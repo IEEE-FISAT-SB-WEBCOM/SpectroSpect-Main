@@ -1,107 +1,125 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
-
 const Event = () => {
+  const [isSticky, setIsSticky] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const threshold = 360; 
+
+      setIsSticky(scrollY > threshold);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
       {/* breadcrumbs */}
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
       <div className="flex flex-col lg:flex-row bg-black text-white min-h-screen items-center justify-center">
         <div className="md:w-3/4 mt-5 md:mt-32 lg:mr-8 px-3 py-3">
-          <div className="flex">
-            <div className="w-3/4">
-            <nav aria-label="Breadcrumb">
-  <ol className="flex items-center gap-1 text-sm text-white font-bold">
-    <li>
-      <a href="#" className="block transition hover:text-green-400">
-        <span className="sr-only"> Home </span>
+          <div className={`flex  top-0 pt-5 sticky ${isSticky? ' rounded-md bg-clip-padding  backdrop-filter backdrop-blur-sm bg-opacity-10 ' : 'bg-black'}`}>
+            <div className="w-3/4 ">
+              <div aria-label="Breadcrumb">
+                <ol className="flex items-center gap-1 text-sm bg-inherit border-0 text-white font-bold">
+                  <li>
+                    <a
+                      href="#"
+                      className="block transition hover:text-green-400"
+                    >
+                      <span className="sr-only"> Home </span>
 
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          className="h-4 w-4"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-          />
-        </svg>
-      </a>
-    </li>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-4 w-4"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                        />
+                      </svg>
+                    </a>
+                  </li>
 
-    <li className="rtl:rotate-180">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-4 w-4"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-          clip-rule="evenodd"
-        />
-      </svg>
-    </li>
+                  <li className="rtl:rotate-180">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </li>
 
-    <li>
-      <a href="#" className="block transition hover:text-green-400"> Events </a>
-    </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="block transition hover:text-green-400"
+                    >
+                      {" "}
+                      Events{" "}
+                    </a>
+                  </li>
 
-    <li className="rtl:rotate-180">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        className="h-4 w-4"
-        viewBox="0 0 20 20"
-        fill="currentColor"
-      >
-        <path
-          fill-rule="evenodd"
-          d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-          clip-rule="evenodd"
-        />
-      </svg>
-    </li>
+                  <li className="rtl:rotate-180">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      className="h-4 w-4"
+                      viewBox="0 0 20 20"
+                      fill="currentColor"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </li>
 
-    <li>
-      <a href="#" className="block transition text-green-400 hover:text-green-400">Brainwave Robotics Workshop  </a>
-    </li>
-  </ol>
-</nav>
+                  <li>
+                    <a
+                      href="#"
+                      className="block transition text-green-400 hover:text-green-400"
+                    >
+                      Brainwave Robotics Workshop{" "}
+                    </a>
+                  </li>
+                </ol>
+              </div>
 
               <h6 className="text-7xl font-bold my-6">
                 Brainwave Robotics Workshop
               </h6>
             </div>
-            <div className="w-1/4">
-
-            <button className="bg-white text-black p-3 px-4 rounded-2xl">Register</button>
-
+            <div className="w-1/4 flex items-center justify-end align-middle">
+              <button
+                href="#_"
+                className="relative inline-flex items-center justify-start inline-block px-10 py-3 overflow-hidden font-bold rounded-full group"
+              >
+                <span className="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-[3%]"></span>
+                <span className="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-white opacity-100 group-hover:-translate-x-8"></span>
+                <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-gray-900">
+                  Register
+                </span>
+                <span className="absolute inset-0 border-2 border-white rounded-full"></span>
+              </button>
             </div>
           </div>
-
-
-
-
 
           <div className="w-full h-72 bg-white rounded-md my-20"></div>
           <div className="">
@@ -135,13 +153,10 @@ const Event = () => {
             voluptates quisquam!
           </div>
           <br></br>
-          <div>
-            
-          </div>
+          <div></div>
           <div className="flex text-xl font-bold items-center">
-
-          <MdArrowOutward className="text-green-400 text-2xl mr-3" />
-          Perks
+            <MdArrowOutward className="text-green-400 text-2xl mr-3" />
+            Perks
           </div>
           <br></br>
           <div>
@@ -150,10 +165,9 @@ const Event = () => {
             aspernatur quis, eius ratione illo praesentium.
           </div>
           <div className="flex text-xl font-bold items-center my-10">
-
-<MdArrowOutward className="text-green-400 text-2xl mr-3" />
-Our Speakers
-</div>
+            <MdArrowOutward className="text-green-400 text-2xl mr-3" />
+            Our Speakers
+          </div>
           {/* Speaker Section */}
           <div className="flex mt-10 w-full">
             {/* Speaker */}
