@@ -34,7 +34,7 @@ const Event = () => {
                 <ol className="flex items-center gap-1 text-sm bg-inherit border-0 text-white font-bold">
                   <li>
                     <a
-                      href="#"
+                      href="/"
                       className="block transition hover:text-green-400"
                     >
                       <span className="sr-only"> Home </span>

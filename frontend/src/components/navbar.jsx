@@ -12,8 +12,8 @@ const Navbar = () => {
         <div id='bar'>
       <ul>
         <li><a href="#" class="navv">Home</a></li>
-        <li><a href="#" class="navv">About</a></li>
-        <li><a href="/Workshops" class="navv">Workshops</a></li>
+        <li><a href="#about" class="navv">About</a></li>
+        <li><a href="#Workshops" class="navv">Workshops</a></li>
         <li><a href="#" class="navv">Contact</a></li>
        </ul>
        <div className="gif-container">
