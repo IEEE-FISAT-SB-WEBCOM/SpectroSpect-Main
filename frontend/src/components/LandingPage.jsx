@@ -1,8 +1,45 @@
 import { Link } from "react-router-dom";
 import Footer from "./footer";
 import { MdArrowOutward } from "react-icons/md";
+import { useState } from "react";
 
 const LandingPage = () => {
+
+    const [workshops, setworkshops] = useState([
+        {
+            key:1,
+            title:"Workshop 1",
+            data: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, molestiae animi corporis perspiciatis, laudantium magnam, inventore minima provident voluptatem repellendus aperiam. Repellat enim ducimus, accusamus neque adipisci sint quae numquam?",
+            isOpen:false
+        },
+        {
+            key:1,
+            title:"Workshop 2",
+            data: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, molestiae animi corporis perspiciatis, laudantium magnam, inventore minima provident voluptatem repellendus aperiam. Repellat enim ducimus, accusamus neque adipisci sint quae numquam?",
+            isOpen:false
+        },
+        
+        {
+            key:1,
+            title:"Workshop 3",
+            data: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, molestiae animi corporis perspiciatis, laudantium magnam, inventore minima provident voluptatem repellendus aperiam. Repellat enim ducimus, accusamus neque adipisci sint quae numquam?",
+            isOpen:false
+        },
+        
+    ])
+
+    const toggle = (wrkKey)=>{
+        const update=workshops.map((workshop)=>{
+            if (workshop.key === wrkKey) { 
+                return { ...workshop, isOpen: !workshop.isOpen }; 
+            } else { 
+                return { ...workshop, isOpen: false }; 
+            } 
+        });
+        setworkshops(update);
+    }
+    
+
   return (
     <>
       {/* <h1>SPECTROSPECT🪫🔌</h1>
@@ -19,6 +56,18 @@ const LandingPage = () => {
             <button>
                 <Link to="/Events">Events</Link>
             </button> */}
+  <div className="flex flex-col lg:flex-row bg-black items-center justify-center">
+        <div className="md:w-3/4 flex flex-col  md:mt-32 lg:mr-8 px-3 py-3">
+        <div className="flex text-3xl font-bold align-middle self-start items-center mb-10">
+            <MdArrowOutward className="text-green-400 text-5xl mr-3" />
+            Workshops
+          </div>
+       
+            </div>
+            </div>
+
+
+
 
       {/* Speaker Section */}
       <div className="flex flex-col lg:flex-row bg-black items-center justify-center">
