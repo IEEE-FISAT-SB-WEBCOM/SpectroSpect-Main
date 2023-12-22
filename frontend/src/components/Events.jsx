@@ -135,16 +135,25 @@ const Event = () => {
             voluptates quisquam!
           </div>
           <br></br>
-          <MdArrowOutward className="text-green-400 text-2xl" />
+          <div>
+            
+          </div>
+          <div className="flex text-xl font-bold items-center">
+
+          <MdArrowOutward className="text-green-400 text-2xl mr-3" />
           Perks
+          </div>
           <br></br>
           <div>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur
             nisi dolore sequi corrupti ipsam beatae vero, magni numquam laborum
             aspernatur quis, eius ratione illo praesentium.
           </div>
-          <MdArrowOutward className="text-green-400 text-2xl" />
-          Our Speakers
+          <div className="flex text-xl font-bold items-center my-10">
+
+<MdArrowOutward className="text-green-400 text-2xl mr-3" />
+Our Speakers
+</div>
           {/* Speaker Section */}
           <div className="flex mt-10 w-full">
             {/* Speaker */}

@@ -1,7 +1,7 @@
 import footerLogo from "../assets/Frame.png"
-import fb from "../assets/fb.png"
-import ig from "../assets/Insta.png"
-import gm from "../assets/mail.png"
+import { MdFacebook } from "react-icons/md";
+import { FaInstagram } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
 
 const Footer = () => {
     return(
@@ -18,10 +18,10 @@ const Footer = () => {
           alt="Ezgif"
         />
                 </div>
-                <div className="footer-Box" id="fb2">
-                    <a href="https://www.facebook.com/ieeefisat/"><img src={fb} alt="FB" className="fb1-icons"></img></a>
-                    <a href="https://www.instagram.com/ieeefisatsb/?hl=en"><img src={ig} alt="IG" className="fb2-icons"></img></a>
-                    <a href="mailto:fisatieeesb@gmail.com"><img src={gm} alt="Mail" className="fb3-icons"></img></a>
+                <div className="footer-Box text-3xl" id="fb2">
+                    <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500 "><MdFacebook /></a>
+                    <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><FaInstagram /></a>
+                    <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><FiMail /></a>
                 </div>
                 <div className="footer-Box" id="fb3">
                     Our Sponsors
