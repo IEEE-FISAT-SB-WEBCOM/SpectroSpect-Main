@@ -6,6 +6,7 @@ import Event from './components/Events';
 import Speakers from './components/Speakers';
 import Navbar from './components/navbar';
 
+
 function App() {
   return (
     <>
