@@ -1,6 +1,11 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
+
+
+
+
+
 const Event = () => {
   const [isSticky, setIsSticky] = useState(false);
   useEffect(() => {

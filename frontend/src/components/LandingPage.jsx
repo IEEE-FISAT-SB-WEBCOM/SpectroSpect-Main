@@ -2,7 +2,19 @@ import { Link } from "react-router-dom";
 import Footer from "./footer";
 import { MdArrowOutward } from "react-icons/md";
 import { useState } from "react";
+import { Tilt } from "react-tilt";
 
+const defaultOptions = {
+	reverse:        false,  // reverse the tilt direction
+	max:            25,     // max tilt rotation (degrees)
+	perspective:    2000,   // Transform perspective, the lower the more extreme the tilt gets.
+	scale:          1,    // 2 = 200%, 1.5 = 150%, etc..
+	speed:          1000,   // Speed of the enter/exit transition
+	transition:     true,   // Set a transition on enter/exit.
+	axis:           null,   // What axis should be disabled. Can be X or Y.
+	reset:          true,    // If the tilt effect has to be reset on exit.
+	easing:         "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
+}
 const LandingPage = () => {
 
     const [workshops, setworkshops] = useState([
@@ -183,6 +195,8 @@ const LandingPage = () => {
             Latest Update
           </div>
           <div className="grid grid-cols-2 gap-8">
+            <Tilt options={defaultOptions} className=" hover:cursor-pointer">
+
           <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
         <img
           alt="Office"
@@ -203,6 +217,8 @@ const LandingPage = () => {
           </div>
         </div>
       </article>
+      </Tilt>
+
       <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
         <img
           alt="Office"
