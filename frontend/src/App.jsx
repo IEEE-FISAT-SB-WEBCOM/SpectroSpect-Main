@@ -10,7 +10,7 @@ import Navbar from './components/navbar';
 function App() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className='app-container'>
       <Routes>
         <Route path="/" element={<LandingPage />} />
