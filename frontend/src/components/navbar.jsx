@@ -4,7 +4,7 @@ import './Navbar.css';
 import spec from "../assets/spect.jpg";
 const Navbar = () => {
   return (
-    <div>
+    <div className='navBarContainer'>
         <div class='imgg'>
             <img src={spec} alt="" />
         </div>

@@ -1,13 +1,16 @@
 /* src/components/Navbar.css */
 nav {
-    position: relative;
-    background: rgb(0 186 81 / 11%);
+    position: fixed;
+    background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     padding: 45px;
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.2);
-    margin: 50px 200px;
+    transform: translate(10%,50%);
     overflow: hidden; /* Ensure that the overflow is hidden */
+    z-index: 3;
+    width:80vw;
+    
   }
   
   .imgg{
