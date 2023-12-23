@@ -124,14 +124,14 @@ const LandingPage = () => {
 
       {/* Speaker Section */}
       <div className="flex flex-col lg:flex-row bg-black items-center justify-center">
-        <div className="md:w-3/4 flex flex-col  md:mt-32 lg:mr-8 px-3 py-3">
-          <div className="flex text-3xl font-bold align-middle self-start items-center">
-            <MdArrowOutward className="text-green-400 text-5xl mr-3" />
+        <div className="md:w-3/4 flex w-full flex-col  md:mt-32 lg:mr-8 px-3 py-3">
+          <div className="flex w-full text-3xl font-bold align-middle self-start items-center">
+            <MdArrowOutward className="text-green-400 sm:self-center text-5xl mr-3" />
             Speakers
           </div>
-          <div className="flex mt-10 w-full">
+          <div className="flex mt-10 w-full md:flex-row flex-col">
             {/* Speaker */}
-            <div className="w-1/4 hover:cursor-pointer hover:scale-105 transition duration-300">
+            <div className="md:w-1/4 w-full hover:cursor-pointer hover:scale-105 transition duration-300">
               <div href="#" class="block rounded-lg p-4">
                 <img
                   alt="Home"
@@ -151,8 +151,26 @@ const LandingPage = () => {
                 </div>
               </div>
             </div>
+            <div className="md:w-1/4 w-full hover:cursor-pointer hover:scale-105 transition duration-300">
+              <div href="#" class="block rounded-lg p-3">
+                <img
+                  alt="Home"
+                  src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  class="h-56 w-full rounded-md object-cover"
+                />
 
-            <div className="w-1/4">
+                <div class="mt-2">
+                  <dl>
+                    <div>
+                      <dd class="font-medium">Marine Gwenddydd</dd>
+                      <div>
+                        <dd class="text-sm text-gray-500">Managing Director</dd>
+                      </div>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </div> <div className="md:w-1/4 w-full hover:cursor-pointer hover:scale-105 transition duration-300">
               <div href="#" class="block rounded-lg p-4">
                 <img
                   alt="Home"
@@ -171,28 +189,7 @@ const LandingPage = () => {
                   </dl>
                 </div>
               </div>
-            </div>
-            <div className="w-1/4">
-              <div href="#" class="block rounded-lg p-4">
-                <img
-                  alt="Home"
-                  src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="h-56 w-full rounded-md object-cover"
-                />
-
-                <div class="mt-2">
-                  <dl>
-                    <div>
-                      <dd class="font-medium">Marine Gwenddydd</dd>
-                      <div>
-                        <dd class="text-sm text-gray-500">Managing Director</dd>
-                      </div>
-                    </div>
-                  </dl>
-                </div>
-              </div>
-            </div>
-            <div className="w-1/4">
+            </div> <div className="md:w-1/4 w-full hover:cursor-pointer hover:scale-105 transition duration-300">
               <div href="#" class="block rounded-lg p-4">
                 <img
                   alt="Home"
