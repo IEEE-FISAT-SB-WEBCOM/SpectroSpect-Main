@@ -129,3 +129,21 @@ h1{
     transform: translateX(-1500%);
   }
 }
+
+
+
+/* Speakers */
+
+.Speakers p{
+  top:0;
+  position: sticky;
+}
+
+.speakerCards{
+  display: flex;
+  justify-content: space-around;
+}
+
+.speakerCard img{
+  height:20vh;
+}
