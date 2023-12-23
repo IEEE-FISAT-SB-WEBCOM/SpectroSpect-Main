@@ -37,14 +37,15 @@ const Footer = () => {
                     <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><FiMail /></a>
                 </div>
                 <div className="footer-Box" id="fb3">
-                  <div>
+                  <div id="footer-slider-1">
                     Our Sponsors
                   </div>
-                  <div></div>
-                  <div>
+                  <div id="footer-slider-2"></div>
+                  <div id="footer-slider-3">
                     <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500 "><MdFacebook /></a>
                     <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><FaInstagram /></a>
                     <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><FiMail /></a>
+                    <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500 "><MdFacebook /></a>
                   </div>
                   <div>Workshops</div>
                   <div>Talks</div>
