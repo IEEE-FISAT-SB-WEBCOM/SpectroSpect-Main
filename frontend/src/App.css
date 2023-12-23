@@ -75,7 +75,9 @@ h1{
 }
 
 .footer-slider-common{
-  animation: slideAnimation2 5s 11s infinite linear forwards ;
+  min-width: 70%;
+  font-size: 30px;
+  animation: slideAnimation1 20s 1s infinite linear forwards;
 }
 
 .fb2-icons{
@@ -101,7 +103,7 @@ h1{
     transform: translateX(-100%);
   }
   75%,100%{
-    transform: translateX(-500%);
+    transform: translateX(-700%);
   }
 }
 
@@ -109,8 +111,8 @@ h1{
   0%{
     transform: translateX(0%);
   }
-  100%{
-    transform: translateX(-400%);
+  90%,100%{
+    transform: translateX(-700%);
   }
 }
 
@@ -126,6 +128,6 @@ h1{
 
   75%,100%{
     opacity: 1;
-    transform: translateX(-1000%);
+    transform: translateX(-1500%);
   }
 }
