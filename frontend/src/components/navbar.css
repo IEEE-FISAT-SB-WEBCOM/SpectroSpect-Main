@@ -7,7 +7,7 @@ nav {
     border-radius: 15px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     transform: translate(10%,50%);
-    overflow: hidden; /* Ensure that the overflow is hidden */
+    overflow: hidden;
     z-index: 3;
     width:80vw;
     
