@@ -37,7 +37,24 @@ const Footer = () => {
                     <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><FiMail /></a>
                 </div>
                 <div className="footer-Box" id="fb3">
-                    Our Sponsors
+                <div className="footer-slide">
+                  <div>
+                    <p>Our Sponsors</p>
+                  </div>
+                  <div></div>
+                  <div>
+                    <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500 "><MdFacebook /></a>
+                    <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><FaInstagram /></a>
+                    <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><FiMail /></a>
+                  </div>
+                  </div>
+                    {/* <a className="Header-Footer-slider-icons"><MdFacebook /></a>
+                    <a className="Header-Footer-slider-icons"><MdFacebook /></a>
+                    <a className="Header-Footer-slider-icons"><MdFacebook /></a>
+                    <a className="Header-Footer-slider-icons"><MdFacebook /></a>
+                    <a className="Header-Footer-slider-icons"><MdFacebook /></a>
+                    <a className="Header-Footer-slider-icons"><MdFacebook /></a>
+                    <a className="Header-Footer-slider-icons"><MdFacebook /></a> */}
                 </div>
             </div>
             <img src={footerLogo}></img>
