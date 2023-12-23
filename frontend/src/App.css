@@ -46,11 +46,16 @@ h1{
 }
 
 #fb3{
-  display: flex;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  white-space: nowrap;
   /* overflow-x: hidden; */
+}
+
+#fb3 div{
+  min-width: 50%;
+  height: 100%;
+  border: 1px solid ;
+  animation: slideAnimation 5s 1s infinite linear;
 }
 
 .fb2-icons{
@@ -68,23 +73,12 @@ h1{
   margin-left: 27%;
 }
 
-.footer-slide{
-  position: relative;
-  display: flex;
-  animation: slideAnimation 5s infinite linear;
-}
-
-#fb3 p{
-  width:50%;
-  border: 1px solid;
-  margin:30px;
-}
 
 @keyframes slideAnimation {
   0%{
     transform: translateX(0%);
   }
   100%{
-    transform: translateX(-100%);
+    transform: translateX(-500%);
   }
 }
