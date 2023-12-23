@@ -25,7 +25,7 @@ const Event = () => {
       <div className="flex flex-col lg:flex-row text-white min-h-screen items-center justify-center">
         <div className="md:w-3/4 mt-5 md:mt-32 lg:mr-8 px-3 py-3">
           <div className={`flex md:flex-row flex-col  top-0 pt-5 sticky ${isSticky? ' rounded-md bg-clip-padding  backdrop-filter backdrop-blur-sm bg-opacity-10 ' : 'bg-black'}`}>
-            <div className="w-3/4 bg-red-50 ">
+            <div className="md:w-3/4 sm:w-full flex sm:flex-col items-center justify-center align-middle   ">
               <div aria-label="Breadcrumb" className=" md:flex hidden">
                 <ol className="flex items-center gap-1 text-sm bg-inherit border-0 text-white font-bold">
                   <li>
@@ -107,7 +107,7 @@ const Event = () => {
                 Brainwave Robotics Workshop
               </h6>
             </div>
-            <div className="w-1/4 flex items-center justify-end align-middle">
+            <div className="w-full md:w-1/4 flex items-center justify-start md:justify-end align-middle">
               <button
                 href="#_"
                 className="relative inline-flex items-center justify-start inline-block px-10 py-3 overflow-hidden font-bold rounded-full group"
