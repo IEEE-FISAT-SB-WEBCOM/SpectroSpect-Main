@@ -1,17 +1,13 @@
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
-
-
-
-
 
 const Event = () => {
   const [isSticky, setIsSticky] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const threshold = 360; 
+      const threshold = 360;
 
       setIsSticky(scrollY > threshold);
     };
@@ -22,15 +18,15 @@ const Event = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
   return (
     <>
-      {/* breadcrumbs */}
-
-      <div className="flex flex-col lg:flex-row bg-black text-white min-h-screen items-center justify-center">
+      {/* Breadcrumbs and Header */}
+      <div className="flex flex-col lg:flex-row text-white min-h-screen items-center justify-center">
         <div className="md:w-3/4 mt-5 md:mt-32 lg:mr-8 px-3 py-3">
-          <div className={`flex  top-0 pt-5 sticky ${isSticky? ' rounded-md bg-clip-padding  backdrop-filter backdrop-blur-sm bg-opacity-10 ' : 'bg-black'}`}>
-            <div className="w-3/4 ">
-              <div aria-label="Breadcrumb">
+          <div className={`flex md:flex-row flex-col  top-0 pt-5 sticky ${isSticky? ' rounded-md bg-clip-padding  backdrop-filter backdrop-blur-sm bg-opacity-10 ' : 'bg-black'}`}>
+            <div className="w-3/4 bg-red-50 ">
+              <div aria-label="Breadcrumb" className=" md:flex hidden">
                 <ol className="flex items-center gap-1 text-sm bg-inherit border-0 text-white font-bold">
                   <li>
                     <a
@@ -126,8 +122,9 @@ const Event = () => {
             </div>
           </div>
 
-          <div className="w-full h-72 bg-white rounded-md my-20"></div>
-          <div className="">
+          {/* Content section */}
+          <div className="w-full h-72 bg-white rounded-md my-8 lg:my-20"></div>
+          <div className="lg:text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
             aperiam aut dolorem repellat cum totam architecto. Quo ipsum,
             excepturi voluptas debitis eos inventore fuga reiciendis illo
@@ -157,39 +154,43 @@ const Event = () => {
             dolorum consequatur fugit, quaerat velit ab quia qui asperiores eius
             voluptates quisquam!
           </div>
-          <br></br>
-          <div></div>
-          <div className="flex text-xl font-bold items-center">
-            <MdArrowOutward className="text-green-400 text-2xl mr-3" />
+
+          {/* Perks section */}
+          <div className="flex text-xl lg:text-2xl font-bold items-center mt-6">
+            <MdArrowOutward className="text-green-400 text-xl lg:text-2xl mr-3" />
             Perks
           </div>
-          <br></br>
-          <div>
+          <div className="text-lg lg:text-xl">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur
             nisi dolore sequi corrupti ipsam beatae vero, magni numquam laborum
             aspernatur quis, eius ratione illo praesentium.
           </div>
-          <div className="flex text-xl font-bold items-center my-10">
-            <MdArrowOutward className="text-green-400 text-2xl mr-3" />
+
+          {/* Our Speakers section */}
+          <div className="flex text-xl lg:text-2xl font-bold items-center mt-6">
+            <MdArrowOutward className="text-green-400 text-xl lg:text-2xl mr-3" />
             Our Speakers
           </div>
+
           {/* Speaker Section */}
-          <div className="flex mt-10 w-full">
-            {/* Speaker */}
-            <div className="w-1/4">
-              <div href="#" class="block rounded-lg p-4">
+          <div className="flex flex-col lg:flex-row w-full mt-4">
+            {/* Speaker image */}
+            <div className="w-full lg:w-1/4 mb-4 lg:mb-0">
+              <div className="block rounded-lg p-4">
                 <img
-                  alt="Home"
+                  alt="Speaker"
                   src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="h-56 w-full rounded-md object-cover"
+                  className="h-56 w-full rounded-md object-cover"
                 />
 
-                <div class="mt-2">
+                <div className="mt-2">
                   <dl>
                     <div>
-                      <dd class="font-medium">Marine Gwenddydd</dd>
+                      <dd className="font-medium">Marine Gwenddydd</dd>
                       <div>
-                        <dd class="text-sm text-gray-500">Managing Director</dd>
+                        <dd className="text-sm text-gray-500">
+                          Managing Director
+                        </dd>
                       </div>
                     </div>
                   </dl>
@@ -197,7 +198,8 @@ const Event = () => {
               </div>
             </div>
 
-            <div className="w-3/4 ml-10  h-56 rounded-lg mt-4 box-border border-gray-800 border flex items-center px-5">
+            {/* Speaker description */}
+            <div className="w-full lg:w-3/4 lg:ml-4 h-56 rounded-lg box-border border-gray-800 border flex items-center px-5">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
               optio delectus velit earum qui, dicta excepturi voluptas beatae
               tenetur inventore harum recusandae, placeat minus dignissimos
