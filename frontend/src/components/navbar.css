@@ -3,14 +3,14 @@ nav {
     position: fixed;
     background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
-    padding: 45px;
     border-radius: 15px;
+    display: flex;
     border: 1px solid rgba(255, 255, 255, 0.2);
     transform: translate(10%,50%);
     overflow: hidden;
     z-index: 3;
     width:80vw;
-    
+    height: 15vh;
   }
   
   .imgg{
@@ -26,6 +26,7 @@ nav {
     justify-content: flex-start;
     margin: 0;
     padding: 0;
+    align-items: center;
   }
   
   .navv {
@@ -61,3 +62,20 @@ nav {
     border-radius: 15px; /* Apply the same border-radius as the navbar */
   }
   
+  .header-sponsors{
+    margin-left: 5vw;
+    width: 25vw;
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: hidden;
+    height: 100%;
+    font:10px;
+    align-items: center;
+  }
+
+  .header-sponsors div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
