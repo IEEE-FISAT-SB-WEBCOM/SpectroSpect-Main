@@ -2,6 +2,7 @@ import footerLogo from "../assets/Frame.png"
 import { MdFacebook } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
+import { MdArrowOutward } from "react-icons/md";
 
 const Footer = () => {
     return(
@@ -47,10 +48,10 @@ const Footer = () => {
                     <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><FiMail /></a>
                     <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500 "><MdFacebook /></a>
                   </div>
-                  <div className="footer-slider-common">Workshops</div>
-                  <div className="footer-slider-common">Talks</div>
-                  <div className="footer-slider-common">Pre Show</div>
-                  <div className="footer-slider-common">More Fun</div>
+                  <div className="footer-slider-common">Workshops <MdArrowOutward className="text-green-400 text-5xl mr-3" /></div>
+                  <div className="footer-slider-common">Talks <MdArrowOutward className="text-green-400 text-5xl mr-3" /></div>
+                  <div className="footer-slider-common">Pro Show <MdArrowOutward className="text-green-400 text-5xl mr-3" /></div>
+                  <div className="footer-slider-common">More Fun <MdArrowOutward className="text-green-400 text-5xl mr-3" /></div>
                 </div>
             </div>
             <img src={footerLogo}></img>
