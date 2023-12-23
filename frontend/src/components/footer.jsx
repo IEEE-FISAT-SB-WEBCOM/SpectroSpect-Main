@@ -47,10 +47,10 @@ const Footer = () => {
                     <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><FiMail /></a>
                     <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500 "><MdFacebook /></a>
                   </div>
-                  <div>Workshops</div>
-                  <div>Talks</div>
-                  <div>Pre Show</div>
-                  <div>More Fun</div>
+                  <div className="footer-slider-common">Workshops</div>
+                  <div className="footer-slider-common">Talks</div>
+                  <div className="footer-slider-common">Pre Show</div>
+                  <div className="footer-slider-common">More Fun</div>
                 </div>
             </div>
             <img src={footerLogo}></img>

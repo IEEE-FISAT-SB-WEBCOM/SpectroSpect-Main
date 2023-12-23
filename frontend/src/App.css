@@ -56,14 +56,14 @@ h1{
 #fb3 div{
   display: flex;
   height: 100%;
-  border: 1px solid ;
+  /* border: 1px solid ; */
   justify-content: center;
   align-items: center;
 }
 
 #footer-slider-1{
   min-width: 30%;
-  animation: opacityIG 10s infinite;
+  animation: opacityIG 20s 1s infinite linear forwards;
 }
 
 #footer-slider-2,#footer-slider-3{
@@ -71,10 +71,12 @@ h1{
 }
 
 #footer-slider-3{
-  animation: slideAnimation 10s 1s infinite linear forwards;
+  animation: slideAnimation1 20s 1s infinite linear forwards;
 }
 
-
+.footer-slider-common{
+  animation: slideAnimation2 5s 11s infinite linear forwards ;
+}
 
 .fb2-icons{
   height: 5vh;
@@ -91,20 +93,39 @@ h1{
   margin-left: 27%;
 }
 
-@keyframes slideAnimation {
+@keyframes slideAnimation1 {
   0%{
     transform: translateX(0%);
   }
-  50%,100%{
+  25%,75%{
     transform: translateX(-100%);
+  }
+  75%,100%{
+    transform: translateX(-500%);
+  }
+}
+
+@keyframes slideAnimation2 {
+  0%{
+    transform: translateX(0%);
+  }
+  100%{
+    transform: translateX(-400%);
   }
 }
 
 @keyframes opacityIG {
   0%{
     opacity: 0;
+    transform: translateX(0%);
   }
-  50%,100%{
+  25%,75%{
     opacity: 1;
+    transform: translateX(0%);
+  }
+
+  75%,100%{
+    opacity: 1;
+    transform: translateX(-1000%);
   }
 }
