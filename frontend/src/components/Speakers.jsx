@@ -1,5 +1,6 @@
 import Footer from "./footer"
 import AK from "../assets/ak.jpg"
+import AG from "../assets/AG.jpeg"
 import { useState } from "react"
 
 const Speakers = () => {
@@ -12,9 +13,9 @@ const Speakers = () => {
     for(let i=1;i<5;i++){
         speakerList.push(
             <a href="#SpeakerInfo">
-            <div className="speakerCard" style={{border: active === i && '2px solid green'}} key={i} onClick={() => SetActive(i)}>
+            <div className="speakerCard" style={{border: active === i && '2px solid #33FFA9'}} key={i} onClick={() => SetActive(i)}>
                 <img src={AK}></img>
-                <p>Anantha Krishnan {i}</p>
+                <span>Anantha Krishnan {i}</span>
                 <p>Student, Doctor, Astronaut, Dev</p>
             </div>
             </a>
@@ -31,8 +32,8 @@ const Speakers = () => {
             </div>
             {active && <div id="SpeakerInfo" style={{flexWrap: window.innerHeight > window.innerWidth && "wrap"}}>
             <div className="speakerCard">
-                <img src={AK}></img>
-                <p>Anantha Krishnan {active}</p>
+                <img src={AG}></img>
+                <span>Anantha Krishnan {active}</span>
                 <p>Student, Doctor, Astronaut, Dev</p>
             </div>
             <div className="speaker-Description" style={{height: window.innerHeight > window.innerWidth  && '70vh'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>

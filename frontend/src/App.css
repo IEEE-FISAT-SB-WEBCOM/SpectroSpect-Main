@@ -169,6 +169,17 @@ h1{
   margin: 0;
 }
 
+.speakerCard span{
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 2%;
+}
+
+.speakerCard p{
+  font-weight: 300;
+  font-size: 15px;
+}
+
 #SpeakerInfo{
   width:100vw;
   display: flex;
