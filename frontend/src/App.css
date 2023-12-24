@@ -161,4 +161,24 @@ h1{
   margin: 4vw;
   border-radius: 10px;
   border: 2px solid #282828;
+  height:40vh;
+}
+
+.SpeakerInfo{
+  width:100vw;
+  display: flex;
+  margin-top: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.speaker-Description{
+  height: 30vh;
+  border: 2px solid #282828;
+  height: 40vh;
+  border-radius: 10px;
+  font-size: 22px;
+  padding: 5vh;
+  margin-right:2vw;
+  margin-left: 2vw;
 }
