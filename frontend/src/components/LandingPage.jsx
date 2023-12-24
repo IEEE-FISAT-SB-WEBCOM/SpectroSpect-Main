@@ -6,6 +6,7 @@ import { Tilt } from "react-tilt";
 import footerLogo from "../assets/Frame.png"
 import { FaArrowDownLong } from "react-icons/fa6";
 import Workshop2 from "../Workshop2";
+import { useEffect } from "react";
 
 
 const defaultOptions = {
@@ -19,8 +20,30 @@ const defaultOptions = {
 	reset:          true,    // If the tilt effect has to be reset on exit.
 	easing:         "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
 }
-const LandingPage = () => {
 
+
+const LandingPage = () => {
+  
+  const [feed, setFeed] = useState([]);
+  
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const access="IGQWRNazFESEQwSnlSb2szT1RCdXZAScHFBVU9MMVI2dnFBRXZARVktjbDMxWUJVemdENTc1NzdXSUhHWUFYNGFUaHlpUllSUk5SSmxOTVB5c0RCS2FIOTBkX01OUG5oRTlLWlRxNkhsSHZAqdFN3VFF1WmNwR0RvV1EZD";
+        const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink&access_token=${access}`;
+        const response = await fetch(url);
+        const data = await response.json();
+        setFeed(data.data);
+        console.log(data);
+      } catch (error) {
+        console.error("Error fetching Instagram data:", error);
+      }
+    };
+  
+    fetchData();
+  }, []);
+  
     const [workshops, setworkshops] = useState([
         {
             key:1,
@@ -154,19 +177,19 @@ const LandingPage = () => {
           <div className="flex mt-10 w-full md:flex-row flex-col">
             {/* Speaker */}
             <div className="md:w-1/4 w-full hover:cursor-pointer hover:scale-105 transition duration-300">
-              <div href="#" class="block rounded-lg p-4">
+              <div href="#" className="block rounded-lg p-4">
                 <img
                   alt="Home"
                   src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="h-56 w-full rounded-md object-cover"
+                  className="h-56 w-full rounded-md object-cover"
                 />
 
-                <div class="mt-2">
+                <div className="mt-2">
                   <dl>
                     <div>
-                      <dd class="font-medium">Marine Gwenddydd</dd>
+                      <dd className="font-medium">Marine Gwenddydd</dd>
                       <div>
-                        <dd class="text-sm text-gray-500">Managing Director</dd>
+                        <dd className="text-sm text-gray-500">Managing Director</dd>
                       </div>
                     </div>
                   </dl>
@@ -174,57 +197,57 @@ const LandingPage = () => {
               </div>
             </div>
             <div className="md:w-1/4 w-full hover:cursor-pointer hover:scale-105 transition duration-300">
-              <div href="#" class="block rounded-lg p-3">
+              <div href="#" className="block rounded-lg p-3">
                 <img
                   alt="Home"
                   src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="h-56 w-full rounded-md object-cover"
+                  className="h-56 w-full rounded-md object-cover"
                 />
 
-                <div class="mt-2">
+                <div className="mt-2">
                   <dl>
                     <div>
-                      <dd class="font-medium">Marine Gwenddydd</dd>
+                      <dd className="font-medium">Marine Gwenddydd</dd>
                       <div>
-                        <dd class="text-sm text-gray-500">Managing Director</dd>
+                        <dd className="text-sm text-gray-500">Managing Director</dd>
                       </div>
                     </div>
                   </dl>
                 </div>
               </div>
             </div> <div className="md:w-1/4 w-full hover:cursor-pointer hover:scale-105 transition duration-300">
-              <div href="#" class="block rounded-lg p-4">
+              <div href="#" className="block rounded-lg p-4">
                 <img
                   alt="Home"
                   src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="h-56 w-full rounded-md object-cover"
+                  className="h-56 w-full rounded-md object-cover"
                 />
 
-                <div class="mt-2">
+                <div className="mt-2">
                   <dl>
                     <div>
-                      <dd class="font-medium">Marine Gwenddydd</dd>
+                      <dd className="font-medium">Marine Gwenddydd</dd>
                       <div>
-                        <dd class="text-sm text-gray-500">Managing Director</dd>
+                        <dd className="text-sm text-gray-500">Managing Director</dd>
                       </div>
                     </div>
                   </dl>
                 </div>
               </div>
             </div> <div className="md:w-1/4 w-full hover:cursor-pointer hover:scale-105 transition duration-300">
-              <div href="#" class="block rounded-lg p-4">
+              <div href="#" className="block rounded-lg p-4">
                 <img
                   alt="Home"
                   src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  class="h-56 w-full rounded-md object-cover"
+                  className="h-56 w-full rounded-md object-cover"
                 />
 
-                <div class="mt-2">
+                <div className="mt-2">
                   <dl>
                     <div>
-                      <dd class="font-medium">Marine Gwenddydd</dd>
+                      <dd className="font-medium">Marine Gwenddydd</dd>
                       <div>
-                        <dd class="text-sm text-gray-500">Managing Director</dd>
+                        <dd className="text-sm text-gray-500">Managing Director</dd>
                       </div>
                     </div>
                   </dl>
@@ -256,97 +279,18 @@ const LandingPage = () => {
       Latest Update
     </div>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      <Tilt options={defaultOptions} className="hover:cursor-pointer mb-4 md:mb-0">
-        <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg w-full">
-          <img
-            alt="Office"
-            src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
-            className="absolute inset-0 h-full w-full object-cover"
-          />
-          <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
-            <div className="p-4 sm:p-6">
-              <a href="#">
-                <h3 className="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
-              </a>
-              <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
-                pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
-                quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
-                atque dignissimos. Molestias explicabo corporis voluptatem?
-              </p>
-            </div>
-          </div>
-        </article>
-      </Tilt>
+      {feed.map(item=>(
 
-      <Tilt options={defaultOptions} className="hover:cursor-pointer mb-4 md:mb-0">
+      <Tilt options={defaultOptions} key={item.id} className="hover:cursor-pointer mb-4 md:mb-0">
         <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg w-full">
           <img
             alt="Office"
-            src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
-            className="absolute inset-0 h-full w-full object-cover"
+            src={item.media_url}
           />
-          <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
-            <div className="p-4 sm:p-6">
-              <a href="#">
-                <h3 className="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
-              </a>
-              <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
-                pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
-                quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
-                atque dignissimos. Molestias explicabo corporis voluptatem?
-              </p>
-            </div>
-          </div>
+        
         </article>
       </Tilt>
-
-      <Tilt options={defaultOptions} className="hover:cursor-pointer mb-4 md:mb-0">
-        <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg w-full">
-          <img
-            alt="Office"
-            src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
-            className="absolute inset-0 h-full w-full object-cover"
-          />
-          <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
-            <div className="p-4 sm:p-6">
-              <a href="#">
-                <h3 className="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
-              </a>
-              <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
-                pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
-                quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
-                atque dignissimos. Molestias explicabo corporis voluptatem?
-              </p>
-            </div>
-          </div>
-        </article>
-      </Tilt>
-
-      <Tilt options={defaultOptions} className="hover:cursor-pointer mb-4 md:mb-0">
-        <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg w-full">
-          <img
-            alt="Office"
-            src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
-            className="absolute inset-0 h-full w-full object-cover"
-          />
-          <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
-            <div className="p-4 sm:p-6">
-              <a href="#">
-                <h3 className="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
-              </a>
-              <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
-                pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
-                quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
-                atque dignissimos. Molestias explicabo corporis voluptatem?
-              </p>
-            </div>
-          </div>
-        </article>
-      </Tilt>
+      ))}
 
 
     </div>
@@ -366,3 +310,6 @@ const LandingPage = () => {
 };
 
 export default LandingPage;
+
+
+
