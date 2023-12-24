@@ -5,6 +5,18 @@ import { FiMail } from "react-icons/fi";
 import { MdArrowOutward } from "react-icons/md";
 
 const Footer = () => {
+    const mobFooterContainer = {
+      flexDirection:"column",
+      height:"70vh",
+      width:"100%",
+      margin:"0"
+    }
+
+    const mobFooterContainerDiv = {
+      height:"30%",
+      width:"100%"
+    }
+    let condition = window.innerHeight > window.innerWidth
     return(
         <div className="footerContainer">
             <br />
@@ -24,20 +36,20 @@ const Footer = () => {
                 <span className="absolute inset-0 border-2 border-white rounded-full"></span>
               </button>
             </div>
-            <div className="footerBoxContainer">
-                <div className="footer-Box" id="fb1">
+            <div className="footerBoxContainer" style={condition ? mobFooterContainer : null}>
+                <div className="footer-Box" id="fb1" style={condition ? {...mobFooterContainerDiv,borderBottomLeftRadius:"0px",borderTopRightRadius:"10px"} : null}>
                 <img
           className="ezgif"
           src="src\assets\ezgif.gif"  // Update the path to your GIF file
           alt="Ezgif"
         />
                 </div>
-                <div className="footer-Box text-3xl" id="fb2">
+                <div className="footer-Box text-3xl" id="fb2" style={condition ? mobFooterContainerDiv : null}>
                     <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500 "><MdFacebook /></a>
                     <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><FaInstagram /></a>
                     <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><FiMail /></a>
                 </div>
-                <div className="footer-Box" id="fb3">
+                <div className="footer-Box" id="fb3" style={condition ? {...mobFooterContainerDiv,borderTopRightRadius:"0px",borderBottomLeftRadius:"10px"} : null}>
                   <div id="footer-slider-1">
                     Our Sponsors
                   </div>
