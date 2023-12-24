@@ -7,9 +7,9 @@ import { FaInstagram } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 //import { MdArrowOutward } from "react-icons/md";
 
-const Navbar = () => {
+const Navbar = ({setSticky = false}) => {
   return (
-    <div className='navBarContainer'>
+    <div className='navBarContainer' style={setSticky?{position:"fixed"}:null}>
         <div class='imgg'>
             <img src={spec} alt="" />
         </div>

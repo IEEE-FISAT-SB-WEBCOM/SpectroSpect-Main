@@ -3,6 +3,7 @@ import AK from "../assets/ak.jpg"
 import AG from "../assets/AG.jpeg"
 import { useState } from "react"
 import { Link } from "react-router-dom";
+import Navbar from "./navbar";
 
 const Speakers = () => {
 
@@ -22,9 +23,11 @@ const Speakers = () => {
             </a>
         )
     }
-
-    return <div className="Speakers">
-            <div className="footerBeASponsor" style={{top:"-30vh",position:"sticky",border:"none",background: 'radial-gradient(#187747 70%,rgba(0, 0, 0, 0))',zIndex:""}}>
+    //style={{top:"-30vh",position:"sticky",border:"none",background: 'radial-gradient(#187747 15%,rgba(0, 0, 0, 0))',zIndex:"2"}}
+    return  <>
+            <Navbar/>
+            <div className="Speakers">
+            <div className="footerBeASponsor" style={{top:"-30vh",position:"sticky",border:"1px solid rgba(255, 255, 255, 0.2)",background: "rgba(0, 0, 0, 0.2)",zIndex:"2",backdropFilter:"blur(10px)"}}>
 
             </div>
                 <div aria-label="Breadcrumb" className=" md:flex md:self-start hidden" style={{ top: 0, position: 'sticky',zIndex:"2" }}>
@@ -98,6 +101,7 @@ const Speakers = () => {
         
         <Footer/>
         </div>
+      </>
 }
 
 export default Speakers
