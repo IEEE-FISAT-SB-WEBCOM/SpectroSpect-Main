@@ -9,11 +9,11 @@ import { FiMail } from "react-icons/fi";
 
 const Navbar = ({setSticky = false}) => {
   return (
-    <div className='navBarContainer' style={setSticky?{position:"fixed"}:null}>
+    <div className='navBarContainer'>
         <div class='imgg'>
             <img src={spec} alt="" />
         </div>
-    <nav>
+    <nav style={setSticky?{position:"fixed"}:null}>
       <ul>
         <li><a href="#" class="navv">Home</a></li>
         <li><a href="#about" class="navv">About</a></li>

@@ -7,6 +7,7 @@ import footerLogo from "../assets/Frame.png"
 import { FaArrowDownLong } from "react-icons/fa6";
 import Workshop2 from "../Workshop2";
 import { useEffect } from "react";
+import Navbar from "./navbar";
 
 
 const defaultOptions = {
@@ -81,6 +82,7 @@ const LandingPage = () => {
 
   return (
     <>
+    <Navbar setSticky={true}/>
       {/* <h1>SPECTROSPECT🪫🔌</h1>
             <button>
                 <Link to="/Workshops">Workshops</Link>

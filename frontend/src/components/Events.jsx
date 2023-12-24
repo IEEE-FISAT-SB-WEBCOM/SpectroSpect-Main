@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
+import Navbar from "./navbar";
 
 const Event = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -23,6 +24,7 @@ const Event = () => {
   return (
     <>
       {/* Breadcrumbs and Header */}
+      <Navbar/>
       <div className="flex flex-col lg:flex-row text-white min-h-screen items-center justify-center">
         <div className="md:w-3/4  mt-5 md:mt-32 lg:mr-8 px-3 py-3">
           <div className={`flex md:flex-row flex-col  top-0 pt-5 sticky ${isSticky? ' relative rounded-md overflow-hidden bg-gradient-to-b  from-green18774F to-transparent backdrop-blur-sm bg-opacity-10' : 'bg-inherit'}`}>

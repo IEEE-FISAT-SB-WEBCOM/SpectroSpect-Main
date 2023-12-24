@@ -8,8 +8,8 @@ const Footer = () => {
     const mobFooterContainer = {
       flexDirection:"column",
       height:"70vh",
-      width:"100%",
-      margin:"0"
+      width:"90%",
+      margin:"5%"
     }
 
     const mobFooterContainerDiv = {
