@@ -229,112 +229,116 @@ const LandingPage = () => {
 
       {/* Insta */}
       <div className="flex flex-col lg:flex-row bg-black text-white items-center justify-center">
-        <div className="md:w-3/4 flex flex-col md:mt-32 lg:mr-8 px-3 py-3">
-        <div className="flex text-3xl mb-10 font-bold align-middle self-start items-center">
-            <MdArrowOutward className="text-green-400 text-5xl mr-3" />
-            Latest Update
+  <div className="md:w-full lg:w-3/4 flex flex-col md:mt-32 lg:mr-8 px-3 py-3">
+    <div className="flex text-3xl mb-10 font-bold align-middle self-start items-center">
+      <MdArrowOutward className="text-green-400 text-5xl mr-3" />
+      Latest Update
+    </div>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <Tilt options={defaultOptions} className="hover:cursor-pointer mb-4 md:mb-0">
+        <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg w-full">
+          <img
+            alt="Office"
+            src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+          <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
+            <div className="p-4 sm:p-6">
+              <a href="#">
+                <h3 className="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
+              </a>
+              <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
+                pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
+                quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
+                atque dignissimos. Molestias explicabo corporis voluptatem?
+              </p>
+            </div>
           </div>
-          <div className="grid grid-cols-2 gap-8">
-            <Tilt options={defaultOptions} className=" hover:cursor-pointer">
-
-          <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-        <img
-          alt="Office"
-          src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
-          className="absolute inset-0 h-full w-full object-cover"
-        />
-        <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
-          <div className="p-4 sm:p-6">
-            <a href="#">
-              <h3 className="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
-            </a>
-            <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
-              pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
-              quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
-              atque dignissimos. Molestias explicabo corporis voluptatem?
-            </p>
-          </div>
-        </div>
-      </article>
+        </article>
       </Tilt>
 
-      <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-        <img
-          alt="Office"
-          src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
-          className="absolute inset-0 h-full w-full object-cover"
-        />
-        <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
-          <div className="p-4 sm:p-6">
-            <a href="#">
-              <h3 className="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
-            </a>
-            <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
-              pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
-              quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
-              atque dignissimos. Molestias explicabo corporis voluptatem?
-            </p>
+      <Tilt options={defaultOptions} className="hover:cursor-pointer mb-4 md:mb-0">
+        <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg w-full">
+          <img
+            alt="Office"
+            src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+          <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
+            <div className="p-4 sm:p-6">
+              <a href="#">
+                <h3 className="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
+              </a>
+              <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
+                pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
+                quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
+                atque dignissimos. Molestias explicabo corporis voluptatem?
+              </p>
+            </div>
           </div>
-        </div>
-      </article>
-      <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-        <img
-          alt="Office"
-          src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
-          className="absolute inset-0 h-full w-full object-cover"
-        />
-        <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
-          <div className="p-4 sm:p-6">
-            <a href="#">
-              <h3 className="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
-            </a>
-            <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
-              pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
-              quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
-              atque dignissimos. Molestias explicabo corporis voluptatem?
-            </p>
+        </article>
+      </Tilt>
+
+      <Tilt options={defaultOptions} className="hover:cursor-pointer mb-4 md:mb-0">
+        <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg w-full">
+          <img
+            alt="Office"
+            src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+          <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
+            <div className="p-4 sm:p-6">
+              <a href="#">
+                <h3 className="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
+              </a>
+              <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
+                pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
+                quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
+                atque dignissimos. Molestias explicabo corporis voluptatem?
+              </p>
+            </div>
           </div>
-        </div>
-      </article>
-      <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-        <img
-          alt="Office"
-          src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
-          className="absolute inset-0 h-full w-full object-cover"
-        />
-        <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
-          <div className="p-4 sm:p-6">
-            <a href="#">
-              <h3 className="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
-            </a>
-            <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
-              pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
-              quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
-              atque dignissimos. Molestias explicabo corporis voluptatem?
-            </p>
+        </article>
+      </Tilt>
+
+      <Tilt options={defaultOptions} className="hover:cursor-pointer mb-4 md:mb-0">
+        <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg w-full">
+          <img
+            alt="Office"
+            src="https://images.unsplash.com/photo-1661956602116-aa6865609028?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=764&q=80"
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+          <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
+            <div className="p-4 sm:p-6">
+              <a href="#">
+                <h3 className="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
+              </a>
+              <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
+                pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
+                quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
+                atque dignissimos. Molestias explicabo corporis voluptatem?
+              </p>
+            </div>
           </div>
-        </div>
-      </article>
+        </article>
+      </Tilt>
+
+
+    </div>
+
+    <Link to="/Events">
+      <div className="my-10 hover:bg-white hover:text-black font-bold transition duration-600 hover:cursor-pointer flex items-center w-full justify-center border border-gray-700 p-2 rounded-3xl">
+        View all
+        <MdArrowOutward className="text-green-400 text-2xl ml-3 mr-3" />
+      </div>
+    </Link>
+  </div>
 </div>
 
-
-
-
-
-
-
-          <Link to="/Events">
-          <div className="my-10 hover:bg-white hover:text-black font-bold transition duration-600 hover:cursor-pointer flex items-center w-full justify-center border border-gray-700 p-2 rounded-3xl">View all
-          <MdArrowOutward className="text-green-400 text-2xl ml-3 mr-3" />
-
-          </div>
-          </Link>
-            </div>
-            </div>
       <Footer />
     </>
   );
