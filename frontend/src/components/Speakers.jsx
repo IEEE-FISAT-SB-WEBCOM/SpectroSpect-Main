@@ -9,7 +9,7 @@ const Speakers = () => {
             <div className="speakerCard">
                 <img src={AK}></img>
                 <p>Anantha Krishnan {i}</p>
-                <p>Showing this pic to your girl XD</p>
+                <p>Student, Doctor, Astronaut, Dev</p>
             </div>
         )
     }
