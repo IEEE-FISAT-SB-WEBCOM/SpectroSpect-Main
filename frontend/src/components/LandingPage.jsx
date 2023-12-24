@@ -85,13 +85,13 @@ const LandingPage = () => {
 <div className="flex flex-col lg:flex-row bg-black items-center justify-center" id="about">
         <div className="md:w-3/4 flex flex-col  md:mt-32 lg:mr-8 px-3 py-3">
             <div className="w-full flex ">
-                <div className="flex flex-col">
+                <div className="flex w-4/6 flex-col">
 
-                <div className="w-4/6 text-3xl">
+                <div className=" text-3xl">
                 "Spectrospect is a tech symposium spotlighting signal processing’s forefront.Engage in workshops, discussions, and competitions led by industry experts.Explore digital, audio, and visual processing, machine learning ,and emerging tech. Connect with innovators, showcase your skills,and dive into the pulse of technological evolution."
                 
                 </div>
-                <div className="w-2/3 flex ">
+                <div className=" flex ">
                 <button
                 href="#_"
                 className="relative mt-10 inline-flex items-center justify-start inline-block px-10 py-3 overflow-hidden font-bold rounded-full group"
@@ -106,6 +106,27 @@ const LandingPage = () => {
                 </div>
                 </div>
 
+              <div className="grid items-start pl-10 justify-center align-middle grid-cols-2 grid-rows-3 w-2/6  min-h-full text-black">
+              <div className="w-2/3 border border-gray-700 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
+                Ieee
+              </div>
+              <div className="w-2/3 border border-gray-700 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
+                Ieee
+              </div>
+              <div className="w-2/3 border border-gray-700 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
+                Ieee
+              </div>
+              <div className="w-2/3 border border-gray-700 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
+                Ieee
+              </div>
+              <div className="w-2/3 border border-gray-700 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
+                Ieee
+              </div>
+              <div className="w-2/3 border border-gray-700 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
+                Ieee
+              </div>
+
+              </div>
             </div>
             </div>
             </div>

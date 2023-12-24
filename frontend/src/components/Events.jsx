@@ -25,7 +25,7 @@ const Event = () => {
       {/* Breadcrumbs and Header */}
       <div className="flex flex-col lg:flex-row text-white min-h-screen items-center justify-center">
         <div className="md:w-3/4  mt-5 md:mt-32 lg:mr-8 px-3 py-3">
-          <div className={`flex md:flex-row flex-col  top-0 pt-5 sticky ${isSticky? ' rounded-md bg-clip-padding  backdrop-filter backdrop-blur-sm bg-opacity-10 ' : 'bg-inherit'}`}>
+          <div className={`flex md:flex-row flex-col  top-0 pt-5 sticky ${isSticky? ' relative rounded-md overflow-hidden bg-gradient-to-b  from-green18774F to-transparent backdrop-blur-sm bg-opacity-10' : 'bg-inherit'}`}>
             <div className="md:w-3/4 sm:w-full flex sm:flex-col items-center justify-center align-middle   ">
               <div aria-label="Breadcrumb" className=" md:flex md:self-start hidden">
                 <ol className="flex items-center gap-1 text-sm bg-inherit border-0 text-white font-bold">
