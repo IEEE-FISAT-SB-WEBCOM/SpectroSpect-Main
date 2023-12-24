@@ -2,6 +2,7 @@ import Footer from "./footer"
 import AK from "../assets/ak.jpg"
 import AG from "../assets/AG.jpeg"
 import { useState } from "react"
+import { Link } from "react-router-dom";
 
 const Speakers = () => {
 
@@ -26,7 +27,7 @@ const Speakers = () => {
             <div className="footerBeASponsor">
 
             </div>
-            <p>Home -- Speakers</p>
+            <p><Link to="/"><span>Home</span></Link> -- Speakers</p>
             <div className="speakerCards">
                 {speakerList}
             </div>

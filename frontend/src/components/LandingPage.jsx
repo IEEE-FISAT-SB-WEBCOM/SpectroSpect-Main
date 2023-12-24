@@ -5,6 +5,7 @@ import { useState } from "react";
 import { Tilt } from "react-tilt";
 import footerLogo from "../assets/Frame.png"
 import { FaArrowDownLong } from "react-icons/fa6";
+import Workshop2 from "../Workshop2";
 
 
 const defaultOptions = {
@@ -115,7 +116,7 @@ const LandingPage = () => {
             <MdArrowOutward className="text-green-400 text-5xl mr-3" />
             Workshops
           </div>
-       
+            {/* <Workshop2/> */}
             </div>
             </div>
 
@@ -213,10 +214,11 @@ const LandingPage = () => {
 
 
           </div>
+          <Link to="/Speakers">
           <div className="mt-10 hover:bg-white hover:text-black font-bold transition duration-700 hover:cursor-pointer flex items-center w-full justify-center border border-gray-600 p-2 rounded-3xl">View all
           <MdArrowOutward className="text-green-400 text-2xl ml-3 mr-3" />
-
           </div>
+          </Link>
         </div>
       </div>
 
@@ -325,11 +327,12 @@ const LandingPage = () => {
 
 
 
-
+          <Link to="/Events">
           <div className="my-10 hover:bg-white hover:text-black font-bold transition duration-600 hover:cursor-pointer flex items-center w-full justify-center border border-gray-700 p-2 rounded-3xl">View all
           <MdArrowOutward className="text-green-400 text-2xl ml-3 mr-3" />
 
           </div>
+          </Link>
             </div>
             </div>
       <Footer />

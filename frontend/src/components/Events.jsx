@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
+import { Link } from "react-router-dom";
 
 const Event = () => {
   const [isSticky, setIsSticky] = useState(false);
@@ -33,7 +34,7 @@ const Event = () => {
                       href="/"
                       className="block transition hover:text-green-400"
                     >
-                      <span className="sr-only"> Home </span>
+                      <span className="sr-only"><Link to="/"> Home</Link> </span>
 
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
