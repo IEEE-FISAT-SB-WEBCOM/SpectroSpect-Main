@@ -32,22 +32,22 @@ const LandingPage = () => {
   const [feed, setFeed] = useState([]);
   
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const access="IGQWRNazFESEQwSnlSb2szT1RCdXZAScHFBVU9MMVI2dnFBRXZARVktjbDMxWUJVemdENTc1NzdXSUhHWUFYNGFUaHlpUllSUk5SSmxOTVB5c0RCS2FIOTBkX01OUG5oRTlLWlRxNkhsSHZAqdFN3VFF1WmNwR0RvV1EZD";
-        const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink&access_token=${access}`;
-        const response = await fetch(url);
-        const data = await response.json();
-        setFeed(data.data);
-        console.log(data);
-      } catch (error) {
-        console.error("Error fetching Instagram data:", error);
-      }
-    };
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const access="IGQWRNazFESEQwSnlSb2szT1RCdXZAScHFBVU9MMVI2dnFBRXZARVktjbDMxWUJVemdENTc1NzdXSUhHWUFYNGFUaHlpUllSUk5SSmxOTVB5c0RCS2FIOTBkX01OUG5oRTlLWlRxNkhsSHZAqdFN3VFF1WmNwR0RvV1EZD";
+  //       const url = `https://graph.instagram.com/me/media?fields=id,caption,media_url,timestamp,media_type,permalink&access_token=${access}`;
+  //       const response = await fetch(url);
+  //       const data = await response.json();
+  //       setFeed(data.data);
+  //       console.log(data);
+  //     } catch (error) {
+  //       console.error("Error fetching Instagram data:", error);
+  //     }
+  //   };
   
-    fetchData();
-  }, []);
+  //   fetchData();
+  // }, []);
   
     const [workshops, setworkshops] = useState([
         {
@@ -278,12 +278,12 @@ const LandingPage = () => {
 
 
       {/* Insta */}
-      <div className="flex flex-col lg:flex-row bg-black text-white items-center justify-center">
-  <div className="md:w-full lg:w-3/4 flex flex-col md:mt-32 lg:mr-8 px-3 py-3">
-    <div className="flex text-3xl mb-10 font-bold align-middle self-start items-center">
-      <MdArrowOutward className="text-green-400 text-5xl mr-3" />
-      Latest Update
-    </div>
+  <div className="flex flex-col lg:flex-row bg-black text-white items-center justify-center">
+    <div className="md:w-full lg:w-3/4 flex flex-col md:mt-32 lg:mr-8 px-3 py-3">
+      <div className="flex text-3xl mb-10 font-bold align-middle self-start items-center">
+        <MdArrowOutward className="text-green-400 text-5xl mr-3" />
+          Latest Update
+      </div>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       {feed.map(item=>(
 
