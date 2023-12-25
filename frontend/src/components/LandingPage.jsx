@@ -29,33 +29,7 @@ const defaultOptions = {
 
 const LandingPage = () => {
   
-  const [feed, setFeed] = useState([]);
-  
-
-    const [longLivedAccessToken, setLongLivedAccessToken] = useState('');
-  
-    useEffect(() => {
-      const fetchLongLivedToken = async () => {
-        try {
-          const graphApiVersion = 'v10.0'; // Replace with the actual version
-          const appId = '1043230276897144';
-          const appSecret = '6b6c3e465dd214253dcb14a68f03dc0c';
-          const shortLivedAccessToken = 'IGQWRORnQ1LVFqM210Q2ZAoekxXall3R1liNnBodmQtWG5EbUNqWmZAlc1VodjBTakozdkxWM0ZAoSjBWY1RDd0hHR1RiSEdjdmQzRHB3ZATRYQnNMN0JKMFR1WGFyVDdMZAlFRemloTnFsZAjA1MlR5WFFVSFh1LUxJMlEZD';
-  
-          const url = `https://graph.instagram.com/access_token?grant_type=ig_exchange_token&client_secret=${appSecret}&access_token=${shortLivedAccessToken}`;
-  
-          const response = await fetch(url);
-          const data = await response.json();
-  
-          setLongLivedAccessToken(data.access_token);
-        } catch (error) {
-          console.error('Error fetching long-lived token:', error);
-        }
-      };
-  
-      fetchLongLivedToken();
-    }, []);
-  
+ 
  
     const [workshops, setworkshops] = useState([
         {
@@ -293,20 +267,17 @@ const LandingPage = () => {
           Latest Update
       </div>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-      {
+    
 
-      feed.slice(0,4).map(item=>(
-
-      <Tilt options={defaultOptions} key={item.id} className="hover:cursor-pointer mb-4 md:mb-0">
+      <Tilt options={defaultOptions}  className="hover:cursor-pointer mb-4 md:mb-0">
         <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg w-full">
           <img
             alt="Office"
-            src={item.media_url}
+            src=''
           />
         
         </article>
       </Tilt>
-      ))}
 
 
     </div>

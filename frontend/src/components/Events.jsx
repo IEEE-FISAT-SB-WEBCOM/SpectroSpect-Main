@@ -111,8 +111,9 @@ const Event = () => {
               </h6>
             </div>
             <div className="w-full md:w-1/4 pb-5 md:pb-0 flex items-center justify-start md:justify-end align-middle">
+              <a href="https://www.yepdesk.com/embed/open-register/6587c946c9e77c0001708f02/eev6mamlun">
               <button
-                href="#_"
+                href="#_\\"
                 className="relative inline-flex items-center justify-start inline-block px-10 py-3 overflow-hidden font-bold rounded-full group"
               >
                 <span className="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-[3%]"></span>
@@ -122,6 +123,7 @@ const Event = () => {
                 </span>
                 <span className="absolute inset-0 border-2 border-white rounded-full"></span>
               </button>
+              </a>
             </div>
           </div>
 
@@ -202,7 +204,7 @@ const Event = () => {
             </div>
 
             {/* Speaker description */}
-            <div className="w-full lg:w-3/4 lg:ml-4 h-56 rounded-lg box-border border-gray-800 border flex items-center px-5">
+            <div className="w-full mt-4 lg:w-3/4 lg:ml-4 h-56 rounded-lg box-border border-gray-800 border flex items-center px-5">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
               optio delectus velit earum qui, dicta excepturi voluptas beatae
               tenetur inventore harum recusandae, placeat minus dignissimos
