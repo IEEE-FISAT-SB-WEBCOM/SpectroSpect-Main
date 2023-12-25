@@ -1,9 +1,11 @@
 import Footer from "./footer"
 import AK from "../assets/ak.jpg"
 import AG from "../assets/AG.jpeg"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom";
 import Navbar from "./navbar";
+import ThreeJSGlobe from "../Three/spectrospect";
+
 
 const Speakers = () => {
 
@@ -28,8 +30,9 @@ const Speakers = () => {
             <div className="Speakers">
             <Navbar/>
             {/* <div className="footerBeASponsor" style={{top:"-30vh",position:"sticky",border:"1px solid rgba(255, 255, 255, 0.2)",background: "rgba(0, 0, 0, 0.2)",zIndex:"2",backdropFilter:"blur(10px)"}}>
-
+            
             </div> */}
+            ThreeJSGlobe()
                 <div aria-label="Breadcrumb" className=" md:flex md:self-start hidden" style={{ top: 0, position: 'sticky',zIndex:"2",marginTop:"18vh" }}>
                  <ol className="flex items-center gap-1 text-sm bg-inherit border-0 text-white font-bold">
                    <li>

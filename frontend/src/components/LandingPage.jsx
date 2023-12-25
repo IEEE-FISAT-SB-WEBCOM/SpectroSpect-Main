@@ -8,7 +8,11 @@ import { FaArrowDownLong } from "react-icons/fa6";
 import Workshop2 from "../Workshop2";
 import { useEffect } from "react";
 import Navbar from "./navbar";
+import ThreeJSGlobe from "../Three/spectrospect";
 
+// useEffect(async () =>{
+//   <ThreeJSGlobe/>
+// })
 
 const defaultOptions = {
 	reverse:        false,  // reverse the tilt direction
@@ -111,7 +115,7 @@ const LandingPage = () => {
         <div className="md:w-3/4 flex flex-col  md:mt-32 lg:mr-8 px-3 py-3">
             <div className="w-full flex ">
                 <div className="flex w-4/6 flex-col">
-
+                
                 <div className=" text-3xl">
                 "Spectrospect is a tech symposium spotlighting signal processing’s forefront.Engage in workshops, discussions, and competitions led by industry experts.Explore digital, audio, and visual processing, machine learning ,and emerging tech. Connect with innovators, showcase your skills,and dive into the pulse of technological evolution."
                 
