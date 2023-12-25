@@ -5,6 +5,46 @@ import { Tilt } from "react-tilt";
 import Navbar from "./navbar";
 
 const Workshops = () => {
+  const post =[{
+      title:"SpectroSpect",
+      Event:"Dive Into Spectra",
+      Caption:"Don't miss the incredible 𝐓𝐞𝐜𝐡𝐧𝐢𝐜𝐚𝐥 𝐐𝐮𝐢𝐳 𝐄𝐱𝐭𝐫𝐚𝐯𝐚𝐠𝐚𝐧𝐳𝐚! Explore mind-bending",
+      link:'https://www.instagram.com/p/C1Hvwy9SAFJ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+      img:'SpectroSpect-Main/frontend/src/assets/CTA.png',
+
+  },
+    {
+      title:"Hyy",
+      Event:"View of Spectra",
+      Caption:"Get ready to unleash your inner explorer, capture the unseen, and reveal the hidden beauty ",
+      link:'',
+       img:"",   
+    },
+    {
+      title:"Hyy",
+      Event:"View of Spectra",
+      Caption:"Get ready to unleash your inner explorer, capture the unseen, and reveal the hidden beauty ",
+      link:'https://www.instagram.com/p/C1HvqNSSeyN/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
+       img:"",   
+    },
+    {
+      title:"Hyy",
+      Event:"View of Spectra",
+      Caption:"Get ready to unleash your inner explorer, capture the unseen, and reveal the hidden beauty ",
+      link:'',
+       img:"",   
+    },
+    {
+      title:"Hyy",
+      Event:"View of Spectra",
+      Caption:"Get ready to unleash your inner explorer, capture the unseen, and reveal the hidden beauty ",
+      link:'',
+       img:"",   
+    }
+  ]
+
+
+
   const defaultOptions = {
     reverse: false,
     max: 25,
@@ -103,7 +143,7 @@ const Workshops = () => {
               </h6>
             </div>
             <div className="w-full md:w-1/4 pb-5 md:pb-0 flex md:items-center justify-center md:justify-end align-middle">
-              <button
+              <a href="https://www.instagram.com/ieeefisatsb?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA=="><button
                 href="#_"
                 className="relative inline-flex items-center justify-start inline-block px-10 py-3 overflow-hidden font-bold rounded-full group"
               >
@@ -113,7 +153,7 @@ const Workshops = () => {
                   Instagram
                 </span>
                 <span className="absolute inset-0 border-2 border-white rounded-full"></span>
-              </button>
+              </button></a>
             </div>
           </div>
 
@@ -122,28 +162,24 @@ const Workshops = () => {
 
 
           <div className="grid z-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 max-h-screen py-5 gap-5">
-            {[1, 2, 3, 4].map((index) => (
+            {post.map((item,index) => (
               <Tilt key={index} options={defaultOptions}>
-                <a href="#" className="group relative block bg-black">
+                <a href={item.link} className="group relative block bg-black">
                   <img
-                    alt="Developer"
-                    src="https://images.unsplash.com/photo-1603871165848-0aa92c869fa1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=772&q=80"
+                    alt="Event"
+                    src={item.img}
                     className="absolute inset-0 w-full h-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
                   />
                   <div className="relative p-4 sm:p-6 lg:p-8">
                     <p className="text-sm font-medium uppercase tracking-widest text-pink-500">
-                      Developer
+                      {item.title}
                     </p>
                     <p className="text-xl font-bold text-white sm:text-2xl">
-                      Tony Wayne
-                    </p>
+{item.Event}                    </p>
                     <div className="mt-32 sm:mt-48 lg:mt-64">
                       <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
                         <p className="text-sm text-white">
-                          Lorem ipsum dolor, sit amet consectetur adipisicing
-                          elit. Omnis perferendis hic asperiores quibusdam quidem
-                          voluptates doloremque reiciendis nostrum harum.
-                          Repudiandae?
+                       {item.Caption}
                         </p>
                       </div>
                     </div>
