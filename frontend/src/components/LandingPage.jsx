@@ -174,7 +174,7 @@ const LandingPage = () => {
             <MdArrowOutward className="text-green-400 text-5xl mr-3" />
             Workshops
           </div>
-            {/* <Workshop2/> */}
+             <Workshop2/>
             </div>
             </div>
 
