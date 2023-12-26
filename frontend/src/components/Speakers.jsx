@@ -24,7 +24,8 @@ const Speakers = () => {
     },{opacity:1,
       y:0,
       duration:2,
-      stagger:0.5
+      stagger:0.5,
+      scrollTrigger:{trigger:".speakerCards a",toggleActions:"restart none restart none"}
     })
 
     gsap.fromTo(".speakerCards a div img",{
@@ -34,10 +35,15 @@ const Speakers = () => {
       opacity:1,
       duration:3,
       stagger:0.5,
-      scale:1
+      scale:1,
+      scrollTrigger:{trigger:".speakerCards a div img",toggleActions:"restart none restart none"}
     })
 
   },[])
+
+  // useEffect(()=>{
+  //   gsap.fromTo()
+  // })
 
     const [active,SetActive] = useState(false);
 
