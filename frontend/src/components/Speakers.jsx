@@ -7,7 +7,6 @@ import Navbar from "./navbar";
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 gsap.registerPlugin(ScrollTrigger)
-// import ThreeJSGlobe from "../Three/spectrospect";
 
 const Speakers = () => {
 
@@ -39,16 +38,6 @@ const Speakers = () => {
       scale:1,
       scrollTrigger:{trigger:".speakerCards a div img",toggleActions:"restart none none none"}
     })
-
-    // gsap.fromTo("#SpeakerInfo div",{
-    //   opacity:0,
-    //   y:200
-    // },{opacity:1,
-    //   y:0,
-    //   duration:2,
-    //   stagger:1,
-    //   scrollTrigger:{trigger:"#SpeakerInfo",toggleActions:"restart none restart none"}
-    // })
 
   },[])
 
