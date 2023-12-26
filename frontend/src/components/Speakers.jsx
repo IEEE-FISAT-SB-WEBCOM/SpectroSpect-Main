@@ -51,6 +51,16 @@ const Speakers = () => {
       stagger:1,
       // scrollTrigger:{trigger:"#SpeakerInfo",toggleActions:"restart none restart none"}
     })
+
+    gsap.fromTo("#SpeakerInfo div img",{
+      opacity:0,
+      scale:0.5
+    },{
+      opacity:1,
+      duration:3,
+      stagger:0.5,
+      scale:1,
+    })
   },[active])
 
 
