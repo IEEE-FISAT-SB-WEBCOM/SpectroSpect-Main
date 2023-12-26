@@ -75,7 +75,7 @@ const LandingPage = () => {
       },{opacity:1,
         x:0,
         duration:2,
-        scrollTrigger:{trigger:"#about div div div div",toggleActions:"restart none restart none"}
+        scrollTrigger:{trigger:"#about",toggleActions:"restart none restart none"}
       })
       
       gsap.fromTo("#broSure",{
@@ -87,18 +87,20 @@ const LandingPage = () => {
         y:0,
         duration:2,
         scale:1,
-        scrollTrigger:{trigger:"#broSure",toggleActions:"restart none restart none"}
+        scrollTrigger:{trigger:"#about",toggleActions:"restart none restart none"}
       })
-      // gsap.fromTo(".speakerCards a div img",{
-      //   opacity:0,
-      //   scale:0.5
-      // },{
-      //   opacity:1,
-      //   duration:3,
-      //   stagger:0.5,
-      //   scale:1,
-      //   scrollTrigger:{trigger:".speakerCards a div img",toggleActions:"restart none none none"}
-      // })
+      gsap.fromTo("#WorkshopIntelandingPg","",{
+        opacity:0,
+        scale:0.5,
+        x:-200,
+      },{
+        opacity:1,
+        duration:3,
+        stagger:0.5,
+        scale:1,
+        x:0,
+        scrollTrigger:{trigger:"#Workshops",toggleActions:"restart none none none"}
+      })
   
     },[])
     
@@ -181,7 +183,7 @@ const LandingPage = () => {
 
   <div className="flex flex-col lg:flex-row bg-black items-center justify-center" id="Workshops">
         <div className="md:w-3/4 flex flex-col  md:mt-32 lg:mr-8 px-3 py-3">
-        <div className="flex text-3xl font-bold align-middle self-start items-center mb-10">
+        <div className="flex text-3xl font-bold align-middle self-start items-center mb-10" id="WorkshopIntelandingPg">
             <MdArrowOutward className="text-green-400 text-5xl mr-3" />
             Workshops
           </div>
