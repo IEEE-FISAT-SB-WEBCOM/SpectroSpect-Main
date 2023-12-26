@@ -1,13 +1,43 @@
 import Footer from "./footer"
 import AK from "../assets/ak.jpg"
 import AG from "../assets/AG.jpeg"
-import { useEffect, useState } from "react"
+import { useEffect, useState,useRef } from "react"
 import { Link } from "react-router-dom";
 import Navbar from "./navbar";
-import ThreeJSGlobe from "../Three/spectrospect";
-
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/all'
+gsap.registerPlugin(ScrollTrigger)
+// import ThreeJSGlobe from "../Three/spectrospect";
 
 const Speakers = () => {
+
+  const SpeakerRef = useRef(null)
+
+  const tl = gsap.timeline({
+    
+  })
+
+  useEffect(() => {
+    gsap.fromTo(".speakerCards a",{
+      opacity:0,
+      y:200
+    },{opacity:1,
+      y:0,
+      duration:2,
+      stagger:0.5
+    })
+
+    gsap.fromTo(".speakerCards a div img",{
+      opacity:0,
+      scale:0.5
+    },{
+      opacity:1,
+      duration:3,
+      stagger:0.5,
+      scale:1
+    })
+
+  },[])
 
     const [active,SetActive] = useState(false);
 
@@ -32,7 +62,6 @@ const Speakers = () => {
             {/* <div className="footerBeASponsor" style={{top:"-30vh",position:"sticky",border:"1px solid rgba(255, 255, 255, 0.2)",background: "rgba(0, 0, 0, 0.2)",zIndex:"2",backdropFilter:"blur(10px)"}}>
             
             </div> */}
-            ThreeJSGlobe()
                 <div aria-label="Breadcrumb" className=" md:flex md:self-start hidden" style={{ top: 0, position: 'sticky',zIndex:"2",marginTop:"18vh" }}>
                  <ol className="flex items-center gap-1 text-sm bg-inherit border-0 text-white font-bold">
                    <li>
@@ -89,7 +118,7 @@ const Speakers = () => {
                 </ol>
               </div> 
             {/* <p><Link to="/"><span>Home</span></Link> -- Speakers</p> */}
-            <div className="speakerCards">
+            <div className="speakerCards" ref={SpeakerRef}>
                 {speakerList}
             </div>
             {active && <div id="SpeakerInfo" style={{flexWrap: window.innerHeight > window.innerWidth && "wrap"}}>
