@@ -89,7 +89,7 @@ const LandingPage = () => {
         scale:1,
         scrollTrigger:{trigger:"#about",toggleActions:"restart none restart none"}
       })
-      gsap.fromTo("#WorkshopIntelandingPg","",{
+      gsap.fromTo("#WorkshopIntelandingPg",{
         opacity:0,
         scale:0.5,
         x:-200,
@@ -99,7 +99,53 @@ const LandingPage = () => {
         stagger:0.5,
         scale:1,
         x:0,
-        scrollTrigger:{trigger:"#Workshops",toggleActions:"restart none none none"}
+        scrollTrigger:{trigger:"#Workshops",toggleActions:"restart none restart none"}
+      })
+
+      gsap.fromTo("#SpeakerIntelandingPg",{
+        opacity:0,
+        x:-150,
+      },{
+        opacity:1,
+        duration:3,
+        stagger:0.5,
+        x:0,
+        scrollTrigger:{trigger:"#Speakersss",toggleActions:"restart none none none"}
+      })
+      //SpeakerIntelandingPgExamples
+      gsap.fromTo("#SpeakerIntelandingPgExamples",{
+        opacity:0,
+        x:500,
+      },{
+        opacity:1,
+        duration:4,
+        stagger:1,
+        x:0,
+        scrollTrigger:{trigger:"#Speakersss",toggleActions:"restart none none none"}
+      })
+
+
+      gsap.fromTo("#InstaIntelandingPageButton",{
+        opacity:0,
+        y:100,
+        scale:0
+      },{opacity:1,
+        delay:0.2,
+        y:0,
+        duration:2,
+        scale:1,
+        scrollTrigger:{trigger:"#InstaIntelandingPage",toggleActions:"restart none none none"}
+      })
+
+      gsap.fromTo("#InstaIntelandingPageHeading",{
+        opacity:0,
+        x:-150,
+      },{
+        opacity:1,
+        duration:3,
+        stagger:0.5,
+        x:0,
+        scrollTrigger:{trigger:"#InstaIntelandingPageHeading",toggleActions:"restart none none none"}
       })
   
     },[])
@@ -195,13 +241,13 @@ const LandingPage = () => {
 
 
       {/* Speaker Section */}
-      <div className="flex flex-col lg:flex-row bg-black items-center justify-center">
+      <div className="flex flex-col lg:flex-row bg-black items-center justify-center" id="Speakersss">
         <div className="md:w-3/4 flex w-full flex-col  md:mt-32 lg:mr-8 px-3 py-3">
-          <div className="flex w-full text-3xl font-bold align-middle self-start items-center">
+          <div className="flex w-full text-3xl font-bold align-middle self-start items-center" id="SpeakerIntelandingPg">
             <MdArrowOutward className="text-green-400 sm:self-center text-5xl mr-3" />
             Speakers
           </div>
-          <div className="flex mt-10 w-full md:flex-row flex-col">
+          <div className="flex mt-10 w-full md:flex-row flex-col" id="SpeakerIntelandingPgExamples">
             {/* Speaker */}
             <div className="md:w-1/4 w-full hover:cursor-pointer hover:scale-105 transition duration-300">
               <div href="#" className="block rounded-lg p-4">
@@ -299,9 +345,9 @@ const LandingPage = () => {
 
 
       {/* Insta */}
-  <div className="flex flex-col lg:flex-row bg-black text-white items-center justify-center">
+  <div className="flex flex-col lg:flex-row bg-black text-white items-center justify-center" id="InstaIntelandingPage">
     <div className="md:w-full lg:w-3/4 flex flex-col md:mt-32 lg:mr-8 px-3 py-3">
-      <div className="flex text-3xl mb-10 font-bold align-middle self-start items-center">
+      <div className="flex text-3xl mb-10 font-bold align-middle self-start items-center" id="InstaIntelandingPageHeading">
         <MdArrowOutward className="text-green-400 text-5xl mr-3" />
           Latest Update
       </div>
@@ -322,7 +368,7 @@ const LandingPage = () => {
     </div>
 
     <Link to="/Events">
-      <div className="my-10 hover:bg-white hover:text-black font-bold transition duration-600 hover:cursor-pointer flex items-center w-full justify-center border border-gray-700 p-2 rounded-3xl">
+      <div className="my-10 hover:bg-white hover:text-black font-bold transition duration-600 hover:cursor-pointer flex items-center w-full justify-center border border-gray-700 p-2 rounded-3xl" id="InstaIntelandingPageButton">
         View all
         <MdArrowOutward className="text-green-400 text-2xl ml-3 mr-3" />
       </div>
