@@ -32,7 +32,7 @@ const Event = () => {
               <div aria-label="Breadcrumb" className=" md:flex md:self-start hidden">
                 <ol className="flex items-center gap-1 text-sm bg-inherit border-0 text-white font-bold">
                   <li>
-                    <a
+                    <Link
                       href="/"
                       className="block transition hover:text-green-400"
                     >
@@ -52,7 +52,7 @@ const Event = () => {
                           d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
                         />
                       </svg>
-                    </a>
+                    </Link>
                   </li>
 
                   <li className="rtl:rotate-180">
@@ -71,13 +71,13 @@ const Event = () => {
                   </li>
 
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="block transition hover:text-green-400"
                     >
                       {" "}
                       Events{" "}
-                    </a>
+                    </Link>
                   </li>
 
                   <li className="rtl:rotate-180">
@@ -96,12 +96,12 @@ const Event = () => {
                   </li>
 
                   <li>
-                    <a
+                    <Link
                       href="#"
                       className="block transition text-green-400 hover:text-green-400"
                     >
                       Brainwave Robotics Workshop{" "}
-                    </a>
+                    </Link>
                   </li>
                 </ol>
               </div>

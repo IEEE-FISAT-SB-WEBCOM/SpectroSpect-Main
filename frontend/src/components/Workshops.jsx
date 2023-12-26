@@ -3,6 +3,7 @@ import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { Tilt } from "react-tilt";
 import Navbar from "./navbar";
+import { motion, useAnimation } from "framer-motion";
 import img1 from "../assets/Spectro.jpeg"
 import img2 from "../assets/ideaofs.jpeg"
 import img3 from "../assets/ofs.jpeg"
@@ -11,6 +12,7 @@ import img5 from "../assets/movesofs.jpeg"
 import img6 from "../assets/faceofs.jpeg"
 import img7 from "../assets/starofs.jpeg"
 import img8 from "../assets/voiceofs.jpeg"
+
 
 const Workshops = () => {
   const post =[{
@@ -190,10 +192,19 @@ const Workshops = () => {
 
 
 
-          <div className="grid z-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 max-h-screen py-5 gap-5">
+          <div className="grid z-10 grid-cols-1 grid-auto-rows sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 max-h-screen py-5 gap-5">
             {post.map((item,index) => (
+              <motion.div
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -50 }}
+              transition={{ duration: 0.5,delay:index*0.3}}
+              whileHover={{
+                scale: 1,
+                transition: { duration: 0.5,delay:0 },
+              }}>
               <Tilt key={index} options={defaultOptions}>
-                <a href={item.link} className="group relative block bg-black">
+                <a href={item.link} className="group bg-black h-80 relative block">
                   <img
                     alt="Event"
                     src={item.img}
@@ -206,7 +217,7 @@ const Workshops = () => {
                     <p className="text-xl font-bold text-white sm:text-2xl">
 {item.Event}                    </p>
                     <div className="mt-32 sm:mt-48 lg:mt-64">
-                      <div className="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
+                      <div className="translate-y-20 transform opacity-0 transition-all group-hover:translate-y-[-96px] group-hover:opacity-100">
                         <p className="text-sm text-white">
                        {item.Caption}
                         </p>
@@ -215,6 +226,7 @@ const Workshops = () => {
                   </div>
                 </a>
               </Tilt>
+              </motion.div>
             ))}
           </div>
         </div>
