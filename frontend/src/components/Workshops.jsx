@@ -4,78 +4,9 @@ import { Link } from "react-router-dom";
 import { Tilt } from "react-tilt";
 import Navbar from "./navbar";
 import { motion, useAnimation } from "framer-motion";
-import img1 from "../assets/Spectro.jpeg"
-import img2 from "../assets/ideaofs.jpeg"
-import img3 from "../assets/ofs.jpeg"
-import img4 from "../assets/viewofs.jpeg"
-import img5 from "../assets/movesofs.jpeg"
-import img6 from "../assets/faceofs.jpeg"
-import img7 from "../assets/starofs.jpeg"
-import img8 from "../assets/voiceofs.jpeg"
-
+import post from "./wrkData";
 
 const Workshops = () => {
-  const post =[{
-      title:"SpectroSpect",
-      Event:"Dive Into Spectra",
-      Caption:"Don't miss the incredible Technical Quiz Extravaganza ! Explore mind-bending",
-      link:'https://www.instagram.com/p/C1Hvwy9SAFJ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
-      img: img1,
-
-  },
-    {
-      title:"SpectroSpect",
-      Event:"Idea Pitching",
-      Caption:"Unleash your innovation, inspire, and let the sparks fly! Get ready to pitch your brilliance! ",
-      link:'',
-      img: img2,   
-    },
-    {
-      title:"SpectroSpect",
-      Event:"Of Spect Series",
-      Caption:"Brace yourselves for a pulse-pounding lineup of electrifying series of events",
-      link:'',
-      img: img3,   
-    },
-    {
-      title:"SpectroSpect",
-      Event:"View of Spect",
-      Caption:"Get ready to unleash your inner explorer, capture the unseen, and reveal the hidden beauty ",
-      link:'',
-      img: img4,   
-    },
-    {
-      title:"SpectroSpect",
-      Event:"Moves of Spect",
-      Caption:"Step into the virtual spotlight and showcase your acting prowess",
-      link:'https://www.instagram.com/p/C1HvqNSSeyN/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==',
-      img: img5,   
-    },
-    {
-      title:"SpectroSpect",
-      Event:"Face of Spect",
-      Caption:"Demonstrate your modeling expertise in Face of Spect ",
-      link:'',
-       img: img6,   
-    },
-    {
-      title:"SpectroSpect",
-      Event:"Star of Spect",
-      Caption:"Step into the virtual spotlight and showcase your acting prowess",
-      link:'',
-      img: img7,   
-    },
-    {
-      title:"SpectroSpect",
-      Event:"Voice of Spect",
-      Caption:"Get ready to unleash your inner explorer, capture the unseen, and reveal the hidden beauty ",
-      link:'',
-      img: img8,   
-    },
-  ]
-
-
-
   const defaultOptions = {
     reverse: false,
     max: 25,
@@ -108,19 +39,30 @@ const Workshops = () => {
   return (
     <>
       {/* Breadcrumbs and Header */}
-      <Navbar/>
+      <Navbar />
       <div className="flex flex-col lg:flex-row text-white min-h-screen items-center justify-center">
         <div className="md:w-3/4  mt-5 md:mt-32 lg:mr-8 px-3 py-3">
-          <div className={`flex z-50 md:flex-row flex-col  top-0 pt-5 sticky ${isSticky? ' relative rounded-md overflow-hidden bg-gradient-to-b  from-green18774F to-transparent backdrop-blur-sm bg-opacity-10' : 'bg-inherit'}`}>
+          <div
+            className={`flex z-50 md:flex-row flex-col  top-0 pt-5 sticky ${
+              isSticky
+                ? " relative rounded-md overflow-hidden bg-gradient-to-b  from-green18774F to-transparent backdrop-blur-sm bg-opacity-10"
+                : "bg-inherit"
+            }`}
+          >
             <div className="md:w-3/4 sm:w-full flex sm:flex-col items-center justify-center align-middle   ">
-              <div aria-label="Breadcrumb" className=" md:flex md:self-start hidden">
+              <div
+                aria-label="Breadcrumb"
+                className=" md:flex md:self-start hidden"
+              >
                 <ol className="flex items-center gap-1 text-sm bg-inherit border-0 text-white font-bold">
                   <li>
                     <a
                       href="/"
                       className="block transition hover:text-green-400"
                     >
-                      <span className="sr-only"><Link to="/"> Home</Link> </span>
+                      <span className="sr-only">
+                        <Link to="/"> Home</Link>{" "}
+                      </span>
 
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -138,8 +80,6 @@ const Workshops = () => {
                       </svg>
                     </a>
                   </li>
-
-               
 
                   <li className="rtl:rotate-180">
                     <svg
@@ -168,64 +108,64 @@ const Workshops = () => {
               </div>
 
               <h6 className="lg:text-5xl  text-4xl flex items-center justify-start self-start font-bold my-6">
-        Latest Posts
-        <MdArrowOutward className="text-green-400  lg:text-5xl text-5xl ml-3" />
-
+                Latest Posts
+                <MdArrowOutward className="text-green-400  lg:text-5xl text-5xl ml-3" />
               </h6>
             </div>
             <div className="w-full md:w-1/4 pb-5 md:pb-0 flex md:items-center justify-center md:justify-end align-middle">
-              <a href="https://www.instagram.com/ieeefisatsb?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA=="><button
-                href="#_"
-                className="relative inline-flex items-center justify-start inline-block px-10 py-3 overflow-hidden font-bold rounded-full group"
-              >
-                <span className="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-[3%]"></span>
-                <span className="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-white opacity-100 group-hover:-translate-x-8"></span>
-                <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-gray-900">
-                  Instagram
-                </span>
-                <span className="absolute inset-0 border-2 border-white rounded-full"></span>
-              </button></a>
+              <a href="https://www.instagram.com/ieeefisatsb?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA==">
+                <button
+                  href="#_"
+                  className="relative inline-flex items-center justify-start inline-block px-10 py-3 overflow-hidden font-bold rounded-full group"
+                >
+                  <span className="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-[3%]"></span>
+                  <span className="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-white opacity-100 group-hover:-translate-x-8"></span>
+                  <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-gray-900">
+                    Instagram
+                  </span>
+                  <span className="absolute inset-0 border-2 border-white rounded-full"></span>
+                </button>
+              </a>
             </div>
           </div>
 
-
-
-
-
           <div className="grid z-10 grid-cols-1 grid-auto-rows sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 max-h-screen py-5 gap-5">
-            {post.map((item,index) => (
+            {post.map((item, index) => (
               <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -50 }}
-              transition={{ duration: 0.5,delay:index*0.3}}
-              whileHover={{
-                scale: 1,
-                transition: { duration: 0.5,delay:0 },
-              }}>
-              <Tilt key={index} options={defaultOptions}>
-                <a href={item.link} className="group bg-black h-80 relative block">
-                  <img
-                    alt="Event"
-                    src={item.img}
-                    className="absolute inset-0 w-full h-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
-                  />
-                  <div className="relative p-4 sm:p-6 lg:p-8">
-                    <p className="text-sm font-medium uppercase tracking-widest text-pink-500">
-                      {item.title}
-                    </p>
-                    <p className="text-xl font-bold text-white sm:text-2xl">
-{item.Event}                    </p>
-                    <div className="mt-32 sm:mt-48 lg:mt-64">
-                      <div className="translate-y-20 transform opacity-0 transition-all group-hover:translate-y-[-96px] group-hover:opacity-100">
-                        <p className="text-sm text-white">
-                       {item.Caption}
-                        </p>
+                initial={{ opacity: 0, y: 50 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -50 }}
+                transition={{ duration: 0.5, delay: index * 0.3 }}
+                whileHover={{
+                  scale: 1,
+                  transition: { duration: 0.5, delay: 0 },
+                }}
+              >
+                <Tilt key={index} options={defaultOptions}>
+                  <a
+                    href={item.link}
+                    className="group bg-black h-80 relative block"
+                  >
+                    <img
+                      alt="Event"
+                      src={item.img}
+                      className="absolute inset-0 w-full h-full object-cover opacity-75 transition-opacity group-hover:opacity-50"
+                    />
+                    <div className="relative p-4 sm:p-6 lg:p-8">
+                      <p className="text-sm font-medium uppercase tracking-widest text-pink-500">
+                        {item.title}
+                      </p>
+                      <p className="text-xl font-bold text-white sm:text-2xl">
+                        {item.Event}{" "}
+                      </p>
+                      <div className="mt-32 sm:mt-48 lg:mt-64">
+                        <div className="translate-y-20 transform opacity-0 transition-all group-hover:translate-y-[-96px] group-hover:opacity-100">
+                          <p className="text-sm text-white">{item.Caption}</p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </a>
-              </Tilt>
+                  </a>
+                </Tilt>
               </motion.div>
             ))}
           </div>
