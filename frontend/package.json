@@ -11,6 +11,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "gasp": "^0.0.2",
     "gltf-loader": "^1.0.0",
     "gsap": "^3.12.4",
     "react": "^18.2.0",
