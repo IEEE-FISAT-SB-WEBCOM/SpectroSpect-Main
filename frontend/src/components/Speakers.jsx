@@ -11,6 +11,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 const Speakers = () => {
 
+  const [active,SetActive] = useState(false);
   const SpeakerRef = useRef(null)
 
   const tl = gsap.timeline({
@@ -25,7 +26,7 @@ const Speakers = () => {
       y:0,
       duration:2,
       stagger:0.5,
-      scrollTrigger:{trigger:".speakerCards a",toggleActions:"restart none restart none"}
+      scrollTrigger:{trigger:".speakerCards a",toggleActions:"restart none none none"}
     })
 
     gsap.fromTo(".speakerCards a div img",{
@@ -36,16 +37,33 @@ const Speakers = () => {
       duration:3,
       stagger:0.5,
       scale:1,
-      scrollTrigger:{trigger:".speakerCards a div img",toggleActions:"restart none restart none"}
+      scrollTrigger:{trigger:".speakerCards a div img",toggleActions:"restart none none none"}
     })
+
+    // gsap.fromTo("#SpeakerInfo div",{
+    //   opacity:0,
+    //   y:200
+    // },{opacity:1,
+    //   y:0,
+    //   duration:2,
+    //   stagger:1,
+    //   scrollTrigger:{trigger:"#SpeakerInfo",toggleActions:"restart none restart none"}
+    // })
 
   },[])
 
-  // useEffect(()=>{
-  //   gsap.fromTo()
-  // })
+  useEffect(()=>{
+    gsap.fromTo("#SpeakerInfo div",{
+      opacity:0,
+      y:200
+    },{opacity:1,
+      y:0,
+      duration:2,
+      stagger:1,
+      // scrollTrigger:{trigger:"#SpeakerInfo",toggleActions:"restart none restart none"}
+    })
+  },[active])
 
-    const [active,SetActive] = useState(false);
 
     console.log(active)
 
