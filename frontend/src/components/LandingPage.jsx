@@ -119,9 +119,23 @@ const LandingPage = () => {
       },{
         opacity:1,
         duration:4,
-        stagger:1,
+        stagger:2,
         x:0,
         scrollTrigger:{trigger:"#Speakersss",toggleActions:"restart none none none"}
+      })
+
+
+      gsap.fromTo("#SpeakerIntelandingPgButton",{
+        opacity:0,
+        y:400,
+        scale:0
+      },{
+        opacity:1,
+        delay:0.2,
+        y:0,
+        duration:3,
+        scale:1,
+        scrollTrigger:{trigger:"#SpeakerIntelandingPgButton",toggleActions:"restart none none none"}
       })
 
 
@@ -145,7 +159,7 @@ const LandingPage = () => {
         duration:3,
         stagger:0.5,
         x:0,
-        scrollTrigger:{trigger:"#InstaIntelandingPageHeading",toggleActions:"restart none none none"}
+        scrollTrigger:{trigger:"#InstaIntelandingPage",toggleActions:"restart none none none"}
       })
   
     },[])
@@ -332,7 +346,7 @@ const LandingPage = () => {
 
           </div>
           <Link to="/Speakers">
-          <div className="mt-10 hover:bg-white hover:text-black font-bold transition duration-700 hover:cursor-pointer flex items-center w-full justify-center border border-gray-600 p-2 rounded-3xl">View all
+          <div className="mt-10 hover:bg-white hover:text-black font-bold transition duration-700 hover:cursor-pointer flex items-center w-full justify-center border border-gray-600 p-2 rounded-3xl" id="SpeakerIntelandingPgButton">View all
           <MdArrowOutward className="text-green-400 text-2xl ml-3 mr-3" />
           </div>
           </Link>
