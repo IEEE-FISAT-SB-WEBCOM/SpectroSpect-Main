@@ -43,19 +43,19 @@ const defaultOptions = {
 
 const LandingPage = () => {
   
-  // const firebaseConfig = {
-  //   apiKey: "AIzaSyChZGH7svlggneoAlFde0_mpU42YqP-0HU",
-  //   authDomain: "spectrospect-24dbc.firebaseapp.com",
-  //   databaseURL: "https://spectrospect-24dbc-default-rtdb.firebaseio.com",
-  //   projectId: "spectrospect-24dbc",
-  //   storageBucket: "spectrospect-24dbc.appspot.com",
-  //   messagingSenderId: "626032103103",
-  //   appId: "1:626032103103:web:e5171cbde6af265e84c00a",
-  //   measurementId: "G-HX90QSQDYE"
-  // };
-  // firebase.initializeApp(firebaseConfig);
+  const firebaseConfig = {
+    apiKey: import.meta.env.VITE_APIKEY,
+    authDomain: import.meta.env.VITE_AUTHDOMAIN,
+    databaseURL: import.meta.env.VITE_DATABASEURL,
+    projectId: import.meta.env.VITE_PROJECTID,
+    storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+    messagingSenderId: import.meta.env.VITE_MSID,
+    appId: import.meta.env.VITE_APPID,
+    measurementId: import.meta.env.VITE_MEASUREMENTID
+  };
+  firebase.initializeApp(firebaseConfig);
   
-  // const dataref= firebase.database();
+  const dataref= firebase.database();
 
   const [email, setemail] = useState('');
   const handleClick=()=>{
