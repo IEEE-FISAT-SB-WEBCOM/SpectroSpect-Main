@@ -21,6 +21,12 @@ import validator from "email-validator";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { motion, useAnimation } from "framer-motion";
+import PES from "../assets/09PES_logo_in_color_with_fade_R.png"
+import RAS from "../assets/IEEE_RAS_logo_no-background-300x110.png"
+import CS from "../assets/IEEE-CS_LogoTM_black.png"
+import WIE from "../assets/wie-logo@2x.png"
+import SPS from "../assets/SPS_Logo_Color_RGB.png"
+import COM from "../assets/ieee-comsoc.png"
 
 // useEffect(async () =>{
 //   <ThreeJSGlobe/>
@@ -171,6 +177,17 @@ const LandingPage = () => {
         scale:1,
         scrollTrigger:{trigger:"#about",toggleActions:"restart none restart none"}
       })
+
+      gsap.fromTo("#IEEE_LOGOS",{
+        opacity:0,
+        x:500
+      },{opacity:1,
+        x:0,
+        duration:2,
+        stagger:0.2,
+        scrollTrigger:{trigger:"#about",toggleActions:"restart none restart none"}
+      })
+
       gsap.fromTo("#WorkshopIntelandingPg",{
         opacity:0,
         scale:0.5,
@@ -310,24 +327,24 @@ theme="dark"
                 </div>
                 </div>
 
-              <div className="grid items-start pl-10 justify-center align-middle grid-cols-2 grid-rows-3 w-2/6  min-h-full text-black">
+              <div className="grid items-start pl-10 justify-center align-middle grid-cols-2 grid-rows-3 w-2/6  min-h-full text-black" id="IEEE_LOGOS">
               <div className="w-2/3 border border-gray-700 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
-                <img></img>
+                <img src={SPS}></img>
               </div>
               <div className="w-2/3 border border-gray-700 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
-                <img></img>
+                <img src={CS}></img>
               </div>
               <div className="w-2/3 border border-gray-700 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
-                <img></img>
+                <img src={RAS}></img>
               </div>
               <div className="w-2/3 border border-gray-700 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
-                <img></img>
+                <img src={PES}></img>
               </div>
               <div className="w-2/3 border border-gray-700 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
-                <img></img>
+                <img src={WIE}></img>
               </div>
               <div className="w-2/3 border border-gray-700 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
-                <img></img>
+                <img src={COM}></img>
               </div>
 
               </div>
