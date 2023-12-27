@@ -312,22 +312,22 @@ theme="dark"
 
               <div className="grid items-start pl-10 justify-center align-middle grid-cols-2 grid-rows-3 w-2/6  min-h-full text-black">
               <div className="w-2/3 border border-gray-700 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
-                Ieee
+                <img></img>
               </div>
               <div className="w-2/3 border border-gray-700 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
-                Ieee
+                <img></img>
               </div>
               <div className="w-2/3 border border-gray-700 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
-                Ieee
+                <img></img>
               </div>
               <div className="w-2/3 border border-gray-700 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
-                Ieee
+                <img></img>
               </div>
               <div className="w-2/3 border border-gray-700 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
-                Ieee
+                <img></img>
               </div>
               <div className="w-2/3 border border-gray-700 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
-                Ieee
+                <img></img>
               </div>
 
               </div>
