@@ -3,6 +3,7 @@ import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
 import Navbar from "./navbar";
 import screen from "../assets/sc.png"
+import Footer from "./footer";
 const Event = () => {
   const [isSticky, setIsSticky] = useState(false);
 
@@ -127,7 +128,8 @@ const Event = () => {
               </a>
             </div>
           </div>
-
+<br></br>
+<br></br>
           {/* Content section */}
           <div className="w-full h-72 bg-white rounded-md my-8 lg:my-20"></div>
           <div className="lg:text-lg">
@@ -160,7 +162,8 @@ const Event = () => {
             dolorum consequatur fugit, quaerat velit ab quia qui asperiores eius
             voluptates quisquam!
           </div>
-
+<br></br>
+<br></br>
           {/* Perks section */}
           <div className="flex text-xl lg:text-2xl font-bold items-center mt-6">
             <MdArrowOutward className="text-green-400 text-xl lg:text-2xl mr-3" />
@@ -171,7 +174,8 @@ const Event = () => {
             nisi dolore sequi corrupti ipsam beatae vero, magni numquam laborum
             aspernatur quis, eius ratione illo praesentium.
           </div>
-
+<br></br>
+<br></br>
           {/* Our Speakers section */}
           <div className="flex text-xl lg:text-2xl font-bold items-center mt-6">
             <MdArrowOutward className="text-green-400 text-xl lg:text-2xl mr-3" />
@@ -203,7 +207,6 @@ const Event = () => {
                 </div>
               </div>
             </div>
-
             {/* Speaker description */}
             <div className="w-full mt-4 lg:w-3/4 lg:ml-4 h-56 rounded-lg box-border border-gray-800 border flex items-center px-5">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
@@ -217,6 +220,7 @@ const Event = () => {
           </div>
         </div>
       </div>
+      <Footer></Footer>
     </>
   );
 };

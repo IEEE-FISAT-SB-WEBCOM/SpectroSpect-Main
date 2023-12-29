@@ -21,14 +21,14 @@ import 'firebase/compat/database'
 import validator from "email-validator";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { motion, useAnimation } from "framer-motion";
+import { animate, motion, useAnimation } from "framer-motion";
 import PES from "../assets/09PES_logo_in_color_with_fade_R.png"
 import RAS from "../assets/IEEE_RAS_logo_no-background-300x110.png"
 import CS from "../assets/IEEE-CS_LogoTM_black.png"
 import WIE from "../assets/wie-logo@2x.png"
 import SPS from "../assets/SPS_Logo_Color_RGB.png"
 import COM from "../assets/ieee-comsoc.png"
-
+import pdf from '../assets/SPECTROSPECT.pdf'
 // useEffect(async () =>{
 //   <ThreeJSGlobe/>
 // })
@@ -50,6 +50,22 @@ const defaultOptions = {
 
 const LandingPage = () => {
   
+
+  const Anim = {
+    initial: {
+      opacity: 0,
+      x: 300,
+    },
+    animate: {
+      opacity: 1,
+      x: 0,
+      transition: {
+        type: "easeIn", // You can use other transition types like "tween", "easeInOut", etc.
+        ease: "easeInOut",
+        duration:1,
+      },
+    },
+  };
   const firebaseConfig = {
     apiKey: import.meta.env.VITE_APIKEY,
     authDomain: import.meta.env.VITE_AUTHDOMAIN,
@@ -308,14 +324,19 @@ theme="dark"
 
 <div className="flex flex-col lg:flex-row bg-black items-center justify-center" id="about">
         <div className="md:w-3/4 flex flex-col  md:mt-32 lg:mr-8 px-3 py-3">
-            <div className="w-full flex ">
-                <div className="flex w-4/6 flex-col">
+            <div className="w-full flex flex-col md:flex-row ">
+                <div className="flex w-full md:w-4/6 flex-col">
                 
                 <div className=" text-3xl">
                 "Spectrospect is a tech symposium spotlighting signal processing’s forefront.Engage in workshops, discussions, and competitions led by industry experts.Explore digital, audio, and visual processing, machine learning ,and emerging tech. Connect with innovators, showcase your skills,and dive into the pulse of technological evolution."
                 
                 </div>
-                <div className=" flex ">
+                <div className=" flex md:mb-0 mb-10 ">
+                  <a         href={pdf}
+                    download="SpectroSpect"
+                    target="_blank"
+                    rel="noreferrer"
+>
                 <button
                 href="#_"
                 className="relative mt-10 inline-flex items-center justify-start inline-block px-10 py-3 overflow-hidden font-bold rounded-full group" id="broSure"
@@ -326,11 +347,11 @@ theme="dark"
                 <FaArrowDownLong className="" />Brochure
                 </span>
                 <span className="absolute inset-0 border-2 border-white rounded-full"></span>
-              </button>
+              </button></a>
                 </div>
                 </div>
 
-              <div className="grid items-start pl-10 justify-center align-middle grid-cols-2 grid-rows-3 w-2/6  min-h-full text-black" id="IEEE_LOGOS">
+              <div className="grid items-start md:gap-0 sm:gap-5 gap-y-24 mt-10 md:mt-0 pl-0 md:pl-10 justify-center align-middle grid-cols-1 md:grid-cols-2 grid-rows-3 w-full md:w-2/6 min-h-full text-black" id="IEEE_LOGOS">
               <div className="w-2/3 border border-gray-700 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
                 <img src={SPS}></img>
               </div>
@@ -375,9 +396,12 @@ theme="dark"
             <MdArrowOutward className="text-green-400 sm:self-center text-5xl mr-3" />
             Speakers
           </div>
-          <div className="flex mt-10 w-full md:flex-row flex-col" id="SpeakerIntelandingPgExamples">
+
+         <div className="flex mt-10 w-full md:flex-row flex-col" >
             {/* Speaker */}
-            <div className="md:w-1/4 w-full hover:cursor-pointer hover:scale-105 transition duration-300">
+
+             
+ <motion.div  className="md:w-1/4 w-full hover:cursor-pointer  hover:scale-105 transition duration-300"  variants={Anim} delay initial="initial" whileInView="animate">
               <div href="#" className="block rounded-lg p-4">
                 <img
                   alt="Home"
@@ -396,27 +420,8 @@ theme="dark"
                   </dl>
                 </div>
               </div>
-            </div>
-            <div className="md:w-1/4 w-full hover:cursor-pointer hover:scale-105 transition duration-300">
-              <div href="#" className="block rounded-lg p-3">
-                <img
-                  alt="Home"
-                  src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  className="h-56 w-full rounded-md object-cover"
-                />
-
-                <div className="mt-2">
-                  <dl>
-                    <div>
-                      <dd className="font-medium">Marine Gwenddydd</dd>
-                      <div>
-                        <dd className="text-sm text-gray-500">Managing Director</dd>
-                      </div>
-                    </div>
-                  </dl>
-                </div>
-              </div>
-            </div> <div className="md:w-1/4 w-full hover:cursor-pointer hover:scale-105 transition duration-300">
+            </motion.div>
+            <motion.div  className="md:w-1/4 w-full hover:cursor-pointer  hover:scale-105 transition duration-300"  variants={Anim} delay initial="initial" whileInView="animate">
               <div href="#" className="block rounded-lg p-4">
                 <img
                   alt="Home"
@@ -435,7 +440,8 @@ theme="dark"
                   </dl>
                 </div>
               </div>
-            </div> <div className="md:w-1/4 w-full hover:cursor-pointer hover:scale-105 transition duration-300">
+            </motion.div>
+            <motion.div  className="md:w-1/4 w-full hover:cursor-pointer  hover:scale-105 transition duration-300"  variants={Anim}  initial="initial" whileInView="animate">
               <div href="#" className="block rounded-lg p-4">
                 <img
                   alt="Home"
@@ -454,11 +460,31 @@ theme="dark"
                   </dl>
                 </div>
               </div>
-            </div>
+            </motion.div>
+            <motion.div  className="md:w-1/4 w-full hover:cursor-pointer  hover:scale-105 transition duration-300"  variants={Anim} delay={3} initial="initial" whileInView="animate">
+              <div href="#" className="block rounded-lg p-4">
+                <img
+                  alt="Home"
+                  src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  className="h-56 w-full rounded-md object-cover"
+                />
+
+                <div className="mt-2">
+                  <dl>
+                    <div>
+                      <dd className="font-medium">Marine Gwenddydd</dd>
+                      <div>
+                        <dd className="text-sm text-gray-500">Managing Director</dd>
+                      </div>
+                    </div>
+                  </dl>
+                </div>
+              </div>
+            </motion.div>
 
 
+          </div>        
 
-          </div>
           <Link to="/Speakers">
           <div className="mt-10 hover:bg-white hover:text-black font-bold transition duration-700 hover:cursor-pointer flex items-center w-full justify-center border border-gray-600 p-2 rounded-3xl" id="SpeakerIntelandingPgButton">View all
           <MdArrowOutward className="text-green-400 text-2xl ml-3 mr-3" />
@@ -494,10 +520,10 @@ theme="dark"
 
   <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
     <div className="p-4 sm:p-6">
-      <p  className="block text-xs font-bold text-white/90"> {item.Event} </p>
+      <p  className="block text-xs font-bold text-white/90"> {"12-5-23"} </p>
 
       <a href="#">
-        <h3 className="mt-0.5 text-lg text-white">How to position your furniture for positivity</h3>
+        <h3 className="mt-0.5 text-lg text-white">{item.Event}</h3>
       </a>
 
       <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
@@ -565,7 +591,7 @@ theme="dark"
   </div>
   </div> 
  <div className="w-full h-1/2 align-middle md:space-x-6 flex space-y-5 md:space-y-0 flex-col md:flex-row justify-center items-center">
-    <input placeholder="Email Id..." value={email} onChange={(e)=>{setemail(e.target.value)}} className="px-5 h-12 focus:outline-none w-1/3 text-black dark:text-white rounded-3xl"></input>
+    <input placeholder="Email Id..." value={email} onChange={(e)=>{setemail(e.target.value)}} className="px-5 h-12 focus:outline-none w-2/3 md:w-1/3 text-black dark:text-white rounded-3xl"></input>
     <button onClick={handleClick} href="#_" class="relative inline-flex items-center justify-center p-4 px-6 py-3 overflow-hidden font-medium text-black transition duration-300 ease-out border-2 border-green-500 rounded-full shadow-md group">
 <span class="absolute inset-0 flex items-center justify-center w-full h-full text-white duration-300 -translate-x-full bg-green-500 group-hover:translate-x-0 ease">
 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
