@@ -1,11 +1,37 @@
 import React, { useState, useEffect } from 'react';
 import './navbar.css';
 import spectrospectLogo from '../assets/ezgif.gif';
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/all'
+gsap.registerPlugin(ScrollTrigger)
 
 const Navbar = ({setSticky = false}) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [scrolling, setScrolling] = useState(false);
+
+  useEffect(() => {
+    gsap.fromTo(".navbar",{
+      opacity:0,
+      y:-100
+    },{opacity:1,
+      y:0,
+      duration:2,
+      scrollTrigger:{trigger:".navbar",toggleActions:"restart none restart none"}
+    })
+
+
+    gsap.fromTo(".nav-links a",{
+      opacity:0,
+      y:-50
+    },{opacity:1,
+      delay:1,
+      y:0,
+      duration:2,
+      stagger:0.5,
+      scrollTrigger:{trigger:".nav-links",toggleActions:"restart none restart none"}
+    })
+  },[])
 
   useEffect(() => {
     const handleResize = () => {
