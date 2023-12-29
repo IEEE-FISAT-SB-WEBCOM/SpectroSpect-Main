@@ -3,6 +3,7 @@ import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { Tilt } from "react-tilt";
 import Navbar from "./navbar";
+import screen from "../assets/sc.png"
 import { motion, useAnimation } from "framer-motion";
 import post from "./wrkData";
 
@@ -38,6 +39,7 @@ const Workshops = () => {
 
   return (
     <>
+      <img src={screen} id="screen"></img>
       {/* Breadcrumbs and Header */}
       <Navbar />
       <div className="flex flex-col lg:flex-row text-white min-h-screen items-center justify-center">

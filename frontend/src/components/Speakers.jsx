@@ -4,6 +4,7 @@ import AG from "../assets/AG.jpeg"
 import { useEffect, useState,useRef } from "react"
 import { Link } from "react-router-dom";
 import Navbar from "./navbar";
+import screen from "../assets/sc.png"
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 gsap.registerPlugin(ScrollTrigger)
@@ -80,6 +81,8 @@ const Speakers = () => {
     }
     //style={{top:"-30vh",position:"sticky",border:"none",background: 'radial-gradient(#187747 15%,rgba(0, 0, 0, 0))',zIndex:"2"}}
     return  <>
+          <img src={screen} id="screen"></img>
+
             <div className="Speakers">
             <Navbar/>
             {/* <div className="footerBeASponsor" style={{top:"-30vh",position:"sticky",border:"1px solid rgba(255, 255, 255, 0.2)",background: "rgba(0, 0, 0, 0.2)",zIndex:"2",backdropFilter:"blur(10px)"}}>

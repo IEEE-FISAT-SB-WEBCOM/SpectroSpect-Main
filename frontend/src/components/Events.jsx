@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
 import Navbar from "./navbar";
-
+import screen from "../assets/sc.png"
 const Event = () => {
   const [isSticky, setIsSticky] = useState(false);
 
@@ -23,6 +23,7 @@ const Event = () => {
 
   return (
     <>
+          <img src={screen} id="screen"></img>
       {/* Breadcrumbs and Header */}
       <Navbar/>
       <div className="flex flex-col lg:flex-row text-white min-h-screen items-center justify-center">

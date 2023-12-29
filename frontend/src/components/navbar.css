@@ -7,13 +7,17 @@
   position:sticky;
   border: 0.5px solid white;
   z-index: 1; 
-  top: 103px;
+  top:68px;
+  margin-top:-543px;
   margin-left: 155px;
   height: 119px;
   margin-right: 155px;
   border-radius: 14px;
   backdrop-filter: blur(10px);
   background-color: rgba(0, 0, 0, 0.2);
+}
+#screen{
+  height:636px;
 }
 
 .navbar.fixed {
@@ -94,9 +98,9 @@
     align-items: center;
     padding: 1rem;
     color: white;
-    margin-top: 5px;
+    margin-top: -295px;
     margin-left: 16px;
-    margin-right: 26px;
+    margin-right: 33px;
     position: sticky;
     z-index: 1;
     top: 38px;
@@ -104,7 +108,9 @@
     height: 57px;
     backdrop-filter: blur(10px); 
   }
-
+  #screen{
+    height:321px;
+  }
   .navbar.fixed {
     position: fixed;
     top: 0;
@@ -148,3 +154,4 @@
     background-color: black;
   }
 }
+

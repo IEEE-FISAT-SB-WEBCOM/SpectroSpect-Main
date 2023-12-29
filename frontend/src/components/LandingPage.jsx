@@ -4,6 +4,7 @@ import { MdArrowOutward } from "react-icons/md";
 import { useState } from "react";
 import { Tilt } from "react-tilt";
 import footerLogo from "../assets/Frame.png"
+import screen from "../assets/sc.png"
 import { FaArrowDownLong } from "react-icons/fa6";
 import Workshop2 from "../Workshop2";
 import { useEffect } from "react";
@@ -277,8 +278,11 @@ pauseOnFocusLoss
 draggable
 pauseOnHover
 theme="dark"
+
 />
+<img src={screen} id="screen"></img>
     <Navbar setSticky={true}/>
+ 
       {/* <h1>SPECTROSPECT🪫🔌</h1>
             <button>
                 <Link to="/Workshops">Workshops</Link>
@@ -294,9 +298,8 @@ theme="dark"
                 <Link to="/Events">Events</Link>
             </button> */}
 <div className="flex items-center min-w-full justify-center">
-<h1 className=" text-9xl">Spectrospect</h1>
-<MdArrowOutward className="text-green-400 text-5xl mr-3" />
-
+{/* <h1 className=" text-9xl">Spectrospect</h1>
+<MdArrowOutward className="text-green-400 text-5xl mr-3" /> */}
 </div>
 <img src={footerLogo} className="mt-20"></img>
 
