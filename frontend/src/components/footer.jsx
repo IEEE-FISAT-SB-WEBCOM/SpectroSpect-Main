@@ -3,6 +3,10 @@ import { MdFacebook } from "react-icons/md";
 import { FaInstagram } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import { MdArrowOutward } from "react-icons/md";
+import { useEffect } from "react";
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/all'
+gsap.registerPlugin(ScrollTrigger)
 
 const Footer = () => {
     const mobFooterContainer = {
@@ -17,6 +21,40 @@ const Footer = () => {
       width:"100%"
     }
     let condition = window.innerHeight > window.innerWidth
+
+    useEffect(()=>{
+
+      gsap.fromTo("#BeASponsor",{
+        opacity:0,
+      },{
+        opacity:1,
+        duration:4,
+        scrollTrigger:{trigger:"#BeASponsor",toggleActions:"restart none none none"}
+      })
+      
+      gsap.fromTo("#BeASponsor h1",{
+        opacity:0,
+        y:-100
+      },{opacity:1,
+        y:0,
+        duration:2,
+        scrollTrigger:{trigger:"#BeASponsor",toggleActions:"restart none none none"}
+      })
+
+      gsap.fromTo(".footerBoxContainer div",{
+        opacity:0,
+        y:100
+      },{opacity:1,
+        y:0,
+        duration:2,
+        stagger:0.5,
+        scrollTrigger:{trigger:"#BeASponsor",toggleActions:"restart none none none"}
+      })
+
+    },[])
+
+    
+
     return(
         <div className="footerContainer">
             <br />
@@ -26,7 +64,7 @@ const Footer = () => {
                 </h1>
                 <button
                 href="#_"
-                className="relative inline-flex items-center justify-start inline-block px-10 py-3 overflow-hidden font-bold rounded-full group"
+                className="relative inline-flex items-center justify-start inline-block px-10 py-3 overflow-hidden font-bold rounded-full group" id="BeASponsorB"
               >
                 <span className="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-[3%]"></span>
                 <span className="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-white opacity-100 group-hover:-translate-x-8"></span>
