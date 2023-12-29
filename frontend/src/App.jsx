@@ -4,9 +4,11 @@ import LandingPage from './components/LandingPage';
 import Workshop from './components/Workshop';
 import Event from './components/Event';
 import Speakers from './components/Speakers';
-
+import WorkshopContent from './components/WorkshopContent';
 
 function App() {
+  WorkshopContent.map()
+
   return (
     <>
       {/* <Navbar /> */}
