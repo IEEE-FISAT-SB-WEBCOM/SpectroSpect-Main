@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Navbar from "./navbar";
 import screen from "../assets/sc.png"
 import Footer from "./footer";
-const Event = () => {
+const Workshop = () => {
   const [isSticky, setIsSticky] = useState(false);
 
   useEffect(() => {
@@ -225,4 +225,4 @@ const Event = () => {
   );
 };
 
-export default Event;
+export default Workshop;

@@ -7,7 +7,7 @@ import screen from "../assets/sc.png"
 import { motion, useAnimation } from "framer-motion";
 import post from "./wrkData";
 
-const Workshops = () => {
+const Event = () => {
   const defaultOptions = {
     reverse: false,
     max: 25,
@@ -177,4 +177,4 @@ const Workshops = () => {
   );
 };
 
-export default Workshops;
+export default Event;
