@@ -43,14 +43,11 @@ const Footer = () => {
 
       gsap.fromTo(".footerBoxContainer div",{
         opacity:0,
-        y:100
       },{opacity:1,
-        y:0,
         duration:2,
         stagger:0.5,
-        scrollTrigger:{trigger:"#BeASponsor",toggleActions:"restart none none none"}
+        scrollTrigger:{trigger:".footerBoxContainer div",toggleActions:"restart none none none"}
       })
-
     },[])
 
     
