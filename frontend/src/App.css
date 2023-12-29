@@ -6,6 +6,14 @@ h1{
   font-size:3rem;
 }
 
+#BeASponsor{
+  background-image: url("../src/assets/bg_spon.png");
+  max-width: 100%;
+  height: 50%;
+  border: none;
+  background-size: cover;
+}
+
 
 .footerContainer{
   height: 156vh;
@@ -83,15 +91,15 @@ h1{
   animation: slideAnimation 20s 1s infinite linear forwards;
 }
 
-.fb2-icons{
+#fb2 a{
   height: 5vh;
   margin-left: 5%;
 }
 
-.fb1-icons{
+/* .fb1-icons{
   height: 5vh;
   margin-left: -15%;
-}
+} */
 
 .fb3-icons{
   height: 5vh;

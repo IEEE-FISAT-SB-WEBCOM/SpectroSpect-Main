@@ -20,7 +20,7 @@ const Footer = () => {
     return(
         <div className="footerContainer">
             <br />
-            <div className="w-full h-96 border flex items-center flex-col justify-center border-white">
+            <div className="w-full border flex items-center flex-col justify-center border-white" id="BeASponsor">
                <h1 className="font-bold text-6xl mb-10">
                  Be a Sponsor?
                 </h1>
