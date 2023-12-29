@@ -71,8 +71,10 @@ h1{
 }
 
 #footer-slider-1{
+  text-align: center;
+  /* border: 1px solid; */
   opacity: 0;
-  min-width: 30%;
+  min-width: 32%;
   animation: opacityIG 20s 1s infinite linear forwards;
 }
 
@@ -96,14 +98,14 @@ h1{
   margin-left: 5%;
 }
 
-/* .fb1-icons{
+.fb1-icons{
   height: 5vh;
   margin-left: -15%;
-} */
+}
 
-.fb3-icons{
-  height: 5vh;
-  margin-left: 27%;
+#fb3 a{
+  /* height: 5vh; */
+  margin-right: 15%;
 }
 
 @keyframes slideAnimation {
