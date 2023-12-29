@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './navbar.css';
 import spectrospectLogo from '../assets/ezgif.gif';
+import { MdFacebook } from "react-icons/md";
+import { FaInstagram } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 gsap.registerPlugin(ScrollTrigger)
@@ -93,6 +96,22 @@ const Navbar = ({setSticky = false}) => {
           Contact
         </a>
       </div>
+      <div className="footer-Box" id="fb3" style={{border:"none"}}>
+                  <div id="footer-slider-1">
+                    Our Sponsors
+                  </div>
+                  <div id="footer-slider-2"></div>
+                  <div id="footer-slider-3">
+                    <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500 "><MdFacebook /></a>
+                    <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><FaInstagram /></a>
+                    <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><FiMail /></a>
+                    <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500 "><MdFacebook /></a>
+                  </div>
+                  {/* <div className="footer-slider-common">Workshops <MdArrowOutward className="text-green-400 text-5xl mr-3" /></div>
+                  <div className="footer-slider-common">Talks <MdArrowOutward className="text-green-400 text-5xl mr-3" /></div>
+                  <div className="footer-slider-common">Pro Show <MdArrowOutward className="text-green-400 text-5xl mr-3" /></div>
+                  <div className="footer-slider-common">More Fun <MdArrowOutward className="text-green-400 text-5xl mr-3" /></div> */}
+                </div>
       <img className="logo" src={spectrospectLogo} alt="SPECTROSPECT Logo" />
     </nav>
   );
