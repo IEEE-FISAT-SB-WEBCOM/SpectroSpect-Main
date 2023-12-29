@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import './navbar.css';
 import spectrospectLogo from '../assets/ezgif.gif';
 
-const Navbar = () => {
+const Navbar = ({setSticky = false}) => {
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   const [scrolling, setScrolling] = useState(false);
@@ -38,7 +38,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className={`navbar ${isMobile && scrolling ? 'fixed' : ''} ${isNavOpen ? 'open' : ''}`}>
+    <nav className={`navbar ${isMobile && scrolling ? 'fixed' : ''} ${isNavOpen ? 'open' : ''}`} style={setSticky?null:{position:"static"}}>
       <div className="burger-menu" onClick={toggleNav}>
         {isNavOpen ? (
           <div className="cross-icon">

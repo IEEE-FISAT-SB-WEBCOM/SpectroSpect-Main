@@ -5,7 +5,7 @@
   align-items: center;
   padding: 1rem;
   position:sticky;
-  border: 0.5px solid white;
+  border: 0.5px solid rgba(157, 159, 161,0.5);
   z-index: 1; 
   top:68px;
   margin-top:-543px;
