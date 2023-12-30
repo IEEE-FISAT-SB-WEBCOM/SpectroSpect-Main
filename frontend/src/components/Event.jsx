@@ -135,7 +135,7 @@ const Event = () => {
             {post.map((item, index) => (
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
-                animate={{ opacity: 1, y: 0 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -50 }}
                 transition={{ duration: 0.5, delay: index * 0.3 }}
                 whileHover={{

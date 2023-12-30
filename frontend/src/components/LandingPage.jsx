@@ -399,11 +399,24 @@ theme="dark"
             Speakers
           </div>
 
-         <div className="flex mt-10 w-full md:flex-row flex-col" >
+         <div className="flex mt-10 w-full md:flex-row space-x-5 flex-col bg-red-500" >
             {/* Speaker */}
 
-             
- <motion.div  className="md:w-1/4 w-full hover:cursor-pointer  hover:scale-105 transition duration-300"  variants={Anim} delay initial="initial" whileInView="animate">
+{post.slice(0,4).map((item,i)=>{
+  return(
+
+ 
+            <motion.div className="bg-red-50 md:w-1/4 w-full"
+   initial={{ opacity: 0, x: 300 }}
+   whileInView={{ opacity: 1, x: 0 }}
+   exit={{ opacity: 0, x: -50 }}
+   transition={{ duration: 1,delay:i*0.3}}
+   whileHover={{
+     scale: 1,
+     transition: { duration: 0.5, delay: 0 },
+   }}
+ >
+ <div  className=" w-full hover:cursor-pointer  hover:scale-105 transition duration-300 border border-green-500"  >
               <div href="#" className="block rounded-lg p-4">
                 <img
                   alt="Home"
@@ -422,68 +435,10 @@ theme="dark"
                   </dl>
                 </div>
               </div>
-            </motion.div>
-            <motion.div  className="md:w-1/4 w-full hover:cursor-pointer  hover:scale-105 transition duration-300"  variants={Anim} delay initial="initial" whileInView="animate">
-              <div href="#" className="block rounded-lg p-4">
-                <img
-                  alt="Home"
-                  src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  className="h-56 w-full rounded-md object-cover"
-                />
-
-                <div className="mt-2">
-                  <dl>
-                    <div>
-                      <dd className="font-medium">Marine Gwenddydd</dd>
-                      <div>
-                        <dd className="text-sm text-gray-500">Managing Director</dd>
-                      </div>
-                    </div>
-                  </dl>
-                </div>
-              </div>
-            </motion.div>
-            <motion.div  className="md:w-1/4 w-full hover:cursor-pointer  hover:scale-105 transition duration-300"  variants={Anim}  initial="initial" whileInView="animate">
-              <div href="#" className="block rounded-lg p-4">
-                <img
-                  alt="Home"
-                  src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  className="h-56 w-full rounded-md object-cover"
-                />
-
-                <div className="mt-2">
-                  <dl>
-                    <div>
-                      <dd className="font-medium">Marine Gwenddydd</dd>
-                      <div>
-                        <dd className="text-sm text-gray-500">Managing Director</dd>
-                      </div>
-                    </div>
-                  </dl>
-                </div>
-              </div>
-            </motion.div>
-            <motion.div  className="md:w-1/4 w-full hover:cursor-pointer  hover:scale-105 transition duration-300"  variants={Anim} delay={3} initial="initial" whileInView="animate">
-              <div href="#" className="block rounded-lg p-4">
-                <img
-                  alt="Home"
-                  src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  className="h-56 w-full rounded-md object-cover"
-                />
-
-                <div className="mt-2">
-                  <dl>
-                    <div>
-                      <dd className="font-medium">Marine Gwenddydd</dd>
-                      <div>
-                        <dd className="text-sm text-gray-500">Managing Director</dd>
-                      </div>
-                    </div>
-                  </dl>
-                </div>
-              </div>
-            </motion.div>
-
+            </div>
+       </motion.div>
+ )
+})}
 
           </div>        
 
@@ -509,7 +464,17 @@ theme="dark"
       </div>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
     
-{post.slice(0,4).map((item)=>(
+{post.slice(0,4).map((item,index)=>(
+   <motion.div
+   initial={{ opacity: 0, y: 50 }}
+   whileInView={{ opacity: 1, y: 0 }}
+   exit={{ opacity: 0, y: -50 }}
+   transition={{ duration: 0.5, delay: index * 0.3 }}
+   whileHover={{
+     scale: 1,
+     transition: { duration: 0.5, delay: 0 },
+   }}
+ >
 
       <Tilt options={defaultOptions}  className="hover:cursor-pointer mb-4 md:mb-0">
       
@@ -534,7 +499,8 @@ theme="dark"
     </div>
   </div>
 </article>
-      </Tilt>))}
+      </Tilt>
+      </motion.div>))}
 
 
 
