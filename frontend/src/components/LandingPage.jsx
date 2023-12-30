@@ -30,6 +30,8 @@ import SPS from "../assets/SPS_Logo_Color_RGB.png"
 import COM from "../assets/ieee-comsoc.png"
 import pdf from '../assets/SPECTROSPECT.pdf'
 import globe from "../assets/globevid.mp4"
+import globee from "../assets/globevid-unscreen.gif"
+
 // useEffect(async () =>{
 //   <ThreeJSGlobe/>
 // })
@@ -314,11 +316,18 @@ theme="dark"
             <button>
                 <Link to="/Events">Events</Link>
             </button> */}
-<div className="flex items-center min-w-full justify-center">
-<video autoPlay muted loop src={globe}  type="video/mp4" className="idk" style={{opacity:"0"}}></video>
-{/* <h1 className=" text-9xl">Spectrospect</h1>
-<MdArrowOutward className="text-green-400 text-5xl mr-3" /> */}
+        
+<div className="flex flex-col z-[-5]  items-center min-w-full justify-center">
+<img className="h-[600px] mt-56" src={globee} ></img>
+<div className="w-full absolute z-10 pb-10 flex bg-opacity-100 bg-gradient-to-b from-transparent to-black items-center translate-y-64 align-middle justify-center">
+
+<h1 className=" text-[12rem]">Spectrospect</h1>
+<MdArrowOutward className="text-green-400 text-[12rem] mr-3" />
 </div>
+</div>
+
+
+
 <img src={footerLogo} className="mt-20"></img>
 
 
@@ -407,7 +416,7 @@ theme="dark"
 
  
             <motion.div className=" md:w-1/4 w-full"
-   initial={{ opacity: 0, x: 300 }}
+   initial={{ opacity: 0, x: 100 }}
    whileInView={{ opacity: 1, x: 0 }}
    exit={{ opacity: 0, x: -50 }}
    transition={{ duration: 1,delay:i*0.3}}
