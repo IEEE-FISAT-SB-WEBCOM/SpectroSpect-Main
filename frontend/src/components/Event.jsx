@@ -3,7 +3,8 @@ import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
 import { Tilt } from "react-tilt";
 import Navbar from "./navbar";
-import screen from "../assets/sc.png"
+import screen from "../assets/p1.png"
+import scrn from "../assets/p2.png"
 import { motion, useAnimation } from "framer-motion";
 import post from "./wrkData";
 
@@ -29,23 +30,24 @@ const Event = () => {
 
       setIsSticky(scrollY > threshold);
     };
-
+    
     window.addEventListener("scroll", handleScroll);
-
+    
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
+  
   return (
     <>
-      <img src={screen} id="screen"></img>
       {/* Breadcrumbs and Header */}
-      <Navbar />
+    <img src={scrn} id="scrn"></img>
+    <img src={screen} id="screen"/>      
+<Navbar />
       <div className="flex flex-col lg:flex-row text-white min-h-screen items-center justify-center">
         <div className="md:w-3/4  mt-5 md:mt-32 lg:mr-8 px-3 py-3">
           <div
-            className={`flex z-30 md:flex-row flex-col  top-0 pt-5 sticky ${
+            className={`flex z-15 md:flex-row flex-col  top-0 pt-5 sticky ${
               isSticky
                 ? " relative rounded-md overflow-hidden bg-gradient-to-b  from-green18774F to-transparent backdrop-blur-sm bg-opacity-10"
                 : "bg-inherit"
@@ -109,7 +111,7 @@ const Event = () => {
                 </ol>
               </div>
 
-              <h6 className="lg:text-5xl  text-4xl flex items-center justify-start self-start font-bold my-6">
+              <h6 className="lg:text-5xl  text-4xl flex items-center justify-start self-start font-bold my-6 z-[-1]">
                 Latest Posts
                 <MdArrowOutward className="text-green-400  lg:text-5xl text-5xl ml-3" />
               </h6>
@@ -135,7 +137,7 @@ const Event = () => {
             {post.map((item, index) => (
               <motion.div
                 initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -50 }}
                 transition={{ duration: 0.5, delay: index * 0.3 }}
                 whileHover={{
