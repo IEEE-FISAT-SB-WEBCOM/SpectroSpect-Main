@@ -29,6 +29,7 @@ import WIE from "../assets/wie-logo@2x.png"
 import SPS from "../assets/SPS_Logo_Color_RGB.png"
 import COM from "../assets/ieee-comsoc.png"
 import pdf from '../assets/SPECTROSPECT.pdf'
+import globe from "../assets/globevid.mp4"
 // useEffect(async () =>{
 //   <ThreeJSGlobe/>
 // })
@@ -314,6 +315,7 @@ theme="dark"
                 <Link to="/Events">Events</Link>
             </button> */}
 <div className="flex items-center min-w-full justify-center">
+<video autoPlay muted loop src={globe}  type="video/mp4" className="idk" style={{opacity:"0"}}></video>
 {/* <h1 className=" text-9xl">Spectrospect</h1>
 <MdArrowOutward className="text-green-400 text-5xl mr-3" /> */}
 </div>
