@@ -39,11 +39,10 @@ const Workshop = ({About,ID,Name,Perks,Speaker,SpeakerDesc}) => {
                 <ol className="flex items-center gap-1 text-sm bg-inherit border-0 text-white font-bold">
                   <li>
                     <Link
-                      href="/"
+                      to="/"
                       className="block transition hover:text-green-400"
                     >
-                      <span className="sr-only"><Link to="/"> Home</Link> </span>
-
+                      {/* <span className="sr-only"><Link to="/"> Home</Link> </span> */}
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-4 w-4"
@@ -78,11 +77,11 @@ const Workshop = ({About,ID,Name,Perks,Speaker,SpeakerDesc}) => {
 
                   <li>
                     <Link
-                      href="#"
+                      to="/"
                       className="block transition hover:text-green-400"
                     >
                       {" "}
-                      Events{" "}
+                      Workshops{" "}
                     </Link>
                   </li>
 

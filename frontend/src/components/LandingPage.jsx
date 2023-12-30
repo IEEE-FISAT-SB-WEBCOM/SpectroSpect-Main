@@ -538,13 +538,12 @@ theme="dark"
 
     </div>
 
-    <Link to="/Workshops">
+    <Link to="/Events">
       <div className="my-10 hover:bg-white hover:text-black font-bold transition duration-600 hover:cursor-pointer flex items-center w-full justify-center border border-gray-700 p-2 rounded-3xl" id="InstaIntelandingPageButton">
         View all
         <MdArrowOutward className="text-green-400 text-2xl ml-3 mr-3" />
       </div>
     </Link>
-
   </div>
 </div>
 

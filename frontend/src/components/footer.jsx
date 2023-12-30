@@ -81,9 +81,9 @@ const Footer = () => {
         />
                 </div>
                 <div className="footer-Box text-3xl" id="fb2" style={condition ? mobFooterContainerDiv : null}>
-                    <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500 "><MdFacebook /></a>
-                    <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><FaInstagram /></a>
-                    <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><FiMail /></a>
+                    <a href="https://www.facebook.com/ieeefisat/" className="hover:cursor-pointer hover:text-gray-400 transition duration-500 "><MdFacebook /></a>
+                    <a href="https://www.instagram.com/ieeefisatsb/?hl=en" className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><FaInstagram /></a>
+                    <a href="" className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><FiMail /></a>
                 </div>
                 <div className="footer-Box" id="fb3" style={condition ? {...mobFooterContainerDiv,borderTopRightRadius:"0px",borderBottomLeftRadius:"10px"} : null}>
                   <div id="footer-slider-1">
@@ -91,10 +91,10 @@ const Footer = () => {
                   </div>
                   <div id="footer-slider-2"></div>
                   <div id="footer-slider-3">
-                    <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500 "><MdFacebook /></a>
-                    <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><FaInstagram /></a>
-                    <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><FiMail /></a>
-                    <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500 "><MdFacebook /></a>
+                    <a href="https://www.facebook.com/ieeefisat/" className="hover:cursor-pointer hover:text-gray-400 transition duration-500 "><MdFacebook /></a>
+                    <a href="https://www.instagram.com/ieeefisatsb/?hl=en" className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><FaInstagram /></a>
+                    <a href="" className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><FiMail /></a>
+                    <a href="https://www.facebook.com/ieeefisat/" className="hover:cursor-pointer hover:text-gray-400 transition duration-500 "><MdFacebook /></a>
                   </div>
                   <div className="footer-slider-common">Workshops <MdArrowOutward className="text-green-400 text-5xl mr-3" /></div>
                   <div className="footer-slider-common">Talks <MdArrowOutward className="text-green-400 text-5xl mr-3" /></div>
