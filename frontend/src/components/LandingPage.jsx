@@ -33,6 +33,7 @@ import pdf from '../assets/SPECTROSPECT.pdf'
 import globee from "../assets/globevid-unscreen.gif"
 import pes from '../assets/pes_white.png'
 import cs from '../assets/cs.png'
+import RegistrationCore from "./RegistrationCore";
 
 
 // useEffect(async () =>{
@@ -528,7 +529,7 @@ theme="dark"
   </div>
 </div>
 
-
+<RegistrationCore/>
 
 <div className="w-full flex flex-col items-center align-middle mt-16">
 <div className="h-1/2">
