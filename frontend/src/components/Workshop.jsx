@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
 import Navbar from "./navbar";
-import screen from "../assets/sc.png"
+import screen from "../assets/p1.png"
+import scrn from "../assets/p2.png"
 import Footer from "./footer";
 const Workshop = ({About,ID,Name,Perks,Speaker,SpeakerDesc}) => {
 
@@ -28,6 +29,7 @@ const Workshop = ({About,ID,Name,Perks,Speaker,SpeakerDesc}) => {
 
   return (
     <>
+          <img src={scrn} id="scrn"></img>
           <img src={screen} id="screen"></img>
       {/* Breadcrumbs and Header */}
       <Navbar/>
