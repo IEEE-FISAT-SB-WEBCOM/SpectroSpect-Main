@@ -7,15 +7,13 @@ import Speakers from './components/Speakers';
 import WorkshopContent from './components/WorkshopContent';
 
 function App() {
-  WorkshopContent.map(item => <Route path={`Workshops/${item.ID}`} element={<Workshop id={item.ID} name={item.Name} />}/>) //Continue
-  console.log(WorkshopContent)
   return (
     <>
       {/* <Navbar /> */}
       <div classNameName='app-container'>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        {WorkshopContent}
+        {WorkshopContent.map(item => <Route path={`Workshops/${item.ID}`} element={<Workshop ID={item.ID} NAME={item.Name} />}/>)}
         <Route path="/Speakers" element={<Speakers />} />
         <Route path="/Events" element={<Event />} />
       </Routes>

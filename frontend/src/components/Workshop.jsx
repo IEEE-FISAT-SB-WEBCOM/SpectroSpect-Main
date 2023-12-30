@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import Navbar from "./navbar";
 import screen from "../assets/sc.png"
 import Footer from "./footer";
-const Workshop = (props) => {
+const Workshop = ({ID,NAME}) => {
 
-  console.log(props)
+  console.log(NAME)
   const [isSticky, setIsSticky] = useState(false);
 
   useEffect(() => {
