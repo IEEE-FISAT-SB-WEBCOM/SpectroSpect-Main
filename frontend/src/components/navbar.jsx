@@ -93,7 +93,7 @@ const Navbar = ({setSticky = false}) => {
         <Link to="/Events" onClick={handleNavItemClick}>
           Events
         </Link>
-        <Link href="/Registration" onClick={handleNavItemClick}>
+        <Link to="/Registration" onClick={handleNavItemClick}>
           Register
         </Link>
       </div>
