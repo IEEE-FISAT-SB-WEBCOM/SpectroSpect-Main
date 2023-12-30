@@ -1,10 +1,6 @@
 import {React,useState} from "react";
 import './Workshop2.css';
-import img1 from './assets/workshop1.png'
-import img2 from './assets/workshop2.png'
-import img3 from './assets/workshop3.png'
-import img4 from './assets/workshop4.png'
-import img5 from './assets/workshop5.png'
+import WorkshopContent from "./components/WorkshopContent";
 
 const Workshop2 = () =>{
     
@@ -18,57 +14,22 @@ const Workshop2 = () =>{
         setSelected(i);
     }
     
-    
-    const workshops = [
-        {
-          img: img1,
-          name: 'Brainwave Robotics Workshop',
-          content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit...',
-          button: '',
-        },
-        {
-          img: img2,
-          name: 'Digital Signal Processing using Matlab',
-          content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit...',
-          button: '',
-        },
-        {
-          img: img3,
-          name: 'Quantum Signal Processing Workshop',
-          content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit...',
-          button: '',
-        },
-        {
-            img: img4,
-            name: 'Speech Recognition Workshop',
-            content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit...',
-            button: '',
-        },
-        {
-            img: img5,
-            name: 'The Blockchain and Signal Processing Workshop',
-            content: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit...',
-            button: '',
-        },
-       
-      ];
-    
     return(
         <>
             <div className="container ">
                 <div className="accordian">
                     
                     <br />
-                    {workshops.map((items,i)=>(
+                    {WorkshopContent.map((items)=>(
                         <div className="items">
                             
-                            <div className="title" onClick={()=>toogle(i)}>
+                            <div className="title" onClick={()=>toogle(items.ID)}>
                                 
-                            <img src={items.img} alt="" className="workshop-img" />
+                            <img src={items.WImg} alt="" className="workshop-img" />
                                 
-                                <div>{items.name}</div>
+                                <div>{items.Name}</div>
                                 
-                                <span className="crxnpls">{selected === i? 
+                                <span className="crxnpls">{selected === items.ID? 
                                 (<svg width="41" height="42" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="Icon/Add"><path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M12.8379 12.2955C12.5553 12.0129 12.0971 12.0129 11.8144 12.2955C11.5318 12.5782 11.5318 13.0364 11.8144 13.319L19.6611 21.1657L11.8145 29.0123C11.5319 29.2949 11.5319 29.7532 11.8145 30.0358C12.0971 30.3184 12.5554 30.3184 12.838 30.0358L20.6846 22.1892L28.5313 30.0359C28.8139 30.3185 29.2721 30.3185 29.5548 30.0359C29.8374 29.7532 29.8374 29.295 29.5548 29.0124L21.7081 21.1657L29.5548 13.319C29.8375 13.0363 29.8375 12.5781 29.5548 12.2955C29.2722 12.0128 28.814 12.0128 28.5314 12.2955L20.6846 20.1422L12.8379 12.2955Z" fill="#9D9FA2"/></g>
                                 </svg>
                                 ) 
@@ -83,8 +44,8 @@ const Workshop2 = () =>{
                             </div>
                             
                             
-                            <div className={selected === i? 'content show' : 'content'}>
-                                <div>{items.content}</div>
+                            <div className={selected === items.ID? 'content show' : 'content'}>
+                                <div>{items.About.slice(0,40)+"..."}</div>
                                 <button className="know-more">
                                     Know more
                                 </button>
