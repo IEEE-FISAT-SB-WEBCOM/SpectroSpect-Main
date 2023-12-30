@@ -30,7 +30,6 @@ import WIE from "../assets/wie-logo@2x.png"
 import SPS from "../assets/SPS_Logo_Color_RGB.png"
 import COM from "../assets/ieee-comsoc.png"
 import pdf from '../assets/SPECTROSPECT.pdf'
-import globe from "../assets/globevid.mp4"
 import globee from "../assets/globevid-unscreen.gif"
 import pes from '../assets/pes_white.png'
 import cs from '../assets/cs.png'

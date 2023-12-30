@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 import './navbar.css';
 import spectrospectLogo from '../assets/ezgif.gif';
 import { MdFacebook } from "react-icons/md";
@@ -83,18 +84,18 @@ const Navbar = ({setSticky = false}) => {
         )}
       </div>
       <div className={`nav-links ${isNavOpen ? 'open' : ''}`}>
-        <a href="#" onClick={handleNavItemClick}>
+        <Link to="/" onClick={handleNavItemClick}>
           Home
-        </a>
-        <a href="#about" onClick={handleNavItemClick}>
-          About
-        </a>
-        <a href="#Workshops" onClick={handleNavItemClick}>
-          Workshops
-        </a>
-        <a href="#" onClick={handleNavItemClick}>
-          Contact
-        </a>
+        </Link>
+        <Link to="/Speakers" onClick={handleNavItemClick}>
+          Speakers
+        </Link>
+        <Link to="/Events" onClick={handleNavItemClick}>
+          Events
+        </Link>
+        <Link href="/Registration" onClick={handleNavItemClick}>
+          Register
+        </Link>
       </div>
       <div className="footer-Box" id="fb3" style={{border:"none",opacity:window.innerHeight>window.innerWidth?0:1}}>
                   <div id="footer-slider-1">

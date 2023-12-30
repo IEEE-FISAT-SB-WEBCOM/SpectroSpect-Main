@@ -5,6 +5,7 @@ import Workshop from './components/Workshop';
 import Event from './components/Event';
 import Speakers from './components/Speakers';
 import WorkshopContent from './components/WorkshopContent';
+import Registration from './components/Registration';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         {WorkshopContent.map(item => <Route key={item.ID} path={`Workshops/${item.ID}`} element={<Workshop {...item}/>}/>)}
         <Route path="/Speakers" element={<Speakers />} />
         <Route path="/Events" element={<Event />} />
+        <Route path="/Registration" element={<Registration/>}/>
       </Routes>
       </div>
     </>
