@@ -111,7 +111,7 @@ const Workshop = ({About,ID,Name,Perks,Speaker,SpeakerDesc}) => {
                 </ol>
               </div>
 
-              <h6 className="text-7xl font-bold my-6">
+              <h6 className="text-4xl md:text-7xl font-bold my-6">
                 {Name}
               </h6>
             </div>

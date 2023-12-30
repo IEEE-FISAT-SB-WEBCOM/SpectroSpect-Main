@@ -317,12 +317,12 @@ theme="dark"
                 <Link to="/Events">Events</Link>
             </button> */}
         
-<div className="flex flex-col z-[-5]  items-center min-w-full justify-center">
-<img className="h-[600px] mt-56" src={globee} ></img>
-<div className="w-full absolute z-10 pb-10 flex bg-opacity-100 bg-gradient-to-b from-transparent to-black items-center translate-y-64 align-middle justify-center">
+<div className="flex flex-col  items-center min-w-full justify-center">
+<img className="h-[600px] hidden md:flex  mt-36" src={globee} ></img>
+<div className="w-full sm:static md:absolute z-10 pb-40 flex bg-opacity-100 md:bg-gradient-to-b from-transparent to-black  translate-y-28 md:translate-y-52 items-center align-middle justify-center">
 
-<h1 className=" text-[12rem]">Spectrospect</h1>
-<MdArrowOutward className="text-green-400 text-[12rem] mr-3" />
+<h1 className="text-[42px] z-10 md:text-[12rem]">Spectrospect</h1>
+<MdArrowOutward className="text-green-400 text-[42px] md:text-[12rem] mr-3" />
 </div>
 </div>
 
@@ -338,7 +338,7 @@ theme="dark"
             <div className="w-full flex flex-col md:flex-row ">
                 <div className="flex w-full md:w-4/6 flex-col">
                 
-                <div className=" text-3xl">
+                <div className=" text-xl md:text-3xl">
                 "Spectrospect is a tech symposium spotlighting signal processing’s forefront.Engage in workshops, discussions, and competitions led by industry experts.Explore digital, audio, and visual processing, machine learning ,and emerging tech. Connect with innovators, showcase your skills,and dive into the pulse of technological evolution."
                 
                 </div>
