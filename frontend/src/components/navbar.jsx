@@ -67,7 +67,7 @@ const Navbar = ({setSticky = false}) => {
   };
 
   return (
-    <nav className={`navbar ${isMobile && scrolling ? 'fixed' : ''} ${isNavOpen ? 'open' : ''}`} style={setSticky?null:{position:"static"}}>
+    <nav className={`navbar ${isMobile && scrolling ? 'fixed' : ''} ${isNavOpen ? 'open' : ''}`} style={setSticky?null:{position:"relative",top: window.innerWidth <= 768 ? "-44px" : "3px"}}>
       <div className="burger-menu" onClick={toggleNav}>
         {isNavOpen ? (
           <div className="cross-icon">
@@ -96,7 +96,7 @@ const Navbar = ({setSticky = false}) => {
           Contact
         </a>
       </div>
-      <div className="footer-Box" id="fb3" style={{border:"none"}}>
+      <div className="footer-Box" id="fb3" style={{border:"none",opacity:window.innerHeight>window.innerWidth?0:1}}>
                   <div id="footer-slider-1">
                     Our Sponsors
                   </div>
