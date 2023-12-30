@@ -130,8 +130,6 @@ const Workshop = ({About,ID,Name,Perks,Speaker,SpeakerDesc}) => {
               </a>
             </div>
           </div>
-<br></br>
-<br></br>
           {/* Content section */}
           <div className="w-full h-72 bg-white rounded-md my-8 lg:my-20"></div>
           <div className="lg:text-lg">
