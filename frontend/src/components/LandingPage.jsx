@@ -4,7 +4,8 @@ import { MdArrowOutward } from "react-icons/md";
 import { useState } from "react";
 import { Tilt } from "react-tilt";
 import footerLogo from "../assets/Frame.png"
-import screen from "../assets/sc.png"
+import screen from "../assets/p1.png"
+import scrn from "../assets/p2.png"
 import { FaArrowDownLong } from "react-icons/fa6";
 import Workshop2 from "../Workshop2";
 import { useEffect } from "react";
@@ -299,6 +300,7 @@ pauseOnHover
 theme="dark"
 
 />
+<img src={scrn} id="scrn"></img>
 <img src={screen} id="screen"></img>
     <Navbar setSticky={true}/>
  
