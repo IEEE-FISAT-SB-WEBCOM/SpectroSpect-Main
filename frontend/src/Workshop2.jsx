@@ -1,6 +1,7 @@
 import {React,useState} from "react";
 import './Workshop2.css';
 import WorkshopContent from "./components/WorkshopContent";
+import { Link } from "react-router-dom";
 
 const Workshop2 = () =>{
     
@@ -46,9 +47,11 @@ const Workshop2 = () =>{
                             
                             <div className={selected === items.ID? 'content show' : 'content'}>
                                 <div>{items.About.slice(0,40)+"..."}</div>
+                                <Link to={`Workshops/${items.ID}`}>
                                 <button className="know-more">
                                     Know more
                                 </button>
+                                </Link>
                             </div>
                             
                         
