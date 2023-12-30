@@ -7,7 +7,7 @@
   position:sticky;
   border: 0.5px solid rgba(157, 159, 161,0.5);
   z-index: 1; 
-  top:68px;
+  top:55px;
   margin-top:-543px;
   margin-left: 155px;
   height: 119px;
@@ -18,8 +18,15 @@
 }
 #screen{
   height:636px;
+  width: 1550px;
 }
 
+#scrn{
+  height:276px;
+  z-index: 1;
+  left: -7px;
+  position: absolute;
+}
 .navbar.fixed {
   position: fixed;
   top: 0;
@@ -98,18 +105,21 @@
     align-items: center;
     padding: 1rem;
     color: white;
-    margin-top: -295px;
+    margin-top: -370px;
     margin-left: 16px;
     margin-right: 33px;
     position: sticky;
     z-index: 1;
-    top: 38px;
+    top:-74px;
     background-color: rgba(0, 0, 0, 0.2);
     height: 57px;
     backdrop-filter: blur(10px); 
   }
-  #screen{
-    height:321px;
+ #screen{
+    height:450px;
+  }
+  #scrn{
+    height:145px;
   }
   .navbar.fixed {
     position: fixed;
@@ -152,6 +162,8 @@
   .burger-menu {
     display: block;
     background-color: black;
+    z-index: 100;
+    position:fixed;
   }
 }
 
