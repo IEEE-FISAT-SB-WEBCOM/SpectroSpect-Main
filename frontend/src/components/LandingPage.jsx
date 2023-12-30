@@ -32,6 +32,9 @@ import COM from "../assets/ieee-comsoc.png"
 import pdf from '../assets/SPECTROSPECT.pdf'
 import globe from "../assets/globevid.mp4"
 import globee from "../assets/globevid-unscreen.gif"
+import pes from '../assets/pes_white.png'
+import cs from '../assets/cs.png'
+
 
 // useEffect(async () =>{
 //   <ThreeJSGlobe/>
@@ -368,19 +371,19 @@ theme="dark"
               <div className="w-2/3 border border-gray-700 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
                 <img src={SPS}></img>
               </div>
-              <div className="w-2/3 border border-gray-700 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
-                <img src={CS}></img>
+              <div className="w-2/3  flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
+                <img src={cs}></img>
               </div>
-              <div className="w-2/3 border border-gray-700 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
+              <div className="w-2/3 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
                 <img src={RAS}></img>
               </div>
-              <div className="w-2/3 border border-gray-700 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
-                <img src={PES}></img>
+              <div className="w-2/3  flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
+                <img src={pes}></img>
               </div>
-              <div className="w-2/3 border border-gray-700 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
+              <div className="w-2/3  flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
                 <img src={WIE}></img>
               </div>
-              <div className="w-2/3 border border-gray-700 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
+              <div className="w-2/3  flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
                 <img src={COM}></img>
               </div>
 
