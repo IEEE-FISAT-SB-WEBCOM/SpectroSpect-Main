@@ -399,14 +399,14 @@ theme="dark"
             Speakers
           </div>
 
-         <div className="flex mt-10 w-full md:flex-row space-x-5 flex-col bg-red-500" >
+         <div className="flex mt-10 w-full md:flex-row space-x-5 flex-col" >
             {/* Speaker */}
 
 {post.slice(0,4).map((item,i)=>{
   return(
 
  
-            <motion.div className="bg-red-50 md:w-1/4 w-full"
+            <motion.div className=" md:w-1/4 w-full"
    initial={{ opacity: 0, x: 300 }}
    whileInView={{ opacity: 1, x: 0 }}
    exit={{ opacity: 0, x: -50 }}
@@ -416,7 +416,7 @@ theme="dark"
      transition: { duration: 0.5, delay: 0 },
    }}
  >
- <div  className=" w-full hover:cursor-pointer  hover:scale-105 transition duration-300 border border-green-500"  >
+ <div  className=" w-full hover:cursor-pointer  hover:scale-105 transition duration-300"  >
               <div href="#" className="block rounded-lg p-4">
                 <img
                   alt="Home"
