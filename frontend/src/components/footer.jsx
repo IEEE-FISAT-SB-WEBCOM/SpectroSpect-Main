@@ -4,6 +4,7 @@ import { FaInstagram } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 import { MdArrowOutward } from "react-icons/md";
 import { useEffect } from "react";
+import spectroLogo from "../assets/ezgif.gif"
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 gsap.registerPlugin(ScrollTrigger)
@@ -75,7 +76,7 @@ const Footer = () => {
                 <div className="footer-Box" id="fb1" style={condition ? {...mobFooterContainerDiv,borderBottomLeftRadius:"0px",borderTopRightRadius:"10px"} : null}>
                 <img
           className="ezgif"
-          src="src\assets\ezgif.gif"  // Update the path to your GIF file
+          src={spectroLogo}  // Update the path to your GIF file
           alt="Ezgif"
         />
                 </div>

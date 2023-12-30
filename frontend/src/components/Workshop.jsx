@@ -4,10 +4,12 @@ import { Link } from "react-router-dom";
 import Navbar from "./navbar";
 import screen from "../assets/sc.png"
 import Footer from "./footer";
-const Workshop = ({ID,NAME}) => {
+const Workshop = ({About,ID,Name,Perks,Speaker,SpeakerDesc}) => {
 
-  console.log(NAME)
+  console.log(ID)
   const [isSticky, setIsSticky] = useState(false);
+
+
 
   useEffect(() => {
     const handleScroll = () => {
@@ -104,22 +106,21 @@ const Workshop = ({ID,NAME}) => {
                       href="#"
                       className="block transition text-green-400 hover:text-green-400"
                     >
-                      Brainwave Robotics Workshop{" "}
+                      {Name}{" "}
                     </Link>
                   </li>
                 </ol>
               </div>
 
               <h6 className="text-7xl font-bold my-6">
-                Brainwave Robotics Workshop
+                {Name}
               </h6>
             </div>
             <div className="w-full md:w-1/4 pb-5 md:pb-0 flex items-center justify-start md:justify-end align-middle">
               <a href="https://www.yepdesk.com/embed/open-register/6587c946c9e77c0001708f02/eev6mamlun">
               <button
-                href="#_\\"
-                className="relative inline-flex items-center justify-start inline-block px-10 py-3 overflow-hidden font-bold rounded-full group"
-              >
+                // href="#_\\"
+                className="relative inline-flex items-center justify-start inline-block px-10 py-3 overflow-hidden font-bold rounded-full group">
                 <span className="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-[3%]"></span>
                 <span className="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-white opacity-100 group-hover:-translate-x-8"></span>
                 <span className="relative w-full text-left text-white transition-colors duration-200 ease-in-out group-hover:text-gray-900">
@@ -135,34 +136,7 @@ const Workshop = ({ID,NAME}) => {
           {/* Content section */}
           <div className="w-full h-72 bg-white rounded-md my-8 lg:my-20"></div>
           <div className="lg:text-lg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
-            aperiam aut dolorem repellat cum totam architecto. Quo ipsum,
-            excepturi voluptas debitis eos inventore fuga reiciendis illo
-            asperiores quasi tenetur earum tempore placeat odit repellendus
-            rerum eius. Eum veniam ipsum voluptate ea minima porro vitae numquam
-            minus error delectus tenetur voluptatem nobis, doloribus inventore
-            eos debitis eligendi dolorum obcaecati ipsam maxime! Ipsum
-            molestiae, voluptatum voluptatibus cum ad aliquam, labore incidunt
-            earum vero fugit aperiam aliquid quaerat enim! Natus consequuntur,
-            sit incidunt harum laudantium laboriosam ex eius illum omnis
-            blanditiis necessitatibus totam nemo animi repudiandae ipsum
-            voluptate reiciendis similique eveniet culpa numquam. Accusantium
-            repellendus consequatur et amet numquam quidem quo alias,
-            necessitatibus eveniet nemo voluptatibus consequuntur voluptatem
-            odit magni pariatur soluta laboriosam hic aliquam deserunt tenetur
-            sunt, non quas. Eaque veritatis deleniti nemo eos nesciunt vitae?
-            Molestias ea possimus atque, nobis cupiditate ab. Laboriosam aut vel
-            molestias deserunt voluptatem inventore placeat quas doloremque unde
-            fugiat aliquam accusamus ducimus magnam beatae corrupti harum ipsa,
-            atque iste, vero illo, quia consequuntur dolore odit! Dignissimos
-            delectus voluptate, tenetur blanditiis voluptas laudantium optio
-            exercitationem et minima nam maiores nemo consequatur rerum
-            assumenda omnis vitae repudiandae impedit tempore corrupti!
-            Perferendis minima, maxime sint dolores fuga magni possimus. Lorem
-            ipsum dolor, sit amet consectetur adipisicing elit. Nihil iusto
-            ipsum sequi soluta, magni debitis doloribus voluptatibus accusamus
-            dolorum consequatur fugit, quaerat velit ab quia qui asperiores eius
-            voluptates quisquam!
+            {About}
           </div>
 <br></br>
 <br></br>
@@ -172,9 +146,7 @@ const Workshop = ({ID,NAME}) => {
             Perks
           </div>
           <div className="text-lg lg:text-xl">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur
-            nisi dolore sequi corrupti ipsam beatae vero, magni numquam laborum
-            aspernatur quis, eius ratione illo praesentium.
+            {Perks}
           </div>
 <br></br>
 <br></br>
@@ -198,10 +170,10 @@ const Workshop = ({ID,NAME}) => {
                 <div className="mt-2">
                   <dl>
                     <div>
-                      <dd className="font-medium">Marine Gwenddydd</dd>
+                      <dd className="font-medium">{Speaker[0]}</dd>
                       <div>
                         <dd className="text-sm text-gray-500">
-                          Managing Director
+                          {Speaker[1]}
                         </dd>
                       </div>
                     </div>
@@ -211,13 +183,7 @@ const Workshop = ({ID,NAME}) => {
             </div>
             {/* Speaker description */}
             <div className="w-full mt-4 lg:w-3/4 lg:ml-4 h-56 rounded-lg box-border border-gray-800 border flex items-center px-5">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-              optio delectus velit earum qui, dicta excepturi voluptas beatae
-              tenetur inventore harum recusandae, placeat minus dignissimos
-              doloribus quo voluptate debitis consectetur vel reprehenderit
-              molestiae. Optio omnis quis, ex, laudantium reiciendis eveniet
-              officiis maiores aut error earum mollitia at perspiciatis sint
-              soluta.
+              {SpeakerDesc}
             </div>
           </div>
         </div>
