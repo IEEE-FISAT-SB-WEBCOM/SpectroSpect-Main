@@ -1,10 +1,26 @@
 import { MdArrowOutward } from "react-icons/md";
+import Navbar from "./navbar";
+import screen from "../assets/p1.png"
+import scrn from "../assets/p2.png"
+import Footer from "./footer";
+
 
 const Registration = () => {
     return(
+        <>
+        <img src={scrn} id="scrn"></img>
+        <img src={screen} id="screen"></img>
+            <Navbar/>
+        
         <div>
-            <div>
-                <h1>Registration {<MdArrowOutward/>}</h1>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+
+            <div className="headingRegistration">
+                <h1 style={{marginLeft:window.innerHeight>window.innerWidth?"10vw":"5vw"}}>Registration</h1>
+                <MdArrowOutward style={{color:"#33FFA9"}}/>
             </div>
             <div style={{display:"flex",justifyContent:"space-around",alignItems:"center",flexDirection:window.innerHeight>window.innerWidth?"column":"row"}}>
                 <div className="regsitrationCard" style={{width:window.innerHeight>window.innerWidth?"80vw":"30vw"}}>
@@ -46,6 +62,8 @@ const Registration = () => {
                 </div>
             </div>
         </div>
+        <Footer/>
+        </>
     )
 }
 

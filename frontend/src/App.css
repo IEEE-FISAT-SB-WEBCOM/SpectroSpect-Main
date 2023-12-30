@@ -265,3 +265,10 @@ h1{
 .regsitrationCard button:hover{
   transform: scale(1.05);
 }
+
+.headingRegistration{
+  display:flex;
+  font-size: 40px;
+  align-items: center;
+  /* justify-content: space-around; */
+}
