@@ -224,65 +224,65 @@ const LandingPage = () => {
         scrollTrigger:{trigger:"#Workshops",toggleActions:"restart none restart none"}
       })
 
-      gsap.fromTo("#SpeakerIntelandingPg",{
-        opacity:0,
-        x:-150,
-      },{
-        opacity:1,
-        duration:3,
-        stagger:0.5,
-        x:0,
-        scrollTrigger:{trigger:"#Speakersss",toggleActions:"restart none none none"}
-      })
-      //SpeakerIntelandingPgExamples
-      gsap.fromTo("#SpeakerIntelandingPgExamples",{
-        opacity:0,
-        x:500,
-      },{
-        opacity:1,
-        duration:4,
-        stagger:2,
-        x:0,
-        scrollTrigger:{trigger:"#Speakersss",toggleActions:"restart none none none"}
-      })
+      // gsap.fromTo("#SpeakerIntelandingPg",{
+      //   opacity:0,
+      //   x:-150,
+      // },{
+      //   opacity:1,
+      //   duration:3,
+      //   stagger:0.5,
+      //   x:0,
+      //   scrollTrigger:{trigger:"#Speakersss",toggleActions:"restart none none none"}
+      // })
+      // //SpeakerIntelandingPgExamples
+      // gsap.fromTo("#SpeakerIntelandingPgExamples",{
+      //   opacity:0,
+      //   x:500,
+      // },{
+      //   opacity:1,
+      //   duration:4,
+      //   stagger:2,
+      //   x:0,
+      //   scrollTrigger:{trigger:"#Speakersss",toggleActions:"restart none none none"}
+      // })
 
 
-      gsap.fromTo("#SpeakerIntelandingPgButton",{
-        opacity:0,
-        y:400,
-        scale:0
-      },{
-        opacity:1,
-        delay:0.2,
-        y:0,
-        duration:3,
-        scale:1,
-        scrollTrigger:{trigger:"#SpeakerIntelandingPgButton",toggleActions:"restart none none none"}
-      })
+      // gsap.fromTo("#SpeakerIntelandingPgButton",{
+      //   opacity:0,
+      //   y:400,
+      //   scale:0
+      // },{
+      //   opacity:1,
+      //   delay:0.2,
+      //   y:0,
+      //   duration:3,
+      //   scale:1,
+      //   scrollTrigger:{trigger:"#SpeakerIntelandingPgButton",toggleActions:"restart none none none"}
+      // })
 
 
-      gsap.fromTo("#InstaIntelandingPageButton",{
-        opacity:0,
-        y:100,
-        scale:0
-      },{opacity:1,
-        delay:0.2,
-        y:0,
-        duration:2,
-        scale:1,
-        scrollTrigger:{trigger:"#InstaIntelandingPage",toggleActions:"restart none none none"}
-      })
+      // gsap.fromTo("#InstaIntelandingPageButton",{
+      //   opacity:0,
+      //   y:100,
+      //   scale:0
+      // },{opacity:1,
+      //   delay:0.2,
+      //   y:0,
+      //   duration:2,
+      //   scale:1,
+      //   scrollTrigger:{trigger:"#InstaIntelandingPage",toggleActions:"restart none none none"}
+      // })
 
-      gsap.fromTo("#InstaIntelandingPageHeading",{
-        opacity:0,
-        x:-150,
-      },{
-        opacity:1,
-        duration:3,
-        stagger:0.5,
-        x:0,
-        scrollTrigger:{trigger:"#InstaIntelandingPage",toggleActions:"restart none none none"}
-      })
+      // gsap.fromTo("#InstaIntelandingPageHeading",{
+      //   opacity:0,
+      //   x:-150,
+      // },{
+      //   opacity:1,
+      //   duration:3,
+      //   stagger:0.5,
+      //   x:0,
+      //   scrollTrigger:{trigger:"#InstaIntelandingPage",toggleActions:"restart none none none"}
+      // })
   
     },[])
     
