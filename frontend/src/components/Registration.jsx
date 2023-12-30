@@ -1,7 +1,11 @@
+import { MdArrowOutward } from "react-icons/md";
+
 const Registration = () => {
     return(
-        <div style={{}}>
-            <h1>Registration</h1>
+        <div>
+            <div>
+                <h1>Registration {<MdArrowOutward/>}</h1>
+            </div>
             <div style={{display:"flex",justifyContent:"space-around",alignItems:"center",flexDirection:window.innerHeight>window.innerWidth?"column":"row"}}>
                 <div className="regsitrationCard" style={{width:window.innerHeight>window.innerWidth?"80vw":"30vw"}}>
                     <h1>IEEE SPS MEMBERS</h1>
