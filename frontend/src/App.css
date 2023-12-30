@@ -153,7 +153,7 @@ h1{
 .speakerCards{
   display: flex;
   justify-content: flex-start;
-  /* overflow-x: scroll; */
+  overflow-x:none;
   padding: 15px;
 }
 
@@ -183,8 +183,8 @@ h1{
 
 .speakerCard span{
   font-weight: 600;
-  font-size: 20px;
-  margin-top: 2%;
+  font-size: 19px;
+  margin-top:-4%;
 }
 
 .speakerCard p{
@@ -205,12 +205,17 @@ h1{
   border: 2px solid #282828;
   height: 40vh;
   border-radius: 10px;
-  font-size: 22px;
+  font-size: 18px;
   padding: 5vh;
   margin-right:2vw;
   margin-left: 2vw;
 }
-/* 
-#screen{
-  margin-top: 0rem;
-} */
+
+@media (max-width: 768px) {
+  .speakerCards{
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    padding: 15px;
+  }
+  }
