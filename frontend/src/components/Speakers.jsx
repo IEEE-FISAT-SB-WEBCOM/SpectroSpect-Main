@@ -4,7 +4,8 @@ import AG from "../assets/AG.jpeg"
 import { useEffect, useState,useRef } from "react"
 import { Link } from "react-router-dom";
 import Navbar from "./navbar";
-import screen from "../assets/sc.png"
+import screen from "../assets/p1.png"
+import scrn from "../assets/p2.png"
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 gsap.registerPlugin(ScrollTrigger)
@@ -81,6 +82,7 @@ const Speakers = () => {
     }
     //style={{top:"-30vh",position:"sticky",border:"none",background: 'radial-gradient(#187747 15%,rgba(0, 0, 0, 0))',zIndex:"2"}}
     return  <>
+          <img src={scrn} id="scrn"></img>
           <img src={screen} id="screen"></img>
 
             <div className="Speakers">
@@ -89,7 +91,7 @@ const Speakers = () => {
             
             </div> */}
                 <div aria-label="Breadcrumb" className=" md:flex  md:self-start  hidden" style={{ top: 0, position: 'sticky',zIndex:"2",marginTop:"18vh" }}>
-                 <ol className="flex items-center gap-1 text-sm bg-inherit border-0 text-white font-bold">
+                 <ol className="flex items-center gap-1 text-sm bg-inherit border-0 text-white font-bold ml-0 md:ml-24">
                    <li>
                    <a
                       href="/"
