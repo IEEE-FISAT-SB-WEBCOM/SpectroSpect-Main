@@ -6,7 +6,7 @@ import screen from "../assets/p1.png"
 import scrn from "../assets/p2.png"
 import freen from "../assets/f2.png"
 import Footer from "./footer";
-const Workshop = ({About,ID,Name,Perks,Speaker,SpeakerDesc}) => {
+const Workshop = ({About,ID,Name,Perks,Speaker,SpeakerDesc,MImg}) => {
 
   console.log(ID)
   const [isSticky, setIsSticky] = useState(false);
@@ -134,7 +134,9 @@ const Workshop = ({About,ID,Name,Perks,Speaker,SpeakerDesc}) => {
             </div>
           </div>
           {/* Content section */}
-          <div className="w-full h-72 bg-white rounded-md my-8 lg:my-20"></div>
+          <div className="w-full h-72 bg-white rounded-md my-8 lg:my-20">
+            <img src={MImg} style={{height:"100%"}}></img>
+          </div>
           <div className="lg:text-lg">
             {About}
           </div>
