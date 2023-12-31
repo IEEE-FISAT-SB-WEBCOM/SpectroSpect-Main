@@ -60,7 +60,7 @@ const RegistrationCore = () => {
                         Exciting Games<br/>
                         Goodies
                     </p>
-                    <h1>Rs.999</h1>
+                    <h1>Rs.899</h1>
                     <button><a href="https://www.yepdesk.com/embed/open-register/6587c946c9e77c0001708f02/eev6mamlun">Register</a></button>
                 </div>
                 <div className="regsitrationCard" style={{width:window.innerHeight>window.innerWidth?"80vw":"30vw"}}>
@@ -72,7 +72,7 @@ const RegistrationCore = () => {
                         Exciting Games<br/>
                         Goodies
                     </p>
-                    <h1>Rs.1199</h1>
+                    <h1>Rs.1099</h1>
                     <button><a href="https://www.yepdesk.com/embed/open-register/6587c946c9e77c0001708f02/eev6mamlun">Register</a></button>
                     
                 </div>
@@ -85,7 +85,7 @@ const RegistrationCore = () => {
                         Exciting Games<br/>
                         Goodies
                     </p>
-                    <h1>Rs.1399</h1>
+                    <h1>Rs.1199</h1>
                     <button><a href="https://www.yepdesk.com/embed/open-register/6587c946c9e77c0001708f02/eev6mamlun">Register</a></button>
                 </div>
             </div>
