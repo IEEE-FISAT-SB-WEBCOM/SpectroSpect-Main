@@ -325,7 +325,7 @@ theme="dark"
 <img className="h-[600px] hidden md:flex  mt-36" src={globee} ></img>
 <div id="spt" className="w-full sm:static md:absolute pb-40 flex bg-opacity-100 md:bg-gradient-to-b from-transparent to-black  translate-y-28 md:translate-y-52 items-center align-middle justify-center">
 
-<h1 className="text-[42px] md:text-[12rem]">Spectrospect</h1>
+<h1 className="text-[42px] md:text-[12rem]">SpectroSpect</h1>
 <MdArrowOutward className="text-green-400 text-[42px] md:text-[12rem] mr-3" />
 </div>
 </div>
