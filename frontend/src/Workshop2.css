@@ -55,7 +55,7 @@
     transition: all 0.5s cubic-bezier(1,0,1,0);
     border-bottom: 1.013px solid var(--Black-700, #282828); 
     margin-top: 2rem;
-    width: 70rem;
+    width: 100%;
     
 }
 
@@ -96,6 +96,7 @@
 @media (max-width: 868px) {
     .container {
       margin: 0%;
+    
     }
   
     .workshop-head {
@@ -137,4 +138,3 @@
       color: black;
     }
   }
-  
