@@ -48,7 +48,7 @@ const RegistrationCore = () => {
 
             <div className="headingRegistration">
                 <MdArrowOutward style={{marginLeft:window.innerHeight>window.innerWidth?"10vw":"5vw",color:"#33FFA9",fontSize:"45px",marginRight:"0.5vw"}}/>
-                <h1 style={{fontWeight:"700"}}>Registration</h1>
+                <h1 style={{fontWeight:"700"}}>Early Bird Registration</h1>
             </div>
             <div id="registrationContainer" style={{display:"flex",justifyContent:"space-around",alignItems:"center",flexDirection:window.innerHeight>window.innerWidth?"column":"row"}}>
                 <div className="regsitrationCard" style={{width:window.innerHeight>window.innerWidth?"80vw":"30vw"}}>
