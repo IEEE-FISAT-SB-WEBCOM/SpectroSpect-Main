@@ -3,6 +3,7 @@ import Footer from "./footer";
 import { MdArrowOutward } from "react-icons/md";
 import { useState } from "react";
 import { Tilt } from "react-tilt";
+import freen from "../assets/f3.png"
 import footerLogo from "../assets/Frame.png"
 import screen from "../assets/p1.png"
 import scrn from "../assets/p2.png"
@@ -373,16 +374,16 @@ theme="dark"
               <div href="#" className="block rounded-lg p-4">
                 <img
                   alt="Home"
-                  src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src={freen}
                   className="h-56 w-full rounded-md object-cover"
                 />
 
                 <div className="mt-2">
                   <dl>
                     <div>
-                      <dd className="font-medium">Marine Gwenddydd</dd>
+                      <dd className="font-medium">To be revealed soon</dd>
                       <div>
-                        <dd className="text-sm text-gray-500">Managing Director</dd>
+                        {/* <dd className="text-sm text-gray-500">Managing Director</dd> */}
                       </div>
                     </div>
                   </dl>

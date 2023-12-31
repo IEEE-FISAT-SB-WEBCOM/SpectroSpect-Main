@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Navbar from "./navbar";
 import screen from "../assets/p1.png"
 import scrn from "../assets/p2.png"
+import freen from "../assets/f2.png"
 import Footer from "./footer";
 const Workshop = ({About,ID,Name,Perks,Speaker,SpeakerDesc}) => {
 
@@ -162,7 +163,7 @@ const Workshop = ({About,ID,Name,Perks,Speaker,SpeakerDesc}) => {
               <div className="block rounded-lg p-4">
                 <img
                   alt="Speaker"
-                  src="https://images.unsplash.com/photo-1664575602554-2087b04935a5?q=80&w=3087&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  src={freen}
                   className="h-56 w-full rounded-md object-cover"
                 />
 

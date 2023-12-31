@@ -5,6 +5,8 @@ import { useEffect, useState,useRef } from "react"
 import { Link } from "react-router-dom";
 import Navbar from "./navbar";
 import screen from "../assets/p1.png"
+import feen from "../assets/f2.png"
+import freen from "../assets/f3.png"
 import scrn from "../assets/p2.png"
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
@@ -73,9 +75,9 @@ const Speakers = () => {
         speakerList.push(
             <a href="#SpeakerInfo">
             <div className="speakerCard" style={{border: active === i && '2px solid #33FFA9'}} key={i} onClick={() => SetActive(i)}>
-                <img src={AK}></img>
-                <span>Anantha Krishnan {i}</span>
-                <p>Student, Doctor, Astronaut, Dev</p>
+                <img src={feen}></img>
+                <span>SPEAKER {i}</span>
+                <p>Revealing really soon</p>
             </div>
             </a>
         )
@@ -151,11 +153,12 @@ const Speakers = () => {
             </div>
             {active && <div id="SpeakerInfo" style={{flexWrap: window.innerHeight > window.innerWidth && "wrap"}}>
             <div className="speakerCard">
-                <img src={AG}></img>
-                <span>Anantha Krishnan {active}</span>
-                <p>Student, Doctor, Astronaut, Dev</p>
+                <img src={freen}></img>
+                <span>Speaker{active}</span>
+                <p></p>
             </div>
-            <div className="speaker-Description" style={{height: window.innerHeight > window.innerWidth  && '70vh'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+            <div className="speaker-Description" style={{height: window.innerHeight > window.innerWidth  && '70vh'}}>
+Get ready for an extraordinary intellectual experience at Spectrospect, presented by IEEE FISAT SB in collaboration with IEEE FISAT SPS SBC. Our lineup of speakers is set to redefine the boundaries of knowledge and innovation. Each speaker brings a wealth of expertise and insights. Join us on 16th,17th and 18th February 2024 for a day of inspiration, collaboration, and unparalleled learning. Register now to secure your spot at this remarkable event that promises to elevate your understanding of cutting-edge advancements.</div>
             </div>}
 
         
