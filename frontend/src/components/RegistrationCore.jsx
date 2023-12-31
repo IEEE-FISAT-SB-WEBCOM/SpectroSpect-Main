@@ -85,7 +85,7 @@ const RegistrationCore = () => {
                         Exciting Games<br/>
                         Goodies
                     </p>
-                    <h1>Rs.1199</h1>
+                    <h1>Rs.1299</h1>
                     <button><a href="https://www.yepdesk.com/embed/open-register/6587c946c9e77c0001708f02/eev6mamlun">Register</a></button>
                 </div>
             </div>
