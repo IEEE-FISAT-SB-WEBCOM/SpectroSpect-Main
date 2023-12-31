@@ -27,36 +27,12 @@ const RegistrationCore = () => {
             scrollTrigger:{trigger:"#registrationContainer",toggleActions:"restart none none none"}
           })
 
-          gsap.fromTo(".regsitrationCard h1",{
-            opacity:0,
-            scale:0.5,
-          },{opacity:1,
-            duration:3,
-            delay:1.5,
-            scale:1,
-            stagger:1,
-            scrollTrigger:{trigger:".regsitrationCard",toggleActions:"restart none none none"}
-          })
-
-          gsap.fromTo(".regsitrationCard p",{
-            opacity:0,
-            scale:0.5,
-          },{opacity:1,
-            duration:3,
-            delay:2,
-            scale:1,
-            stagger:1,
-            scrollTrigger:{trigger:".regsitrationCard",toggleActions:"restart none none none"}
-          })
-
           gsap.fromTo(".regsitrationCard button",{
             opacity:0,
-            y:30,
             scale:0.5,
           },{opacity:1,
-            duration:3,
-            y:0,
-            delay:2,
+            duration:2,
+            delay:1,
             scale:1,
             stagger:1,
             scrollTrigger:{trigger:".regsitrationCard",toggleActions:"restart none none none"}
