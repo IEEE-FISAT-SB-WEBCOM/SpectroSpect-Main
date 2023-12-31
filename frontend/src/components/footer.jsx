@@ -5,6 +5,7 @@ import { FiMail } from "react-icons/fi";
 import { MdArrowOutward } from "react-icons/md";
 import { useEffect } from "react";
 import spectroLogo from "../assets/ezgif.gif"
+import { BsFillQuestionCircleFill } from "react-icons/bs";
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 gsap.registerPlugin(ScrollTrigger)
@@ -91,9 +92,9 @@ const Footer = () => {
                   </div>
                   <div id="footer-slider-2"></div>
                   <div id="footer-slider-3">
-                    <a href="https://www.facebook.com/ieeefisat/" className="hover:cursor-pointer hover:text-gray-400 transition duration-500 "><MdFacebook /></a>
-                    <a href="https://www.instagram.com/ieeefisatsb/?hl=en" className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><FaInstagram /></a>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=fisatieeesb@gmail.com&body" className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><FiMail /></a>
+                    <a href="https://www.facebook.com/ieeefisat/" className="hover:cursor-pointer hover:text-gray-400 transition duration-500 "><BsFillQuestionCircleFill /></a>
+                    <a href="https://www.instagram.com/ieeefisatsb/?hl=en" className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><BsFillQuestionCircleFill /></a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=fisatieeesb@gmail.com&body" className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><BsFillQuestionCircleFill /></a>
                     {/* <a href="https://www.facebook.com/ieeefisat/" className="hover:cursor-pointer hover:text-gray-400 transition duration-500 "><MdFacebook /></a> */}
                   </div>
                   <div className="footer-slider-common">Workshops <MdArrowOutward className="text-green-400 text-5xl mr-3" /></div>
