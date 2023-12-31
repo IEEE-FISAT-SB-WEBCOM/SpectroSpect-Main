@@ -210,7 +210,16 @@ h1{
   margin-right:2vw;
   margin-left: 2vw;
 }
+#cs{
+ max-width: 191px;
+}
+.sb{
+  max-width: 110px;
+}
 
+.sbb{
+  max-width: 90px;
+}
 @media (max-width: 768px) {
   .speakerCards{
     display: flex;
@@ -218,9 +227,19 @@ h1{
     overflow-x: scroll;
     padding: 15px;
   }
+  .sbb{
+    max-width: 121px;
+  }
+  .sb{
+    max-width: 156px;
+  }
   .px-5{
     font-size: 13px;
   }
+  #cs{
+    max-width: 191px;
+   }
+   
   }
 
   .speaker-Description{

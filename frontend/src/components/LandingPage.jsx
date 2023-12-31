@@ -284,7 +284,7 @@ theme="dark"
                 <div className="flex w-full md:w-4/6 flex-col">
                 
                 <div className=" text-xl md:text-3xl">
-                "Spectrospect is a tech symposium spotlighting signal processing’s forefront.Engage in workshops, discussions, and competitions led by industry experts.Explore digital, audio, and visual processing, machine learning ,and emerging tech. Connect with innovators, showcase your skills,and dive into the pulse of technological evolution."
+                "Spectrospect, a groundbreaking tech symposium presented by IEEE FISAT SB in collaboration with IEEE FISAT Signal Processing Society Student Branch Chapter.Spectrospect is a tech symposium spotlighting signal processing’s forefront.Engage in workshops, discussions, and competitions led by industry experts.Explore digital, audio, and visual processing, machine learning ,and emerging tech. Connect with innovators, showcase your skills,and dive into the pulse of technological evolution."
                 
                 </div>
                 <div className=" flex md:mb-0 mb-10 ">
@@ -312,19 +312,19 @@ theme="dark"
                 <img src={SPS}></img>
               </div>
               <div className="w-2/3  flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
-                <img src={cs}></img>
+                <img src={cs} id="cs"></img>
               </div>
               <div className="w-2/3 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
                 <img src={RAS}></img>
               </div>
               <div className="w-2/3  flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
-                <img src={pes}></img>
+                <img src={pes} class="sb"></img>
               </div>
               <div className="w-2/3  flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
-                <img src={WIE}></img>
+                <img src={WIE} class="sbb"></img>
               </div>
               <div className="w-2/3  flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
-                <img src={COM}></img>
+                <img src={COM} class="sb"></img>
               </div>
 
               </div>
