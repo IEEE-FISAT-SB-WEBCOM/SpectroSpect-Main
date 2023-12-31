@@ -103,10 +103,9 @@ const Navbar = ({setSticky = false}) => {
                   </div>
                   <div id="footer-slider-2"></div>
                   <div id="footer-slider-3">
-                    <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500 "><MdFacebook /></a>
-                    <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><FaInstagram /></a>
-                    <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><FiMail /></a>
-                    <a className="hover:cursor-pointer hover:text-gray-400 transition duration-500 "><MdFacebook /></a>
+                    <a href="https://www.facebook.com/ieeefisat/" className="hover:cursor-pointer hover:text-gray-400 transition duration-500 "><MdFacebook /></a>
+                    <a href="https://www.instagram.com/ieeefisatsb/?hl=en" className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><FaInstagram /></a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=fisatieeesb@gmail.com&body" className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><FiMail /></a>
                   </div>
                   {/* <div className="footer-slider-common">Workshops <MdArrowOutward className="text-green-400 text-5xl mr-3" /></div>
                   <div className="footer-slider-common">Talks <MdArrowOutward className="text-green-400 text-5xl mr-3" /></div>
