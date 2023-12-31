@@ -157,6 +157,7 @@
   .nav-links.open {
     display: flex;
     background-color: black;
+    z-index: 100;
   }
 
   .burger-menu {
@@ -165,5 +166,11 @@
     z-index: 100;
     position:fixed;
   }
+  .navbar.open + #spt {
+    opacity: 0;
+    pointer-events: none; /* Disable pointer events to make it non-interactive */
+  }
+  
+ 
 }
 

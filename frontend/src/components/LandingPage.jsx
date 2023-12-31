@@ -23,17 +23,16 @@ import validator from "email-validator";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { animate, motion, useAnimation } from "framer-motion";
-import PES from "../assets/09PES_logo_in_color_with_fade_R.png"
-import RAS from "../assets/IEEE_RAS_logo_no-background-300x110.png"
-import CS from "../assets/IEEE-CS_LogoTM_black.png"
-import WIE from "../assets/wie-logo@2x.png"
+import RAS from "../assets/wie-logo@2x.png"
+import WIE from "../assets/wie-logo_white.png"
 import SPS from "../assets/SPS_Logo_Color_RGB.png"
-import COM from "../assets/ieee-comsoc.png"
+import COM from "../assets/ieee-comsoc_white.png"
 import pdf from '../assets/SPECTROSPECT.pdf'
 import globee from "../assets/globevid-unscreen.gif"
 import pes from '../assets/pes_white.png'
 import cs from '../assets/cs.png'
 import RegistrationCore from "./RegistrationCore";
+import './navbar.css';
 
 
 // useEffect(async () =>{
@@ -73,19 +72,19 @@ const LandingPage = () => {
       },
     },
   };
-  const firebaseConfig = {
-    apiKey: import.meta.env.VITE_APIKEY,
-    authDomain: import.meta.env.VITE_AUTHDOMAIN,
-    databaseURL: import.meta.env.VITE_DATABASEURL,
-    projectId: import.meta.env.VITE_PROJECTID,
-    storageBucket: import.meta.env.VITE_STORAGEBUCKET,
-    messagingSenderId: import.meta.env.VITE_MSID,
-    appId: import.meta.env.VITE_APPID,
-    measurementId: import.meta.env.VITE_MEASUREMENTID
-  };
-  firebase.initializeApp(firebaseConfig);
+  // const firebaseConfig = {
+  //   apiKey: import.meta.env.VITE_APIKEY,
+  //   authDomain: import.meta.env.VITE_AUTHDOMAIN,
+  //   databaseURL: import.meta.env.VITE_DATABASEURL,
+  //   projectId: import.meta.env.VITE_PROJECTID,
+  //   storageBucket: import.meta.env.VITE_STORAGEBUCKET,
+  //   messagingSenderId: import.meta.env.VITE_MSID,
+  //   appId: import.meta.env.VITE_APPID,
+  //   measurementId: import.meta.env.VITE_MEASUREMENTID
+  // };
+  // firebase.initializeApp(firebaseConfig);
   
-  const dataref= firebase.database();
+  // const dataref= firebase.database();
 
   const [email, setemail] = useState('');
   const handleClick=()=>{
@@ -322,11 +321,11 @@ theme="dark"
                 <Link to="/Events">Events</Link>
             </button> */}
         
-<div className="flex flex-col  items-center min-w-full justify-center">
+<div className="flex flex-col z-0  items-center min-w-full justify-center">
 <img className="h-[600px] hidden md:flex  mt-36" src={globee} ></img>
-<div className="w-full sm:static md:absolute z-10 pb-40 flex bg-opacity-100 md:bg-gradient-to-b from-transparent to-black  translate-y-28 md:translate-y-52 items-center align-middle justify-center">
+<div id="spt" className="w-full sm:static md:absolute pb-40 flex bg-opacity-100 md:bg-gradient-to-b from-transparent to-black  translate-y-28 md:translate-y-52 items-center align-middle justify-center">
 
-<h1 className="text-[42px] z-10 md:text-[12rem]">Spectrospect</h1>
+<h1 className="text-[42px] md:text-[12rem]">Spectrospect</h1>
 <MdArrowOutward className="text-green-400 text-[42px] md:text-[12rem] mr-3" />
 </div>
 </div>
@@ -367,7 +366,7 @@ theme="dark"
                 </div>
                 </div>
 
-              <div className="grid items-start md:gap-0 sm:gap-5 gap-y-24 mt-10 md:mt-0 pl-0 md:pl-10 justify-center align-middle grid-cols-1 md:grid-cols-2 grid-rows-3 w-full md:w-2/6 min-h-full text-black" id="IEEE_LOGOS">
+              <div className="grid items-start md:gap-0 sm:gap-5 gap-y-28 mt-10 md:mt-0 md:pl-10 justify-center align-middle grid-cols-1 md:grid-cols-2 grid-rows-3 w-full md:px-0 pl-20  md:w-2/6 min-h-full text-black" id="IEEE_LOGOS">
               <div className="w-2/3 border border-gray-700 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
                 <img src={SPS}></img>
               </div>
@@ -413,7 +412,7 @@ theme="dark"
             Speakers
           </div>
 
-         <div className="flex mt-10 w-full md:flex-row space-x-5 flex-col" >
+         <div className="flex mt-10 w-full md:flex-row space-x-0  md:space-x-5 flex-col" >
             {/* Speaker */}
 
 {post.slice(0,4).map((item,i)=>{
@@ -423,7 +422,7 @@ theme="dark"
             <motion.div className=" md:w-1/4 w-full"
    initial={{ opacity: 0, x: 100 }}
    whileInView={{ opacity: 1, x: 0 }}
-   exit={{ opacity: 0, x: -50 }}
+   exit={{ opacity: 0, x: 0 }}
    transition={{ duration: 1,delay:i*0.3}}
    whileHover={{
      scale: 1,
