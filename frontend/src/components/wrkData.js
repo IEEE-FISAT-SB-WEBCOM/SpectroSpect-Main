@@ -7,6 +7,7 @@ import img5 from "../assets/movesofs.jpeg";
 import img6 from "../assets/faceofs.jpeg";
 import img7 from "../assets/starofs.jpeg";
 import img8 from "../assets/voiceofs.jpeg";
+import img9 from "../assets/weblive.png";
 
 const post = [
   {
@@ -20,11 +21,11 @@ const post = [
   },
   {
     title: "SpectroSpect",
-    Event: "Idea Pitching",
+    Event: "Website is Live",
     Caption:
-      "Unleash your innovation, inspire, and let the sparks fly! Get ready to pitch your brilliance!",
+      "Check out the website for more details about the events and registration process",
     link: "",
-    img: img2,
+    img: img9,
   },
   {
     title: "SpectroSpect",
