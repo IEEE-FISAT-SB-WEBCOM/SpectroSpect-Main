@@ -262,14 +262,19 @@ theme="dark"
                 <Link to="/Events">Events</Link>
             </button> */}
         
-<div className="flex flex-col z-0  items-center min-w-full justify-center">
-<img className="h-[600px] hidden md:flex  mt-36" src={globee} ></img>
-<div id="spt" className="w-full sm:static md:absolute pb-40 flex bg-opacity-100 md:bg-gradient-to-b from-transparent to-black  translate-y-28 md:translate-y-52 items-center align-middle justify-center">
+<div className="flex flex-col z-0 items-center min-w-full justify-center">
+  <img className="h-[600px] hidden md:flex mt-36" src={globee} />
+  <div id="spt" className="w-full sm:static md:absolute pb-40 flex flex-col bg-opacity-100 md:bg-gradient-to-b from-transparent to-black translate-y-28 md:translate-y-52 items-center align-middle justify-center">
 
-<h1 className="text-[42px] md:text-[12rem]">SpectroSpect</h1>
-<MdArrowOutward className="text-green-400 text-[42px] md:text-[12rem] mr-3" />
+    <div className="flex items-center">
+      <h1 className="text-[42px] md:text-[12rem]">SpectroSpect</h1>
+      <MdArrowOutward className="text-green-400 text-[42px] md:text-[12rem] ml-3" />
+    </div>
+
+    <h3 className="text-[42px] md:text-[5rem]">February 16 17 18</h3>
+  </div>
 </div>
-</div>
+
 
 
 
