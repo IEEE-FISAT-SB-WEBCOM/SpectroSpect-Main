@@ -332,7 +332,7 @@ theme="dark"
             </div>
             </div>
 
-  <div className="flex flex-col lg:flex-row bg-black items-center justify-center" id="Workshops">
+  {/* <div className="flex flex-col lg:flex-row bg-black items-center justify-center" id="Workshops">
         <div className="md:w-3/4 flex flex-col  md:mt-32 lg:mr-8 px-3 py-3">
         <div className="flex text-3xl font-bold align-middle self-start items-center mb-10" id="WorkshopIntelandingPg">
             <MdArrowOutward className="text-green-400 text-5xl mr-3" />
@@ -340,23 +340,23 @@ theme="dark"
           </div>
              <Workshop2/>
             </div>
-            </div>
+            </div> */}
 
 
 
 
       {/* Speaker Section */}
-      <div className="flex flex-col lg:flex-row bg-black items-center justify-center" id="Speakersss">
+      {/* <div className="flex flex-col lg:flex-row bg-black items-center justify-center" id="Speakersss">
         <div className="md:w-3/4 flex w-full flex-col  md:mt-32 lg:mr-8 px-3 py-3">
           <div className="flex w-full text-3xl font-bold align-middle self-start items-center" id="SpeakerIntelandingPg">
             <MdArrowOutward className="text-green-400 sm:self-center text-5xl mr-3" />
             Speakers
           </div>
 
-         <div className="flex mt-10 w-full md:flex-row space-x-0  md:space-x-5 flex-col" >
+         <div className="flex mt-10 w-full md:flex-row space-x-0  md:space-x-5 flex-col" > */}
             {/* Speaker */}
 
-{post.slice(0,4).map((item,i)=>{
+{/* {post.slice(0,4).map((item,i)=>{
   return(
 
  
@@ -382,9 +382,9 @@ theme="dark"
                   <dl>
                     <div>
                       <dd className="font-medium">To be revealed soon</dd>
-                      <div>
+                      <div> */}
                         {/* <dd className="text-sm text-gray-500">Managing Director</dd> */}
-                      </div>
+                      {/* </div>
                     </div>
                   </dl>
                 </div>
@@ -392,9 +392,9 @@ theme="dark"
             </div>
        </motion.div>
  )
-})}
+})} */}
 
-          </div>        
+          {/* </div>        
 
           <Link to="/Speakers">
           <div className="mt-10 hover:bg-white hover:text-black font-bold transition duration-700 hover:cursor-pointer flex items-center w-full justify-center border border-gray-600 p-2 rounded-3xl" id="SpeakerIntelandingPgButton">View all
@@ -402,7 +402,7 @@ theme="dark"
           </div>
           </Link>
         </div>
-      </div>
+      </div> */}
 
 
 
