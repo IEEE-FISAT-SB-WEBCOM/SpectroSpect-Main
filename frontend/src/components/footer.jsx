@@ -104,6 +104,14 @@ const Footer = () => {
                 </div>
             </div>
             <img src={footerLogo}></img>
+            <div>
+              <div class="copyright" id="credit">
+                &copy; Copyright <strong><span>IEEE FISAT SB</span></strong>. All Rights Reserved
+              </div>
+              <div class="credits" id="creditt">
+                Designed with Love 💞 <a href="https://www.ieee.fisat.ac.in/SpectroSpectwebteam" id="web">SpectroSpect WebTeam</a>
+              </div>
+            </div>
         </div>
     )
 }
