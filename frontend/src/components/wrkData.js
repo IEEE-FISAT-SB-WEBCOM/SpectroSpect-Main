@@ -13,11 +13,11 @@ import img10 from "../assets/early.png";
 const post = [
   {
     title: "SpectroSpect",
-    Event: "Dive Into Spectra",
+    Event: "SpectoSpect",
     Caption:
-      "Don't miss the incredible Technical Quiz Extravaganza! Explore mind-bending",
+      "Three Day Flagship event of IEEE FISAT SB organised by IEEE SPS SBC FISAT",
     link:
-      "https://www.instagram.com/p/C1Hvwy9SAFJ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+      "",
     img: img1,
   },
   {
