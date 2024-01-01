@@ -8,6 +8,7 @@ import img6 from "../assets/faceofs.jpeg";
 import img7 from "../assets/starofs.jpeg";
 import img8 from "../assets/voiceofs.jpeg";
 import img9 from "../assets/weblive.png";
+import img10 from "../assets/early.png";
 
 const post = [
   {
@@ -18,6 +19,13 @@ const post = [
     link:
       "https://www.instagram.com/p/C1Hvwy9SAFJ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
     img: img1,
+  },
+  {
+    title: "SpectroSpect",
+    Event: "Early Bird Registration",
+    Caption: " Early Bird Registration is now open!",
+    link: "",
+    img: img10,
   },
   {
     title: "SpectroSpect",
