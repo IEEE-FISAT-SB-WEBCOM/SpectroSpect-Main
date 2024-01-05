@@ -83,6 +83,9 @@ h1{
 }
 
 #footer-slider-3{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   animation: slideAnimation 20s 1s infinite linear forwards;
 }
 
