@@ -6,6 +6,8 @@ import { MdArrowOutward } from "react-icons/md";
 import { useEffect } from "react";
 import spectroLogo from "../assets/ezgif.gif"
 import { BsFillQuestionCircleFill } from "react-icons/bs";
+import SP1 from "../assets/BH2.png"
+import SP2 from "../assets/VVSP.jpeg" 
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 gsap.registerPlugin(ScrollTrigger)
