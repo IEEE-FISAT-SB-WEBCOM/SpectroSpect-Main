@@ -12,7 +12,7 @@ const RegistrationCore = () => {
             x:-200
           },{opacity:1,
             x:0,
-            duration:2,
+            duration:1,
             //stagger:0.5,
             scrollTrigger:{trigger:".headingRegistration",toggleActions:"restart none none none"}
           })
@@ -22,7 +22,7 @@ const RegistrationCore = () => {
             y:200,
           },{opacity:1,
             y:0,
-            duration:2,
+            duration:1,
             stagger:0.5,
             scrollTrigger:{trigger:"#registrationContainer",toggleActions:"restart none none none"}
           })
@@ -31,10 +31,10 @@ const RegistrationCore = () => {
             opacity:0,
             scale:0.5,
           },{opacity:1,
-            duration:2,
+            duration:1,
             delay:1,
             scale:1,
-            stagger:1,
+            stagger:0.3,
             scrollTrigger:{trigger:".regsitrationCard",toggleActions:"restart none none none"}
           })
     })
