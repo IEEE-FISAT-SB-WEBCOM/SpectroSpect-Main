@@ -104,8 +104,13 @@ h1{
 }
 
 #fb3 a{
-  /* height: 5vh; */
+  height: 3vh;
   margin-right: 15%;
+}
+
+#fb3 a img{
+  height: 100%;
+  border-radius: 100%;
 }
 
 @keyframes slideAnimation {
