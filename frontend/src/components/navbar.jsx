@@ -2,10 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import './navbar.css';
 import spectrospectLogo from '../assets/ezgif.gif';
-import { MdFacebook } from "react-icons/md";
-import { FaInstagram } from "react-icons/fa";
-import { FiMail } from "react-icons/fi";
-import { BsFillQuestionCircleFill } from "react-icons/bs";
+import SP1 from "../assets/BH2.png"
+import SP2 from "../assets/VVSP.jpeg" 
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 gsap.registerPlugin(ScrollTrigger)
@@ -21,7 +19,7 @@ const Navbar = ({setSticky = false}) => {
       y:-100
     },{opacity:1,
       y:0,
-      duration:2,
+      duration:1,
       scrollTrigger:{trigger:".navbar",toggleActions:"restart none restart none"}
     })
 
@@ -32,8 +30,8 @@ const Navbar = ({setSticky = false}) => {
     },{opacity:1,
       delay:1,
       y:0,
-      duration:2,
-      stagger:0.5,
+      duration:1,
+      stagger:0.25,
       scrollTrigger:{trigger:".nav-links",toggleActions:"restart none restart none"}
     })
   },[])
@@ -104,9 +102,8 @@ const Navbar = ({setSticky = false}) => {
                   </div>
                   <div id="footer-slider-2"></div>
                   <div id="footer-slider-3">
-                    <a href="https://www.facebook.com/ieeefisat/" className="hover:cursor-pointer hover:text-gray-400 transition duration-500 "><BsFillQuestionCircleFill /></a>
-                    <a href="https://www.instagram.com/ieeefisatsb/?hl=en" className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><BsFillQuestionCircleFill /></a>
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=fisatieeesb@gmail.com&body" className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><BsFillQuestionCircleFill /></a>
+                    <a href="https://nuevoue.com/" className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><img src={SP1}></img></a>
+                    <a href="https://visavalley.com/" className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><img src={SP2}></img></a>
                   </div>
                   {/* <div className="footer-slider-common">Workshops <MdArrowOutward className="text-green-400 text-5xl mr-3" /></div>
                   <div className="footer-slider-common">Talks <MdArrowOutward className="text-green-400 text-5xl mr-3" /></div>

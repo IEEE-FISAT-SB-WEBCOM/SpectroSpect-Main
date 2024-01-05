@@ -6,6 +6,11 @@ h1{
   font-size:3rem;
 }
 
+#spt h3 span{
+  color: #33FFA9;
+  font-weight: 600;
+}
+
 #BeASponsor{
   background-image: url("../src/assets/bg_spon.png");
   max-width: 100%;

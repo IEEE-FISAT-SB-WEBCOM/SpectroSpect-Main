@@ -271,7 +271,7 @@ theme="dark"
       <MdArrowOutward className="text-green-400 text-[42px] md:text-[12rem] ml-3" />
     </div>
 
-    <h3 className="text-[42px] md:text-[5rem]">February 16 17 18</h3>
+    <h3 className="text-[30px] md:text-[3.5rem]">February-<span>16</span>,<span>17</span>,<span>18</span></h3>
   </div>
 </div>
 
