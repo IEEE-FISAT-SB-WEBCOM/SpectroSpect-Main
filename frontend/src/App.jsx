@@ -4,7 +4,7 @@ import LandingPage from './components/LandingPage';
 import Workshop from './components/Workshop';
 import Event from './components/Event';
 import Speakers from './components/Speakers';
-import WorkshopContent from './components/WorkshopContent';
+import WorkshopContent from './components/AllTheContent';
 import Registration from './components/Registration';
 import { useEffect } from 'react';
 

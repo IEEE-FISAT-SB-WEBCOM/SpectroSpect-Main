@@ -2,7 +2,6 @@ import img1 from '../assets/workshop1.png'
 import img2 from '../assets/workshop2.png'
 import img3 from '../assets/workshop3.png'
 import img4 from '../assets/workshop4.png'
-import img5 from '../assets/workshop5.png'
 import Main1 from "../assets/Mathlabwk.png"
 import Main2 from "../assets/Quantumwk.png"
 import Main3 from "../assets/SpeechRecogwk.png"
@@ -52,4 +51,35 @@ const WorkshopContent = [
    
 ]
 
-export default WorkshopContent
+const SpeakerContent = [
+    {
+        ID:1,
+        Speaker:"",
+        Desig:"",
+        DescS:"",
+        DescL:""
+    },
+    {
+        ID:2,
+        Speaker:"",
+        Desig:"",
+        DescS:"",
+        DescL:""
+    },
+    {
+        ID:3,
+        Speaker:"",
+        Desig:"",
+        DescS:"",
+        DescL:""
+    },
+    {
+        ID:4,
+        Speaker:"",
+        Desig:"",
+        DescS:"",
+        DescL:""
+    }
+]
+
+export {WorkshopContent,SpeakerContent}

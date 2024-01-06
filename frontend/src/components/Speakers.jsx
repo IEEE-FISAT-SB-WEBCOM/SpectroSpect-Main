@@ -1,6 +1,7 @@
 import Footer from "./footer"
 import AK from "../assets/ak.jpg"
 import AG from "../assets/AG.jpeg"
+import { SpeakerContent } from "./AllTheContent"
 import { useEffect, useState,useRef } from "react"
 import { Link } from "react-router-dom";
 import Navbar from "./navbar";
@@ -14,12 +15,14 @@ gsap.registerPlugin(ScrollTrigger)
 
 const Speakers = () => {
 
+  console.log(SpeakerContent)
+
   const [active,SetActive] = useState(false);
   const SpeakerRef = useRef(null)
 
-  const tl = gsap.timeline({
+  // const tl = gsap.timeline({
     
-  })
+  // })
 
   useEffect(() => {
     gsap.fromTo(".speakerCards a",{
