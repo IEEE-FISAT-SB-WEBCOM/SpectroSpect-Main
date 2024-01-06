@@ -89,7 +89,7 @@ const Footer = () => {
                 </div>
                 <div className="footer-Box" id="fb3" style={condition ? {...mobFooterContainerDiv,borderTopRightRadius:"0px",borderBottomLeftRadius:"10px"} : null}>
                   <div id="footer-slider-1">
-                    Our Sponsors
+                    Our<br/> Sponsors
                   </div>
                   <div id="footer-slider-2"></div>
                   <div id="footer-slider-3">
