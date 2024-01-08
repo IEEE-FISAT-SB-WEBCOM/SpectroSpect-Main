@@ -83,3 +83,4 @@ const SpeakerContent = [
 ]
 
 export {WorkshopContent,SpeakerContent}
+export default WorkshopContent

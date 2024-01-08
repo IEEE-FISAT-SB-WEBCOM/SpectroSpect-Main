@@ -1,6 +1,6 @@
 import {React,useState} from "react";
 import './Workshop2.css';
-import {WorkshopContent} from "./components/AllTheContent";
+import {WorkshopContent} from "./components/DB";
 import { Link } from "react-router-dom";
 
 const Workshop2 = () =>{

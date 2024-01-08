@@ -1,7 +1,7 @@
 import Footer from "./footer"
 import AK from "../assets/ak.jpg"
 import AG from "../assets/AG.jpeg"
-import { SpeakerContent } from "./AllTheContent"
+import { SpeakerContent } from "./DB"
 import { useEffect, useState,useRef } from "react"
 import { Link } from "react-router-dom";
 import Navbar from "./navbar";

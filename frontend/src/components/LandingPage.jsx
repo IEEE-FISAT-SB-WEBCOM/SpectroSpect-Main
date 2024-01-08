@@ -224,6 +224,28 @@ const LandingPage = () => {
         x:0,
         scrollTrigger:{trigger:"#Workshops",toggleActions:"restart none restart none"}
       })
+
+      //"HeadingMainArrow"
+
+      gsap.fromTo("#HeadingMain h1",{
+        opacity:0,
+        y:100,
+      },{
+        opacity:1,
+        duration:2,
+        y:0,
+        scrollTrigger:{trigger:"#HeadingMain",toggleActions:"restart none restart none"}
+      })
+
+      gsap.fromTo("#HeadingMainArrow",{
+        opacity:0,
+        scale:0.5,
+      },{opacity:1,
+        duration:1,
+        delay:1.5,
+        scale:1,
+        scrollTrigger:{trigger:"#HeadingMainArrow",toggleActions:"restart none restart none"}
+      })
   
     },[])
     
@@ -266,9 +288,9 @@ theme="dark"
   <img className="h-[600px] hidden md:flex mt-36" src={globee} />
   <div id="spt" className="w-full sm:static md:absolute pb-40 flex flex-col bg-opacity-100 md:bg-gradient-to-b from-transparent to-black translate-y-28 md:translate-y-52 items-center align-middle justify-center">
 
-    <div className="flex items-center">
+    <div className="flex items-center overflow-hidden" id="HeadingMain">
       <h1 className="text-[42px] md:text-[12rem]">SpectroSpect</h1>
-      <MdArrowOutward className="text-green-400 text-[42px] md:text-[12rem] ml-3" />
+      <MdArrowOutward className="text-green-400 text-[42px] md:text-[12rem] ml-3" id="HeadingMainArrow" />
     </div>
 
     <h3 className="text-[30px] md:text-[3.5rem]">February-<span>16</span>,<span>17</span>,<span>18</span></h3>
