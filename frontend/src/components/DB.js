@@ -29,7 +29,7 @@ const WorkshopContent = [
     },
     {
         ID:2,
-        Name:"Image Processing with AI ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ",
+        Name:"Image Processing with AI ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ",
         About:"Experience the fusion of science and technology in our Quantum Signal Processing workshop. Dive into the world of quantum computing and its game-changing role in signal processing.",
         Perks:"Immerse yourself in a practical exploration of image processing tools, gaining hands-on skills that are essential in the field. Acquire foundational knowledge by delving into key concepts and applications, laying the groundwork for a comprehensive understanding. Gain valuable industry insights as you explore real-world AI applications across diverse sectors, connecting theory to practical scenarios. This program aims to boost your skill set, specifically enhancing image manipulation skills to broaden their relevance in various professional contexts. Join us in this journey of skill development and application in the dynamic realm of image processing. Elevate your understanding and expertise—register now for an illuminating experience! ",
         Speaker:"Karthik K",

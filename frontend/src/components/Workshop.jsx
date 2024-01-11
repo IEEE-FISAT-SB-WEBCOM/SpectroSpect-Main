@@ -134,8 +134,8 @@ const Workshop = ({About,ID,Name,Perks,Speaker,SpeakerImg,SpeakerDesc,MImg,Speak
             </div>
           </div>
           {/* Content section */}
-          <div className="w-full h-72 bg-white rounded-md my-8 lg:my-20">
-            <img src={MImg} style={{height:"100%"}}></img>
+          <div className="w-full h-72 rounded-md my-8 lg:my-20" style={{backgroundImage:`url(${MImg})`,backgroundSize:"cover"}}>
+            {/* <img src={MImg} style={{height:"100%"}}></img> */}
           </div>
           <div className="lg:text-lg">
             {About}
