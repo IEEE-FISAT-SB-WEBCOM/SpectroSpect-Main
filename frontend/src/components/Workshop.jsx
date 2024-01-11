@@ -6,7 +6,7 @@ import screen from "../assets/p1.png"
 import scrn from "../assets/p2.png"
 import freen from "../assets/f2.png"
 import Footer from "./footer";
-const Workshop = ({About,ID,Name,Perks,Speaker,SpeakerImg,SpeakerDesc,MImg}) => {
+const Workshop = ({About,ID,Name,Perks,Speaker,SpeakerImg,SpeakerDesc,MImg,SpeakerDesig}) => {
 
   console.log(ID)
   const [isSticky, setIsSticky] = useState(false);
@@ -119,7 +119,7 @@ const Workshop = ({About,ID,Name,Perks,Speaker,SpeakerImg,SpeakerDesc,MImg}) => 
               </h6>
             </div>
             <div className="w-full md:w-1/4 pb-5 md:pb-0 flex items-center justify-start md:justify-end align-middle">
-              <a href="https://www.yepdesk.com/embed/open-register/6587c946c9e77c0001708f02/eev6mamlun">
+              <a href="https://www.yepdesk.com/embed/open-register/6591465546e0fb0001b7d5cb/fdj96uc2ai">
               <button
                 // href="#_\\"
                 className="relative inline-flex items-center justify-start inline-block px-10 py-3 overflow-hidden font-bold rounded-full group">
@@ -175,7 +175,7 @@ const Workshop = ({About,ID,Name,Perks,Speaker,SpeakerImg,SpeakerDesc,MImg}) => 
                       <dd className="font-medium">{Speaker}</dd>
                       <div>
                         <dd className="text-sm text-gray-500">
-                          {"Astronaut, Doctor"}
+                          {SpeakerDesig}
                         </dd>
                       </div>
                     </div>
