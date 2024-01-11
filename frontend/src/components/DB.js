@@ -12,6 +12,7 @@ import AIIMG from "../assets/AIIMGPROCESSING.png"
 import FILTER from "../assets/FILTERDESIGN.png"
 import DSP from "../assets/AnnapurnaDSP.png"
 import SPEECH from "../assets/SHILESHSPEECH.png"
+import S3 from "../assets/VineetaSpeaker.png"
 
 const WorkshopContent = [
     {
@@ -83,7 +84,7 @@ const SpeakerContent = [
         ID:3,
         Speaker:"Vinitha Jayan",
         Desig:"Freelance corporate trainer",
-        SImg:S1,
+        SImg:S3,
         DescL:"Dive into the dynamic realm of Vinitha Vijayan, a self-employed Freelancer Corporate Trainer specializing in Leadership, Customer Service, Professional Etiquette, Communication, and Team Building. Also, a seasoned Behavioral and Life Skills Facilitator, Campus to Corporate Certified Trainer, and Motivational Speaker. Vinitha, the driving force in professional development, transforms workshops into transformative experiences, shaping the leaders of tomorrow. Join us in unraveling the essence of Vinitha's impactful journey as a trailblazer in corporate training and motivation."
     },
 ]
