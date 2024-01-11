@@ -109,7 +109,7 @@ const Speakers = () => {
             {/* <div className="footerBeASponsor" style={{top:"-30vh",position:"sticky",border:"1px solid rgba(255, 255, 255, 0.2)",background: "rgba(0, 0, 0, 0.2)",zIndex:"2",backdropFilter:"blur(10px)"}}>
             
             </div> */}
-                <div aria-label="Breadcrumb" className=" md:flex  md:self-start  hidden" style={{ top: 0, position: 'sticky',zIndex:"2",marginTop:"18vh" }}>
+                <div aria-label="Breadcrumb" className=" md:flex  md:self-start  hidden" style={{ top:0, position: 'sticky',zIndex:"2",marginTop:"18vh",backdropFilter:"blur(10px)",padding:"5vh 0" }}>
                  <ol className="flex items-center gap-1 text-sm bg-inherit border-0 text-white font-bold ml-0 md:ml-24">
                    <li>
                    <a
