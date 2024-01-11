@@ -21,22 +21,22 @@ const WorkshopContent = [
         Perks:"Delve into the realm of Digital Signal Processing (DSP) with MATLAB at our Spectrospect workshop! This hands-on experience promises an exciting journey through the intricacies of digital signals. By participating, you'll not only master the art of signal processing but also gain proficiency in MATLAB—an invaluable skill in the tech world. The workshop offers expert guidance, networking opportunities, and a certification to validate your newfound expertise. Don't miss out on this chance to elevate your DSP skills and enhance your professional portfolio. Join us for a workshop that combines learning with practical application!",
         Speaker:"Annapurna S M",
         SpeakerImg:DSP,
-        SpeakerDesc:"Get ready for an immersive learning experience at Spectrospect! Our four dynamic workshop sessions, curated by industry experts, cover a spectrum of topics, from hands-on technical sessions to insightful discussions on emerging trends. Whether you're a seasoned professional or a budding enthusiast, these workshops on February 16-18 offer a unique opportunity to delve deep into the practical aspects of cutting-edge technologies.",
+        SpeakerDesc:" Signal processing engineer with a demonstrated history of working in the research industry. Skilled in MATLAB, LabVIEW, Python, R, 8051 Microcontroller, and Deep Learning. Post graduation in Master of Technology - MTech focused in COMMUNICATION SYSTEMS from National Institute of Technology Puducherry.",
         WImg:img1,
         MImg:Main1,
-        SpeakerDesig:"Project Manager at C-DAC & Team"
+        SpeakerDesig:"Project Manager at C-DAC"
     },
     {
         ID:2,
         Name:"Image Processing with AI ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ",
         About:"Experience the fusion of science and technology in our Quantum Signal Processing workshop. Dive into the world of quantum computing and its game-changing role in signal processing.",
         Perks:"Immerse yourself in a practical exploration of image processing tools, gaining hands-on skills that are essential in the field. Acquire foundational knowledge by delving into key concepts and applications, laying the groundwork for a comprehensive understanding. Gain valuable industry insights as you explore real-world AI applications across diverse sectors, connecting theory to practical scenarios. This program aims to boost your skill set, specifically enhancing image manipulation skills to broaden their relevance in various professional contexts. Join us in this journey of skill development and application in the dynamic realm of image processing. Elevate your understanding and expertise—register now for an illuminating experience! ",
-        Speaker:"Karthik A",
+        Speaker:"Karthik K",
         SpeakerImg:AIIMG,
-        SpeakerDesc:"Get ready for an immersive learning experience at Spectrospect! Our four dynamic workshop sessions, curated by industry experts, cover a spectrum of topics, from hands-on technical sessions to insightful discussions on emerging trends. Whether you're a seasoned professional or a budding enthusiast, these workshops on February 16-18 offer a unique opportunity to delve deep into the practical aspects of cutting-edge technologies.",
+        SpeakerDesc:"As an AI Engineer at Litmus7, Karthik K applies their robust problem-solving skills and extensive domain knowledge to intricately design and deploy end-to-end AI solutions across diverse industries, including automotive, agriculture, fashion, healthcare, and real estate. He concentrates on both computer vision and natural language processing, boasting notable expertise in the edge deployment of AI models on mobile and web platforms.",
         WImg:img2,
         MImg:Main2,
-        SpeakerDesig:"AI Engineer at Litmus"
+        SpeakerDesig:"AI Engineer at Litmus7"
     },
     {
         ID:3,
@@ -45,7 +45,7 @@ const WorkshopContent = [
         Perks:"Immerse yourself in the fascinating universe of Speech Recognition with our captivating workshop at Spectrospect! By participating, you gain access to a treasure trove of perks designed to enhance your knowledge and skills. Engage in hands-on learning to unravel the secrets of cutting-edge technology, exploring the intricacies of speech-to-text conversion. Whether you're a novice or a seasoned professional, this workshop provides a unique opportunity to grasp the basics and master advanced techniques in speech recognition. Empower yourself to harness the power of spoken language in the digital realm, gaining a competitive edge in the evolving landscape of technology. Elevate your expertise—register now for an enriching experience that promises to redefine your understanding of speech recognition! ",
         Speaker:"Dr Shailesh Sivan",
         SpeakerImg:SPEECH,
-        SpeakerDesc:"Get ready for an immersive learning experience at Spectrospect! Our four dynamic workshop sessions, curated by industry experts, cover a spectrum of topics, from hands-on technical sessions to insightful discussions on emerging trends. Whether you're a seasoned professional or a budding enthusiast, these workshops on February 16-18 offer a unique opportunity to delve deep into the practical aspects of cutting-edge technologies.",
+        SpeakerDesc:"Dr Shailesh Sivan is a dynamic technology evangelist, educator, and researcher with a wealth of experience spanning both academia and industry. He specialize in various domains of Artificial Intelligence and Data Science, including Deep Learning, Computer Vision, Machine Learning, NLP, Data Mining, and Soft Computing. He also exhibit keen interest and expertise in the programming and algorithmic domain. Shailesh is poised to excel in the field of technology research and development, contributing significantly to the transformative era of digital innovation.",
         WImg:img3,
         MImg:Main3,
         SpeakerDesig:"Assisstant Professor at CUSAT"
@@ -57,12 +57,11 @@ const WorkshopContent = [
         Perks:"Embark on a practical journey in filter design and implementation using MATLAB, where hands-on experience becomes the cornerstone of your learning. Delve into the intricacies of digital signal processing and filter theory, gaining a comprehensive understanding of fundamental principles. Engage in interactive sessions that offer practical insights, providing a dynamic platform for designing filters across various applications. Whether you're a novice or an experienced individual, our inclusive approach ensures a valuable and tailored learning experience for all participants. Join us in mastering the art of filter design, bridging theory and application seamlessly. Don't miss this chance to be at the forefront of technology—register now! ",
         Speaker:"Abhinav Rajeev",
         SpeakerImg:FILTER,
-        SpeakerDesc:"Get ready for an immersive learning experience at Spectrospect! Our four dynamic workshop sessions, curated by industry experts, cover a spectrum of topics, from hands-on technical sessions to insightful discussions on emerging trends. Whether you're a seasoned professional or a budding enthusiast, these workshops on February 16-18 offer a unique opportunity to delve deep into the practical aspects of cutting-edge technologies.",
+        SpeakerDesc:"Abhinav Rajeev is an enthusiastic engineer with a proven track record in the education management industry and renewable energy projects. With expertise in crisis management, communication, electrical wiring, and volunteering, He brings a diverse skill set to the table. Abhinav Rajeev is a passionate advocate in multiple domains, including Solar Energy, Electric Vehicles, and Do It Yourself projects. Additionally, he proudly serve as an Energy Management Center Kerala empanelled Home Energy Assessor.",
         WImg:img4,
         MImg:Main4,
         SpeakerDesig:"Junior Research Fellow at IIT Palakkad"
     },
-   
 ]
 
 const SpeakerContent = [
