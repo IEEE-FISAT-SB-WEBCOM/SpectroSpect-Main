@@ -51,11 +51,11 @@ const Speakers = () => {
   useEffect(()=>{
     gsap.fromTo("#SpeakerInfo div",{
       opacity:0,
-      y:-200
+      y:-150
     },{opacity:1,
       y:0,
-      duration:2,
-      stagger:1,
+      duration:1.5,
+      stagger:0.5,
       // scrollTrigger:{trigger:"#SpeakerInfo",toggleActions:"restart none restart none"}
     })
 
@@ -73,7 +73,7 @@ const Speakers = () => {
 
     console.log(active)
 
-    let speakerList = SpeakerContent.map(({ID,SImg,Desig,DescL,Speaker}) => {
+    let speakerList = SpeakerContent.map(({ID,SImg,Desig,Speaker}) => {
       return(
       <a href="#SpeakerInfo">
             <div className="speakerCard" style={{border: active === ID && '2px solid #33FFA9'}} key={ID} onClick={() => SetActive(ID)}>
@@ -81,10 +81,10 @@ const Speakers = () => {
                 <span>{Speaker}</span>
                 <p>{Desig}</p>
             </div>
-            </a>
+      </a>
     )})
 
-    let speakerListDescription = SpeakerContent.map(({ID,SImg,Desig,DescL,Speaker}) => {
+    let speakerListDescription = SpeakerContent.map(({SImg,Desig,DescL,Speaker}) => {
       return(
         <div id="SpeakerInfo" style={{flexWrap: window.innerHeight > window.innerWidth && "wrap"}}>
             <div className="speakerCard">
@@ -168,7 +168,7 @@ const Speakers = () => {
             <div className="speakerCards" ref={SpeakerRef}>
                 {speakerList}
             </div>
-            {active}
+            {active && speakerListDescription[active-1]}
 
         
         <Footer/>
