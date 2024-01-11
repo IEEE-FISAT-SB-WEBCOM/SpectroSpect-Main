@@ -9,6 +9,9 @@ import img7 from "../assets/starofs.jpeg";
 import img8 from "../assets/voiceofs.jpeg";
 import img9 from "../assets/weblive.png";
 import img10 from "../assets/early.png";
+import img11 from "../assets/EB1.jpeg"
+import img12 from "../assets/EB2.jpeg"
+import img13 from "../assets/EB3.jpeg"
 
 const post = [
   {
@@ -19,6 +22,30 @@ const post = [
     link:
       "",
     img: img1,
+  },
+  {
+    title: "SpectroSpect",
+    Event: "Early Bird Closed",
+    Caption:
+      "Get ready to unleash your inner explorer, capture the unseen, and reveal the hidden beauty",
+    link: "",
+    img: img13,
+  },
+  {
+    title: "SpectroSpect",
+    Event: "Early Bird Closing Soon",
+    Caption:
+      "Get ready to unleash your inner explorer, capture the unseen, and reveal the hidden beauty",
+    link: "",
+    img: img12,
+  },
+  {
+    title: "SpectroSpect",
+    Event: "Early Bird Filling Fast!",
+    Caption:
+      "Get ready to unleash your inner explorer, capture the unseen, and reveal the hidden beauty",
+    link: "",
+    img: img11,
   },
   {
     title: "SpectroSpect",
@@ -81,7 +108,7 @@ const post = [
       "Get ready to unleash your inner explorer, capture the unseen, and reveal the hidden beauty",
     link: "",
     img: img8,
-  },
+  }
 ];
 
 export default post;
