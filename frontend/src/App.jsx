@@ -1,4 +1,4 @@
-import { Route, Routes, useLocation } from 'react-router-dom';
+import { Route, Routes, useLocation, Navigate} from 'react-router-dom';
 import './App.css';
 import LandingPage from './components/LandingPage';
 import Workshop from './components/Workshop';
@@ -26,6 +26,10 @@ function App() {
         <Route path="/Speakers" element={<Speakers />} />
         <Route path="/Events" element={<Event />} />
         <Route path="/Registration" element={<Registration/>}/>
+        <Route
+        path="*"
+        element={<Navigate to="/" replace />}
+        />
       </Routes>
       </div>
     </>
