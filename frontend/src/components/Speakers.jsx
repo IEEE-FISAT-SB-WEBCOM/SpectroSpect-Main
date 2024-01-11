@@ -73,18 +73,32 @@ const Speakers = () => {
 
     console.log(active)
 
-    let speakerList = []
-    for(let i=1;i<5;i++){
-        speakerList.push(
-            <a href="#SpeakerInfo">
-            <div className="speakerCard" style={{border: active === i && '2px solid #33FFA9'}} key={i} onClick={() => SetActive(i)}>
-                <img src={feen}></img>
-                <span>SPEAKER {i}</span>
-                <p>Revealing really soon</p>
+    let speakerList = SpeakerContent.map(({ID,SImg,Desig,DescL,Speaker}) => {
+      return(
+      <a href="#SpeakerInfo">
+            <div className="speakerCard" style={{border: active === ID && '2px solid #33FFA9'}} key={ID} onClick={() => SetActive(ID)}>
+                <img src={SImg}></img>
+                <span>{Speaker}</span>
+                <p>{Desig}</p>
             </div>
             </a>
-        )
-    }
+    )})
+
+    let speakerListDescription = SpeakerContent.map(({ID,SImg,Desig,DescL,Speaker}) => {
+      return(
+        <div id="SpeakerInfo" style={{flexWrap: window.innerHeight > window.innerWidth && "wrap"}}>
+            <div className="speakerCard">
+                <img src={SImg}></img>
+                <span>{Speaker}</span>
+                <p>{Desig}</p>
+            </div>
+            <div className="speaker-Description" style={{height: window.innerHeight > window.innerWidth  && '70vh'}}>
+              {DescL}   
+            </div>
+        </div>
+      )
+    })
+    console.log(speakerList)
     //style={{top:"-30vh",position:"sticky",border:"none",background: 'radial-gradient(#187747 15%,rgba(0, 0, 0, 0))',zIndex:"2"}}
     return  <>
           <img src={scrn} id="scrn"></img>
@@ -154,15 +168,7 @@ const Speakers = () => {
             <div className="speakerCards" ref={SpeakerRef}>
                 {speakerList}
             </div>
-            {active && <div id="SpeakerInfo" style={{flexWrap: window.innerHeight > window.innerWidth && "wrap"}}>
-            <div className="speakerCard">
-                <img src={freen}></img>
-                <span>Speaker{active}</span>
-                <p></p>
-            </div>
-            <div className="speaker-Description" style={{height: window.innerHeight > window.innerWidth  && '70vh'}}>
-Get ready for an extraordinary intellectual experience at Spectrospect, presented by IEEE FISAT SB in collaboration with IEEE FISAT SPS SBC. Our lineup of speakers is set to redefine the boundaries of knowledge and innovation. Each speaker brings a wealth of expertise and insights. Join us on 16th,17th and 18th February 2024 for a day of inspiration, collaboration, and unparalleled learning. Register now to secure your spot at this remarkable event that promises to elevate your understanding of cutting-edge advancements.</div>
-            </div>}
+            {active}
 
         
         <Footer/>
