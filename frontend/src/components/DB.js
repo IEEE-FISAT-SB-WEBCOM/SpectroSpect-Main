@@ -23,18 +23,20 @@ const WorkshopContent = [
         SpeakerImg:DSP,
         SpeakerDesc:"Get ready for an immersive learning experience at Spectrospect! Our four dynamic workshop sessions, curated by industry experts, cover a spectrum of topics, from hands-on technical sessions to insightful discussions on emerging trends. Whether you're a seasoned professional or a budding enthusiast, these workshops on February 16-18 offer a unique opportunity to delve deep into the practical aspects of cutting-edge technologies.",
         WImg:img1,
-        MImg:Main1
+        MImg:Main1,
+        SpeakerDesig:"Project Manager at C-DAC & Team"
     },
     {
         ID:2,
         Name:"Image Processing with AI ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ",
         About:"Experience the fusion of science and technology in our Quantum Signal Processing workshop. Dive into the world of quantum computing and its game-changing role in signal processing.",
-        Perks:"Embark on a groundbreaking journey at our Quantum Signal Processing workshop during Spectrospect! Immerse yourself in the fusion of science and technology, exploring the transformative realm of quantum computing and its pivotal role in signal processing. By joining this workshop, you'll unlock a myriad of perks, including hands-on exposure to quantum technologies, insights into the future of signal processing, and the opportunity to interact with experts in the field. Seize the chance to be at the forefront of innovation, expanding your skill set and gaining a unique perspective on the convergence of quantum mechanics and signal processing. Elevate your understanding and expertise—register now for an illuminating experience! ",
+        Perks:"Immerse yourself in a practical exploration of image processing tools, gaining hands-on skills that are essential in the field. Acquire foundational knowledge by delving into key concepts and applications, laying the groundwork for a comprehensive understanding. Gain valuable industry insights as you explore real-world AI applications across diverse sectors, connecting theory to practical scenarios. This program aims to boost your skill set, specifically enhancing image manipulation skills to broaden their relevance in various professional contexts. Join us in this journey of skill development and application in the dynamic realm of image processing. Elevate your understanding and expertise—register now for an illuminating experience! ",
         Speaker:"Karthik A",
         SpeakerImg:AIIMG,
         SpeakerDesc:"Get ready for an immersive learning experience at Spectrospect! Our four dynamic workshop sessions, curated by industry experts, cover a spectrum of topics, from hands-on technical sessions to insightful discussions on emerging trends. Whether you're a seasoned professional or a budding enthusiast, these workshops on February 16-18 offer a unique opportunity to delve deep into the practical aspects of cutting-edge technologies.",
         WImg:img2,
-        MImg:Main2
+        MImg:Main2,
+        SpeakerDesig:"AI Engineer at Litmus"
     },
     {
         ID:3,
@@ -45,18 +47,20 @@ const WorkshopContent = [
         SpeakerImg:SPEECH,
         SpeakerDesc:"Get ready for an immersive learning experience at Spectrospect! Our four dynamic workshop sessions, curated by industry experts, cover a spectrum of topics, from hands-on technical sessions to insightful discussions on emerging trends. Whether you're a seasoned professional or a budding enthusiast, these workshops on February 16-18 offer a unique opportunity to delve deep into the practical aspects of cutting-edge technologies.",
         WImg:img3,
-        MImg:Main3
+        MImg:Main3,
+        SpeakerDesig:"Assisstant Professor at CUSAT"
     },
     {
         ID:4,
         Name:"Introduction to Realization of Filters using MATLAB",
         About:"Embark on a transformative journey into the realm of signal processing with our 'Introduction to Realization of Filters Using MATLAB' workshop. This engaging and hands-on session is designed to provide participants with a comprehensive understanding of filter design and implementation using the powerful MATLAB software.In this workshop, participants will delve into the fundamental principles of digital signal processing and filter theory. Through a series of interactive sessions, we will guide you through the practical aspects of designing and realizing filters for various applications. Whether you are a novice or an experienced practitioner, this workshop caters to all skill levels, offering a valuable learning experience for everyone.",
-        Perks:"Embark on an exhilarating journey at our immersive workshop, where Blockchain technology meets Signal Processing at Spectrospect! By joining, you'll unlock a host of perks designed to enrich your understanding and skills. Dive deep into the intersection of these dynamic fields, gaining insights into how Blockchain enhances signal processing applications. Enjoy hands-on learning, discovering the practical implications and potential of this powerful synergy. Network with industry experts, fostering collaborations in this cutting-edge domain. Elevate your expertise with a workshop that not only explores the convergence of Blockchain and Signal Processing but also equips you with the tools to navigate and innovate within these transformative landscapes. Don't miss this chance to be at the forefront of technology—register now! ",
+        Perks:"Embark on a practical journey in filter design and implementation using MATLAB, where hands-on experience becomes the cornerstone of your learning. Delve into the intricacies of digital signal processing and filter theory, gaining a comprehensive understanding of fundamental principles. Engage in interactive sessions that offer practical insights, providing a dynamic platform for designing filters across various applications. Whether you're a novice or an experienced individual, our inclusive approach ensures a valuable and tailored learning experience for all participants. Join us in mastering the art of filter design, bridging theory and application seamlessly. Don't miss this chance to be at the forefront of technology—register now! ",
         Speaker:"Abhinav Rajeev",
         SpeakerImg:FILTER,
         SpeakerDesc:"Get ready for an immersive learning experience at Spectrospect! Our four dynamic workshop sessions, curated by industry experts, cover a spectrum of topics, from hands-on technical sessions to insightful discussions on emerging trends. Whether you're a seasoned professional or a budding enthusiast, these workshops on February 16-18 offer a unique opportunity to delve deep into the practical aspects of cutting-edge technologies.",
         WImg:img4,
-        MImg:Main4
+        MImg:Main4,
+        SpeakerDesig:"Junior Research Fellow at IIT Palakkad"
     },
    
 ]

@@ -6,7 +6,7 @@ import screen from "../assets/p1.png"
 import scrn from "../assets/p2.png"
 import freen from "../assets/f2.png"
 import Footer from "./footer";
-const Workshop = ({About,ID,Name,Perks,Speaker,SpeakerDesc,MImg}) => {
+const Workshop = ({About,ID,Name,Perks,Speaker,SpeakerImg,SpeakerDesc,MImg}) => {
 
   console.log(ID)
   const [isSticky, setIsSticky] = useState(false);
@@ -165,17 +165,17 @@ const Workshop = ({About,ID,Name,Perks,Speaker,SpeakerDesc,MImg}) => {
               <div className="block rounded-lg p-4">
                 <img
                   alt="Speaker"
-                  src={freen}
+                  src={SpeakerImg}
                   className="h-56 w-full rounded-md object-cover"
                 />
 
                 <div className="mt-2">
                   <dl>
                     <div>
-                      <dd className="font-medium">{Speaker[0]}</dd>
+                      <dd className="font-medium">{Speaker}</dd>
                       <div>
                         <dd className="text-sm text-gray-500">
-                          {Speaker[1]}
+                          {"Astronaut, Doctor"}
                         </dd>
                       </div>
                     </div>
