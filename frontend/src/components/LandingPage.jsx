@@ -403,7 +403,7 @@ theme="dark"
                 <img
                   alt="Home"
                   src={SImg}
-                  className="h-60 w-full rounded-md object-cover"
+                  className="h-60 w-full rounded-md object-contain"
                 />
 
                 <div className="mt-2">
@@ -462,9 +462,9 @@ theme="dark"
       
 <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
   <img
-    alt="Office"
+    alt=""
     src={item.img}
-    className="absolute inset-0 h-full w-full object-cover"
+    className="absolute inset-0 h-full p-0 pt-5 w-full object-cover"
   />
 
   <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">

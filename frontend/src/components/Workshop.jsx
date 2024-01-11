@@ -166,7 +166,7 @@ const Workshop = ({About,ID,Name,Perks,Speaker,SpeakerImg,SpeakerDesc,MImg,Speak
                 <img
                   alt="Speaker"
                   src={SpeakerImg}
-                  className="h-56 w-full rounded-md object-cover"
+                  className="h-56 w-full rounded-md object-contain"
                 />
 
                 <div className="mt-2">
