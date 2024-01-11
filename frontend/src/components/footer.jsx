@@ -62,8 +62,8 @@ const Footer = () => {
                <h1 className="font-bold text-6xl mb-10">
                  Be a Sponsor?
                 </h1>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=fisatieeesb@gmail.com&body">
                 <button
-                href="#_"
                 className="relative inline-flex items-center justify-start inline-block px-10 py-3 overflow-hidden font-bold rounded-full group" id="BeASponsorB"
               >
                 <span className="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-[3%]"></span>
@@ -73,6 +73,7 @@ const Footer = () => {
                 </span>
                 <span className="absolute inset-0 border-2 border-white rounded-full"></span>
               </button>
+              </a>
             </div>
             <div className="footerBoxContainer" style={condition ? mobFooterContainer : null}>
                 <div className="footer-Box" id="fb1" style={condition ? {...mobFooterContainerDiv,borderBottomLeftRadius:"0px",borderTopRightRadius:"10px"} : null}>
