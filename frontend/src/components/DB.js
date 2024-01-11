@@ -6,6 +6,8 @@ import Main1 from "../assets/Mathlabwk.png"
 import Main2 from "../assets/Quantumwk.png"
 import Main3 from "../assets/SpeechRecogwk.png"
 import Main4 from "../assets/Blockwk.png"
+import S1 from "../assets/Speaker1.png"
+import S2 from "../assets/ShambuMaths.png"
 
 const WorkshopContent = [
     {
@@ -54,32 +56,25 @@ const WorkshopContent = [
 const SpeakerContent = [
     {
         ID:1,
-        Speaker:"",
-        Desig:"",
-        DescS:"",
-        DescL:""
+        Speaker:"Sherin Kalathil",
+        Desig:"Integrated Development Specialist - EY",
+        SImg:S1,
+        DescL:"In the realm of education, Sherin Kalathil emerges as a skilled trainer with 9 years of rich experience, unveiling his profound passion for the craft in a moment of spontaneous revelation.Specializing in both soft skills and technical training, he adeptly navigates diverse student categories, excelling in swiftly grasping technological tools. His flexibility and versatility shine through, enabling poise and competence in deadline-driven environments. Beyond training, Sherin extends his expertise as an Interview Coach, L&D Specialist, Soft Skills Trainer, Personality Development Faculty, Career Counsellor, and Virtual Producer at EY. With a rich blend of compassion and proficiency, Sherin continues to excel in the dynamic world of education and professional development."
     },
     {
         ID:2,
-        Speaker:"",
-        Desig:"",
-        DescS:"",
-        DescL:""
+        Speaker:"RJ Shambu",
+        Desig:"RJ",
+        SImg:S2,
+        DescL:"Step into the vibrant world of RJ Shambu, where charisma meets professionalism. As the dynamic Radio Jockey at Red FM 93.5 and the captivating VJ at Surya Comedy, Shambu seamlessly blends entertainment and expertise. Join us on a journey behind the scenes, exploring his illustrious career and the significant role he plays in shaping the airwaves of Kerala. Get ready for a glimpse into the personality that personifies the heart and soul of broadcasting in the region."
     },
     {
         ID:3,
-        Speaker:"",
-        Desig:"",
-        DescS:"",
-        DescL:""
+        Speaker:"Vinitha Jayan",
+        Desig:"Freelance corporate trainer",
+        SImg:S1,
+        DescL:"Dive into the dynamic realm of Vinitha Vijayan, a self-employed Freelancer Corporate Trainer specializing in Leadership, Customer Service, Professional Etiquette, Communication, and Team Building. Also, a seasoned Behavioral and Life Skills Facilitator, Campus to Corporate Certified Trainer, and Motivational Speaker. Vinitha, the driving force in professional development, transforms workshops into transformative experiences, shaping the leaders of tomorrow. Join us in unraveling the essence of Vinitha's impactful journey as a trailblazer in corporate training and motivation."
     },
-    {
-        ID:4,
-        Speaker:"",
-        Desig:"",
-        DescS:"",
-        DescL:""
-    }
 ]
 
 export {WorkshopContent,SpeakerContent}
