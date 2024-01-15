@@ -9,9 +9,9 @@ const Workshop2 = () =>{
     const [open,setOpen] = useState(false)
 
     return(
-        <div className="WorkshopCorePg">
+        <div className="WorkshopCorePg" style={{marginLeft:window.innerHeight>window.innerWidth?"10vw":"12vw"}}>
             <div className="headingRegistration">
-                <MdArrowOutward style={{marginLeft:window.innerHeight>window.innerWidth?"10vw":"5vw",color:"#33FFA9",fontSize:"45px",marginRight:"0.5vw"}}/>
+                <MdArrowOutward style={{color:"#33FFA9",fontSize:"45px",marginRight:"0.5vw"}}/>
                 <h1 style={{fontWeight:"700"}}>Workshops</h1>
             </div>
             <br/>
