@@ -4,6 +4,7 @@ import './navbar.css';
 import spectrospectLogo from '../assets/ezgif.gif';
 import SP1 from "../assets/BH2.png"
 import SP2 from "../assets/VVSP.jpeg" 
+import { MdArrowOutward } from "react-icons/md";
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 gsap.registerPlugin(ScrollTrigger)
@@ -105,10 +106,10 @@ const Navbar = ({setSticky = false}) => {
                     <a href="https://nuevoue.com/" className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><img src={SP1}></img></a>
                     <a href="https://visavalley.com/" className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><img src={SP2}></img></a>
                   </div>
-                  {/* <div className="footer-slider-common">Workshops <MdArrowOutward className="text-green-400 text-5xl mr-3" /></div>
+                  <div className="footer-slider-common">Workshops <MdArrowOutward className="text-green-400 text-5xl mr-3" /></div>
                   <div className="footer-slider-common">Talks <MdArrowOutward className="text-green-400 text-5xl mr-3" /></div>
                   <div className="footer-slider-common">Pro Show <MdArrowOutward className="text-green-400 text-5xl mr-3" /></div>
-                  <div className="footer-slider-common">More Fun <MdArrowOutward className="text-green-400 text-5xl mr-3" /></div> */}
+                  <div className="footer-slider-common">More Fun <MdArrowOutward className="text-green-400 text-5xl mr-3" /></div>
                 </div>
       <img className="logo" src={spectrospectLogo} alt="SPECTROSPECT Logo" />
     </nav>

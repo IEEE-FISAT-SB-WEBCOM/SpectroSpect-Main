@@ -80,7 +80,7 @@ h1{
   /* border: 1px solid; */
   opacity: 0;
   min-width: 32%;
-  animation: opacityIG 20s 1s infinite linear forwards;
+  animation: opacityIG 17s 1s infinite linear forwards;
 }
 
 #footer-slider-2,#footer-slider-3{
@@ -91,14 +91,14 @@ h1{
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: slideAnimation 20s 1s infinite linear forwards;
+  animation: slideAnimation 17s 1s infinite linear forwards;
 }
 
 .footer-slider-common{
   font-weight: 800;
   min-width: 70%;
   font-size: 30px;
-  animation: slideAnimation 20s 1s infinite linear forwards;
+  animation: slideAnimation 17s 1s infinite linear forwards;
 }
 
 #fb2 a{
