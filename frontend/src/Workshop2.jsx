@@ -1,9 +1,36 @@
 import {React,useState} from "react";
 import './Workshop2.css';
 import {WorkshopContent} from "./components/DB";
+import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
 
 const Workshop2 = () =>{
+
+    const [open,setOpen] = useState(false)
+
+    return(
+        <div className="WorkshopCorePg">
+            <div className="headingRegistration">
+                <MdArrowOutward style={{marginLeft:window.innerHeight>window.innerWidth?"10vw":"5vw",color:"#33FFA9",fontSize:"45px",marginRight:"0.5vw"}}/>
+                <h1 style={{fontWeight:"700"}}>Workshops</h1>
+            </div>
+            <br/>
+            {
+                WorkshopContent.map(({Name,About,WImg,ID}) => {
+                    return(
+                        <div className="WorkshopCoreContainer">
+                            <div className="WCCVisible">
+                                <img src={WImg} alt="Img" className="workshop-img" />
+                                <h2>{Name}</h2>
+                                <button onClick={() => setOpen(ID)}>+</button>
+                            </div>
+                            {open === ID && <div className="WCCInVisible">{About.slice(0,40)+"..."}</div>}
+                        </div>
+                    )
+                })
+            }
+        </div>
+    )
     
     // const[selected,setSelected] = useState(null);
     

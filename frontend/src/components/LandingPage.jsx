@@ -363,9 +363,11 @@ theme="dark"
             <br/>
             <br/>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.3724180250515!2d76.40665101478143!3d10.231517592692693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b08068aa17bd247%3A0xf048b9ebcbd2af28!2sFederal%20Institute%20of%20Science%20And%20Technology%20(FISAT)%C2%AE!5e0!3m2!1sen!2sin!4v1678482024451!5m2!1sen!2sin" style={{width:"76vw",marginLeft:"12vw",height:"40vh"}}></iframe>
+            <br/>
+            <br/>
+            <br/>
 
-
-  <div className="flex flex-col lg:flex-row bg-black items-center justify-center" id="Workshops">
+  {/* <div className="flex flex-col lg:flex-row bg-black items-center justify-center" id="Workshops">
         <div className="md:w-3/4 flex flex-col  md:mt-32 lg:mr-8 px-3 py-3">
         <div className="flex text-3xl font-bold align-middle self-start items-center mb-10" id="WorkshopIntelandingPg">
             <MdArrowOutward className="text-green-400 text-5xl mr-3" />
@@ -373,7 +375,8 @@ theme="dark"
           </div>
              <Workshop2/>
             </div>
-            </div>
+            </div> */}
+      <Workshop2/>
 
 
 {/* Speaker Section */}
