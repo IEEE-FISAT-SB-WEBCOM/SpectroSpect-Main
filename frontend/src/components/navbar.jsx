@@ -83,9 +83,12 @@ const Navbar = ({setSticky = false}) => {
           </>
         )}
       </div>
-      <div className={`nav-links ${isNavOpen ? 'open' : ''}`}>
+      <div className={`nav-links ${isNavOpen ? 'open' : ''}`} style={{marginRight:"50px"}}>
         <Link to="/" onClick={handleNavItemClick} style={{fontWeight:"700"}}>
           Home
+        </Link>
+        <Link to="/Workshops" onClick={handleNavItemClick} style={{fontWeight:"700"}}>
+          Workshops
         </Link>
         <Link to="/Speakers" onClick={handleNavItemClick} style={{fontWeight:"700"}}>
           Speakers

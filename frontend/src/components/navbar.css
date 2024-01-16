@@ -134,6 +134,7 @@
     text-decoration: none;
     color: white;
     padding: 5px;
+
   }
   .logo {
     width: 29%;
@@ -153,6 +154,7 @@
     font-size: 40px;
     text-align: left;
     background-color: black;
+    margin-right: 200px;
   }
 
   .nav-links.open {
