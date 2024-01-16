@@ -74,7 +74,7 @@ const Workshop2 = () =>{
                             
                             <div className={selected === items.ID? 'content show' : 'content'}>
                                 <div>{items.About.slice(0,40)+"..."}</div>
-                                <Link to={`Workshops/${items.ID}`}>
+                                <Link to={`/Workshops/${items.ID}`}>
                                 <button className="know-more">
                                     Know more
                                 </button>
