@@ -22,6 +22,7 @@ function App() {
       <div classNameName='app-container'>
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        {/* <Route path="/Workshops" element={<LandingPage />} /> */}
         {WorkshopContent.map(item => <Route key={item.ID} path={`Workshops/${item.ID}`} element={<Workshop {...item}/>}/>)}
         <Route path="/Speakers" element={<Speakers />} />
         <Route path="/Events" element={<Event />} />

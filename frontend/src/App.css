@@ -344,3 +344,10 @@ h1{
   align-items: center;
   /* justify-content: space-around; */
 }
+
+.WorkshopCorePg{
+  border: 1px solid white;
+  height: 90vh;
+  width:76vw;
+}
+
