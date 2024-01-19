@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import './navbar.css';
 import spectrospectLogo from '../assets/ezgif.gif';
-import SP1 from "../assets/BH2.png"
-import SP2 from "../assets/VVSP.jpeg" 
+import SP1 from "../assets/Frame 811755.png"
+import SP2 from "../assets/Frame 811754.png" 
 import { MdArrowOutward } from "react-icons/md";
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'

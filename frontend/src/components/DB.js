@@ -6,13 +6,13 @@ import Main1 from "../assets/Mathlabwk.png"
 import Main2 from "../assets/Quantumwk.png"
 import Main3 from "../assets/SpeechRecogwk.png"
 import Main4 from "../assets/Blockwk.png"
-import S1 from "../assets/Speaker1.png"
-import S2 from "../assets/ShambuMaths.png"
+import S1 from "../assets/Sherin.png"
+import S2 from "../assets/Sambhu.png"
 import AIIMG from "../assets/AIIMGPROCESSING.png"
 import FILTER from "../assets/AbhinavRNew.png"
 import DSP from "../assets/AnnapurnaDSP.png"
 import SPEECH from "../assets/SHILESHSPEECH.png"
-import S3 from "../assets/VineetaSpeaker.png"
+import S3 from "../assets/Vinitha.png"
 
 const WorkshopContent = [
     {
