@@ -6,6 +6,8 @@ import { Tilt } from "react-tilt";
 import freen from "../assets/f3.png"
 import footerLogo from "../assets/Frame.png"
 import screen from "../assets/p1.png"
+import SP1 from "../assets/Frame 811755.png"
+
 import scrn from "../assets/p2.png"
 import { FaArrowDownLong } from "react-icons/fa6";
 import Workshop2 from "../Workshop2";
@@ -336,7 +338,7 @@ theme="dark"
                 </div>
 
               <div className="grid items-start md:gap-0 sm:gap-5 gap-y-28 mt-10 md:mt-0 md:pl-10 justify-center align-middle grid-cols-1 md:grid-cols-2 grid-rows-3 w-full md:px-0 pl-20  md:w-2/6 min-h-full text-black" id="IEEE_LOGOS">
-              <div className="w-2/3 border border-gray-700 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
+              <div className="w-2/3 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
                 <img src={SPS}></img>
               </div>
               <div className="w-2/3  flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
