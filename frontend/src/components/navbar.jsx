@@ -101,12 +101,12 @@ const Navbar = ({setSticky = false}) => {
         </Link>
       </div>
       <div className="footer-Box" id="fb3" style={{border:"none",opacity:window.innerHeight>window.innerWidth?0:1}}>
-                  <div id="footer-slider-1">
+                  <div id="footer-slider-1" style={{marginRight:"15px"}}>
                     Our Sponsors
                   </div>
                   <div id="footer-slider-2"></div>
                   <div id="footer-slider-3">
-                    <a href="https://nuevoue.com/"  className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><img src={SP1}></img></a>
+                    <a href="https://nuevoue.com/" className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><img src={SP1}></img></a>
                     <a href="https://visavalley.com/" className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><img src={SP2}></img></a>
                   </div>
                   <div className="footer-slider-common">Workshops <MdArrowOutward className="text-green-400 text-5xl mr-3" /></div>

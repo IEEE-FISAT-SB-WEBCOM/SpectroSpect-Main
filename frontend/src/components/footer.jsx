@@ -5,8 +5,8 @@ import { FiMail } from "react-icons/fi";
 import { MdArrowOutward } from "react-icons/md";
 import { useEffect } from "react";
 import spectroLogo from "../assets/ezgif.gif"
-import SP1 from "../assets/BH2.png"
-import SP2 from "../assets/VVSP.jpeg" 
+import SP1 from "../assets/Frame 811755.png"
+import SP2 from "../assets/Frame 811754.png"
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 gsap.registerPlugin(ScrollTrigger)
