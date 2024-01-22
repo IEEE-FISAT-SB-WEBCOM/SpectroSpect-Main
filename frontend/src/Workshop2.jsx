@@ -56,6 +56,15 @@ const Workshop2 = () =>{
             stagger:0.2,
             scrollTrigger:{trigger:".items",toggleActions:"restart none restart none"}
           })
+
+          gsap.fromTo("svg",{
+            opacity:0
+          },{
+            opacity:1,
+            stagger:0.2,
+            duration:1,
+            scrollTrigger:{trigger:".items",toggleActions:"restart none restart none"}
+          })
     },[])
     
     return(
