@@ -111,7 +111,7 @@ const Footer = () => {
                 &copy; Copyright <strong><span>IEEE FISAT SB</span></strong>. All Rights Reserved
               </div>
               <div class="credits" id="creditt">
-                Designed with Love 💞 <a href="https://www.ieee.fisat.ac.in/SpectroSpectwebteam" id="web">SpectroSpect WebTeam</a>
+                Designed with Love 💞 <a href="https://www.ieee.fisat.ac.in/SpectroSpectwebteam" id="web" style={{textDecoration:"underline"}}>SpectroSpect WebTeam</a>
               </div>
             </div>
         </div>
