@@ -376,6 +376,11 @@ theme="dark"
             Workshops
           </div>
              <Workshop2/>
+             <Link to="/Workshops">
+          <div className="mt-10 hover:bg-white hover:text-black font-bold transition duration-700 hover:cursor-pointer flex items-center w-full justify-center border border-gray-600 p-2 rounded-3xl" id="SpeakerIntelandingPgButton">View all
+          <MdArrowOutward className="text-green-400 text-2xl ml-3 mr-3" />
+          </div>
+          </Link>
             </div>
             </div>
       {/* <Workshop2/> */}
