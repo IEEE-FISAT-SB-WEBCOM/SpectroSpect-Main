@@ -506,7 +506,7 @@ theme="dark"
 </div>
 <RegistrationCore/>
 
-<div className="w-full flex flex-col items-center align-middle mt-16">
+{/* <div className="w-full flex flex-col items-center align-middle mt-16">
 <div className="h-1/2">
 <div>
 <svg width="500" height="562" viewBox="0 0 648 562" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -558,7 +558,7 @@ theme="dark"
 
   </div>
 
-</div>
+</div> */}
 <Footer/>
     </>
   );

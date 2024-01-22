@@ -1,8 +1,11 @@
-import {React,useState} from "react";
+import {React,useEffect,useState} from "react";
 import './Workshop2.css';
 import {WorkshopContent} from "./components/DB";
 import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/all'
+gsap.registerPlugin(ScrollTrigger)
 
 const Workshop2 = () =>{
 
@@ -41,6 +44,19 @@ const Workshop2 = () =>{
 
         setSelected(i);
     }
+
+    useEffect(() => {
+        //
+        gsap.fromTo(".items",{
+            opacity:0,
+            x:500
+          },{opacity:1,
+            x:0,
+            duration:1.5,
+            stagger:0.2,
+            scrollTrigger:{trigger:".items",toggleActions:"restart none restart none"}
+          })
+    },[])
     
     return(
         <>
