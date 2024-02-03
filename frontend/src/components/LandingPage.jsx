@@ -240,6 +240,18 @@ const LandingPage = () => {
         scrollTrigger:{trigger:"#HeadingMain",toggleActions:"restart none restart none"}
       })
 
+      gsap.fromTo("#Feb",{
+        opacity:0,
+        y:100,
+      },{
+        opacity:1,
+        duration:2,
+        // delay:0.3,
+        // stagger:0.3,
+        y:0,
+        scrollTrigger:{trigger:"#Feb",toggleActions:"restart none restart none"}
+      })
+
       gsap.fromTo("#HeadingMainArrow",{
         opacity:0,
         scale:0.5,
@@ -296,7 +308,7 @@ theme="dark"
       <MdArrowOutward className="text-green-400 text-[42px] md:text-[12rem] ml-3" id="HeadingMainArrow" />
     </div>
 
-    <h3 className="text-[30px] md:text-[3.5rem]">February-<span>16</span>,<span>17</span>,<span>18</span></h3>
+    <h3 className="text-[30px] md:text-[3.5rem]" id="Feb">February-<span>16</span>,<span>17</span>,<span>18</span></h3>
   </div>
 </div>
 
