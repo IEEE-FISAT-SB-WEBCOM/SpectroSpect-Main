@@ -60,8 +60,8 @@ const RegistrationCore = () => {
                         Exciting Games<br/>
                         Goodies
                     </p>
-                    <h1>Rs.999</h1>
-                    <button><a href="https://forms.gle/SPYhE63BkadXttY36">Register</a></button>
+                    <h1>Rs.799</h1>
+                    <button><a href="https://bit.ly/SpectroSpect">Register</a></button>
                 </div>
                 <div className="regsitrationCard" style={{width:window.innerHeight>window.innerWidth?"80vw":"30vw"}}>
                     <h1>IEEE MEMBERS</h1>
@@ -72,8 +72,8 @@ const RegistrationCore = () => {
                         Exciting Games<br/>
                         Goodies
                     </p>
-                    <h1>Rs.1199</h1>
-                    <button><a href="https://forms.gle/SPYhE63BkadXttY36">Register</a></button>
+                    <h1>Rs.899</h1>
+                    <button><a href="https://bit.ly/SpectroSpect">Register</a></button>
                     
                 </div>
                 <div className="regsitrationCard" style={{width:window.innerHeight>window.innerWidth?"80vw":"30vw"}}>
@@ -85,8 +85,8 @@ const RegistrationCore = () => {
                         Exciting Games<br/>
                         Goodies
                     </p>
-                    <h1>Rs.1399</h1>
-                    <button><a href="https://forms.gle/SPYhE63BkadXttY36">Register</a></button>
+                    <h1>Rs.999</h1>
+                    <button><a href="https://bit.ly/SpectroSpect">Register</a></button>
                 </div>
             </div>
         </div>

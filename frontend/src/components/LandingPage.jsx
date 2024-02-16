@@ -308,7 +308,7 @@ theme="dark"
       <MdArrowOutward className="text-green-400 text-[42px] md:text-[12rem] ml-3" id="HeadingMainArrow" />
     </div>
 
-    <h3 className="text-[30px] md:text-[3.5rem]" id="Feb">February-<span>16</span>,<span>17</span>,<span>18</span></h3>
+    <h3 className="text-[30px] md:text-[3.5rem]" id="Feb">February-<span>23</span>,<span>24</span></h3>
   </div>
 </div>
 
