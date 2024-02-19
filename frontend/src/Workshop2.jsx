@@ -1,9 +1,39 @@
-import {React,useState} from "react";
+import {React,useEffect,useState} from "react";
 import './Workshop2.css';
 import {WorkshopContent} from "./components/DB";
+import { MdArrowOutward } from "react-icons/md";
 import { Link } from "react-router-dom";
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/all'
+gsap.registerPlugin(ScrollTrigger)
 
 const Workshop2 = () =>{
+
+    // const [open,setOpen] = useState(false)
+
+    // return(
+    //     <div className="WorkshopCorePg" style={{marginLeft:window.innerHeight>window.innerWidth?"10vw":"12vw"}}>
+    //         <div className="headingRegistration">
+    //             <MdArrowOutward style={{color:"#33FFA9",fontSize:"45px",marginRight:"0.5vw"}}/>
+    //             <h1 style={{fontWeight:"700"}}>Workshops</h1>
+    //         </div>
+    //         <br/>
+    //         {
+    //             WorkshopContent.map(({Name,About,WImg,ID}) => {
+    //                 return(
+    //                     <div className="WorkshopCoreContainer">
+    //                         <div className="WCCVisible">
+    //                             <img src={WImg} alt="Img" className="workshop-img" />
+    //                             <h2>{Name}</h2>
+    //                             <button onClick={() => setOpen(ID)}>+</button>
+    //                         </div>
+    //                         {open === ID && <div className="WCCInVisible">{About.slice(0,40)+"..."}</div>}
+    //                     </div>
+    //                 )
+    //             })
+    //         }
+    //     </div>
+    // )
     
     const[selected,setSelected] = useState(null);
     
@@ -14,6 +44,28 @@ const Workshop2 = () =>{
 
         setSelected(i);
     }
+
+    useEffect(() => {
+        //
+        gsap.fromTo(".items",{
+            opacity:0,
+            x:500
+          },{opacity:1,
+            x:0,
+            duration:1.5,
+            stagger:0.2,
+            scrollTrigger:{trigger:".items",toggleActions:"restart none restart none"}
+          })
+
+          gsap.fromTo("svg",{
+            opacity:0
+          },{
+            opacity:1,
+            stagger:0.2,
+            duration:1,
+            scrollTrigger:{trigger:".items",toggleActions:"restart none restart none"}
+          })
+    },[])
     
     return(
         <>
@@ -47,7 +99,7 @@ const Workshop2 = () =>{
                             
                             <div className={selected === items.ID? 'content show' : 'content'}>
                                 <div>{items.About.slice(0,40)+"..."}</div>
-                                <Link to={`Workshops/${items.ID}`}>
+                                <Link to={`/Workshops/${items.ID}`}>
                                 <button className="know-more">
                                     Know more
                                 </button>

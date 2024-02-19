@@ -119,7 +119,7 @@ const Workshop = ({About,ID,Name,Perks,Speaker,SpeakerImg,SpeakerDesc,MImg,Speak
               </h6>
             </div>
             <div className="w-full md:w-1/4 pb-5 md:pb-0 flex items-center justify-start md:justify-end align-middle">
-              <a href="https://www.yepdesk.com/embed/open-register/6591465546e0fb0001b7d5cb/fdj96uc2ai">
+              <a href="https://bit.ly/SpectroSpect">
               <button
                 // href="#_\\"
                 className="relative inline-flex items-center justify-start inline-block px-10 py-3 overflow-hidden font-bold rounded-full group">

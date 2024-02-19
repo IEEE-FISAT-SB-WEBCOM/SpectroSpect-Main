@@ -6,6 +6,8 @@ import { Tilt } from "react-tilt";
 import freen from "../assets/f3.png"
 import footerLogo from "../assets/Frame.png"
 import screen from "../assets/p1.png"
+import SP1 from "../assets/Frame 811755.png"
+
 import scrn from "../assets/p2.png"
 import { FaArrowDownLong } from "react-icons/fa6";
 import Workshop2 from "../Workshop2";
@@ -238,6 +240,18 @@ const LandingPage = () => {
         scrollTrigger:{trigger:"#HeadingMain",toggleActions:"restart none restart none"}
       })
 
+      gsap.fromTo("#Feb",{
+        opacity:0,
+        y:100,
+      },{
+        opacity:1,
+        duration:2,
+        // delay:0.3,
+        // stagger:0.3,
+        y:0,
+        scrollTrigger:{trigger:"#Feb",toggleActions:"restart none restart none"}
+      })
+
       gsap.fromTo("#HeadingMainArrow",{
         opacity:0,
         scale:0.5,
@@ -294,7 +308,7 @@ theme="dark"
       <MdArrowOutward className="text-green-400 text-[42px] md:text-[12rem] ml-3" id="HeadingMainArrow" />
     </div>
 
-    <h3 className="text-[30px] md:text-[3.5rem]">February-<span>16</span>,<span>17</span>,<span>18</span></h3>
+    <h3 className="text-[30px] md:text-[3.5rem]" id="Feb">February-<span>23</span>,<span>24</span></h3>
   </div>
 </div>
 
@@ -336,7 +350,7 @@ theme="dark"
                 </div>
 
               <div className="grid items-start md:gap-0 sm:gap-5 gap-y-28 mt-10 md:mt-0 md:pl-10 justify-center align-middle grid-cols-1 md:grid-cols-2 grid-rows-3 w-full md:px-0 pl-20  md:w-2/6 min-h-full text-black" id="IEEE_LOGOS">
-              <div className="w-2/3 border border-gray-700 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
+              <div className="w-2/3 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
                 <img src={SPS}></img>
               </div>
               <div className="w-2/3  flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
@@ -359,6 +373,13 @@ theme="dark"
             </div>
             </div>
             </div>
+            <br/>
+            <br/>
+            <br/>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.3724180250515!2d76.40665101478143!3d10.231517592692693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b08068aa17bd247%3A0xf048b9ebcbd2af28!2sFederal%20Institute%20of%20Science%20And%20Technology%20(FISAT)%C2%AE!5e0!3m2!1sen!2sin!4v1678482024451!5m2!1sen!2sin" style={{width:"76vw",marginLeft:"12vw",height:"40vh"}}></iframe>
+            <br/>
+            <br/>
+            <br/>
 
   <div className="flex flex-col lg:flex-row bg-black items-center justify-center" id="Workshops">
         <div className="md:w-3/4 flex flex-col  md:mt-32 lg:mr-8 px-3 py-3">
@@ -367,10 +388,14 @@ theme="dark"
             Workshops
           </div>
              <Workshop2/>
+             <Link to="/Workshops">
+          <div className="mt-10 hover:bg-white hover:text-black font-bold transition duration-700 hover:cursor-pointer flex items-center w-full justify-center border border-gray-600 p-2 rounded-3xl" id="SpeakerIntelandingPgButton">View all
+          <MdArrowOutward className="text-green-400 text-2xl ml-3 mr-3" />
+          </div>
+          </Link>
             </div>
             </div>
-
-
+      {/* <Workshop2/> */}
 
 
 {/* Speaker Section */}
@@ -498,7 +523,7 @@ theme="dark"
 </div>
 <RegistrationCore/>
 
-<div className="w-full flex flex-col items-center align-middle mt-16">
+{/* <div className="w-full flex flex-col items-center align-middle mt-16">
 <div className="h-1/2">
 <div>
 <svg width="500" height="562" viewBox="0 0 648 562" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -550,7 +575,7 @@ theme="dark"
 
   </div>
 
-</div>
+</div> */}
 <Footer/>
     </>
   );

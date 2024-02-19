@@ -7,6 +7,7 @@ import Speakers from './components/Speakers';
 import WorkshopContent from './components/DB';
 import Registration from './components/Registration';
 import { useEffect } from 'react';
+import WorkshopMain from './components/WorkshopMain'
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       <div classNameName='app-container'>
       <Routes>
         <Route path="/" element={<LandingPage />} />
+        <Route path="/Workshops" element={<WorkshopMain />} />
         {WorkshopContent.map(item => <Route key={item.ID} path={`Workshops/${item.ID}`} element={<Workshop {...item}/>}/>)}
         <Route path="/Speakers" element={<Speakers />} />
         <Route path="/Events" element={<Event />} />

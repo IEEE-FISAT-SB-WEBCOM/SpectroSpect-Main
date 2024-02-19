@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
 import './navbar.css';
 import spectrospectLogo from '../assets/ezgif.gif';
-import SP1 from "../assets/BH2.png"
-import SP2 from "../assets/VVSP.jpeg" 
+import SP1 from "../assets/Frame 811755.png"
+import SP2 from "../assets/Frame 811754.png" 
+import { MdArrowOutward } from "react-icons/md";
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 gsap.registerPlugin(ScrollTrigger)
@@ -82,9 +83,12 @@ const Navbar = ({setSticky = false}) => {
           </>
         )}
       </div>
-      <div className={`nav-links ${isNavOpen ? 'open' : ''}`}>
+      <div className={`nav-links ${isNavOpen ? 'open' : ''}`} style={{marginRight:"50px"}}>
         <Link to="/" onClick={handleNavItemClick} style={{fontWeight:"700"}}>
           Home
+        </Link>
+        <Link to="/Workshops" onClick={handleNavItemClick} style={{fontWeight:"700"}}>
+          Workshops
         </Link>
         <Link to="/Speakers" onClick={handleNavItemClick} style={{fontWeight:"700"}}>
           Speakers
@@ -97,7 +101,7 @@ const Navbar = ({setSticky = false}) => {
         </Link>
       </div>
       <div className="footer-Box" id="fb3" style={{border:"none",opacity:window.innerHeight>window.innerWidth?0:1}}>
-                  <div id="footer-slider-1">
+                  <div id="footer-slider-1" style={{marginRight:"15px"}}>
                     Our Sponsors
                   </div>
                   <div id="footer-slider-2"></div>
@@ -105,10 +109,10 @@ const Navbar = ({setSticky = false}) => {
                     <a href="https://nuevoue.com/" className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><img src={SP1}></img></a>
                     <a href="https://visavalley.com/" className="hover:cursor-pointer hover:text-gray-400 transition duration-500"><img src={SP2}></img></a>
                   </div>
-                  {/* <div className="footer-slider-common">Workshops <MdArrowOutward className="text-green-400 text-5xl mr-3" /></div>
+                  <div className="footer-slider-common">Workshops <MdArrowOutward className="text-green-400 text-5xl mr-3" /></div>
                   <div className="footer-slider-common">Talks <MdArrowOutward className="text-green-400 text-5xl mr-3" /></div>
                   <div className="footer-slider-common">Pro Show <MdArrowOutward className="text-green-400 text-5xl mr-3" /></div>
-                  <div className="footer-slider-common">More Fun <MdArrowOutward className="text-green-400 text-5xl mr-3" /></div> */}
+                  <div className="footer-slider-common">More Fun <MdArrowOutward className="text-green-400 text-5xl mr-3" /></div>
                 </div>
       <img className="logo" src={spectrospectLogo} alt="SPECTROSPECT Logo" />
     </nav>

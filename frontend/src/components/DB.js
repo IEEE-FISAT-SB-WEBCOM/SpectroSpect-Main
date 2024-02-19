@@ -6,13 +6,13 @@ import Main1 from "../assets/Mathlabwk.png"
 import Main2 from "../assets/Quantumwk.png"
 import Main3 from "../assets/SpeechRecogwk.png"
 import Main4 from "../assets/Blockwk.png"
-import S1 from "../assets/Speaker1.png"
-import S2 from "../assets/ShambuMaths.png"
+import S1 from "../assets/Sherin.png"
+import S2 from "../assets/Sambhu.png"
 import AIIMG from "../assets/AIIMGPROCESSING.png"
 import FILTER from "../assets/AbhinavRNew.png"
 import DSP from "../assets/AnnapurnaDSP.png"
 import SPEECH from "../assets/SHILESHSPEECH.png"
-import S3 from "../assets/VineetaSpeaker.png"
+import S3 from "../assets/Vinitha.png"
 
 const WorkshopContent = [
     {
@@ -30,7 +30,7 @@ const WorkshopContent = [
     {
         ID:2,
         Name:"Image Processing with AI",
-        About:"Experience the fusion of science and technology in our Quantum Signal Processing workshop. Dive into the world of quantum computing and its game-changing role in signal processing.",
+        About:"Welcome to the fascinating world of Image Processing using Artificial Intelligence! Our workshop is designed to provide participants with an immersive and hands-on experience in the cutting-edge intersection of computer vision and AI. In this digital age, images are abundant, and extracting meaningful information from them has become a crucial aspect of various industries. Gain a fundamental understanding of image processing concepts, techniques, and applications and also explore how images are represented, manipulated, and enhanced using computational methods. With this workshop you will gain hands-on experience with popular image processing libraries and frameworks. Join us for an exciting journey into the realm of Image Processing using AI. Whether you're a beginner or have some experience, this workshop promises to be an engaging and educational experience that opens doors to a world of possibilities. Let's unlock the potential of images together!",
         Perks:"Immerse yourself in a practical exploration of image processing tools, gaining hands-on skills that are essential in the field. Acquire foundational knowledge by delving into key concepts and applications, laying the groundwork for a comprehensive understanding. Gain valuable industry insights as you explore real-world AI applications across diverse sectors, connecting theory to practical scenarios. This program aims to boost your skill set, specifically enhancing image manipulation skills to broaden their relevance in various professional contexts. Join us in this journey of skill development and application in the dynamic realm of image processing. Elevate your understanding and expertise—register now for an illuminating experience! ",
         Speaker:"Karthik K",
         SpeakerImg:AIIMG,

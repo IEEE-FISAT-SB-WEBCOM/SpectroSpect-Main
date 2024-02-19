@@ -5,8 +5,8 @@ import { FiMail } from "react-icons/fi";
 import { MdArrowOutward } from "react-icons/md";
 import { useEffect } from "react";
 import spectroLogo from "../assets/ezgif.gif"
-import SP1 from "../assets/BH2.png"
-import SP2 from "../assets/VVSP.jpeg" 
+import SP1 from "../assets/Frame 811755.png"
+import SP2 from "../assets/Frame 811754.png"
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/all'
 gsap.registerPlugin(ScrollTrigger)
@@ -111,7 +111,7 @@ const Footer = () => {
                 &copy; Copyright <strong><span>IEEE FISAT SB</span></strong>. All Rights Reserved
               </div>
               <div class="credits" id="creditt">
-                Designed with Love 💞 <a href="https://www.ieee.fisat.ac.in/SpectroSpectwebteam" id="web">SpectroSpect WebTeam</a>
+                Designed with Love 💞 <a href="https://www.ieee.fisat.ac.in/SpectroSpectwebteam" id="web" style={{textDecoration:"underline"}}>SpectroSpect WebTeam</a>
               </div>
             </div>
         </div>
