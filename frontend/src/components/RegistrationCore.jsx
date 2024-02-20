@@ -53,10 +53,10 @@ const RegistrationCore = () => {
             <div id="registrationContainer" style={{display:"flex",justifyContent:"space-around",alignItems:"center",flexDirection:window.innerHeight>window.innerWidth?"column":"row"}}>
                 <div className="regsitrationCard" style={{width:window.innerHeight>window.innerWidth?"80vw":"30vw"}}>
                     <h1>IEEE SPS MEMBERS</h1>
-                    <p>Food and Accommodation<br/>(3 days and 2 nights)<br/><br/>
+                    <p>Food and Accommodation<br/>(2 days and 1 night)<br/><br/>
                         <b>4x</b> Workshop<br/>
                         <b>3x</b> Talk Session<br/>
-                        <b>2x</b> Culturals<br/><br/>
+                        <b>1x</b> Cultural<br/><br/>
                         Exciting Games<br/>
                         Goodies
                     </p>
@@ -65,10 +65,10 @@ const RegistrationCore = () => {
                 </div>
                 <div className="regsitrationCard" style={{width:window.innerHeight>window.innerWidth?"80vw":"30vw"}}>
                     <h1>IEEE MEMBERS</h1>
-                    <p>Food and Accommodation<br/>(3 days and 2 nights)<br/><br/>
+                    <p>Food and Accommodation<br/>(2 days and 1 night)<br/><br/>
                         <b>4x</b> Workshop<br/>
                         <b>3x</b> Talk Session<br/>
-                        <b>2x</b> Culturals<br/><br/>
+                        <b>1x</b> Cultural<br/><br/>
                         Exciting Games<br/>
                         Goodies
                     </p>
@@ -78,10 +78,10 @@ const RegistrationCore = () => {
                 </div>
                 <div className="regsitrationCard" style={{width:window.innerHeight>window.innerWidth?"80vw":"30vw"}}>
                     <h1>NON IEEE MEMBERS</h1>
-                    <p>Food and Accommodation<br/>(3 days and 2 nights)<br/><br/>
+                    <p>Food and Accommodation<br/>(2 days and 1 night)<br/><br/>
                         <b>4x</b> Workshop<br/>
                         <b>3x</b> Talk Session<br/>
-                        <b>2x</b> Culturals<br/><br/>
+                        <b>1x</b> Cultural<br/><br/>
                         Exciting Games<br/>
                         Goodies
                     </p>
