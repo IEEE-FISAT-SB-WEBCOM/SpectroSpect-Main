@@ -69,7 +69,7 @@ const SpeakerContent = [
     {
         ID:1,
         Speaker:"Sherin Kalathil",
-        Desig:"Integrated Development Specialist - EY",
+        Desig:"Head, Creative & Training Development - Triple I Commerce Academy",
         SImg:S1,
         DescL:"In the realm of education, Sherin Kalathil emerges as a skilled trainer with 9 years of rich experience, unveiling his profound passion for the craft in a moment of spontaneous revelation.Specializing in both soft skills and technical training, he adeptly navigates diverse student categories, excelling in swiftly grasping technological tools. His flexibility and versatility shine through, enabling poise and competence in deadline-driven environments. Beyond training, Sherin extends his expertise as an Interview Coach, L&D Specialist, Soft Skills Trainer, Personality Development Faculty, Career Counsellor, and Virtual Producer at EY. With a rich blend of compassion and proficiency, Sherin continues to excel in the dynamic world of education and professional development."
     },
