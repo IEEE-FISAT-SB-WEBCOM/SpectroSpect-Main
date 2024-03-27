@@ -308,7 +308,7 @@ theme="dark"
       <MdArrowOutward className="text-green-400 text-[42px] md:text-[12rem] ml-3" id="HeadingMainArrow" />
     </div>
 
-    <h3 className="text-[30px] md:text-[3.5rem]" id="Feb">March-<span>23</span>,<span>24</span></h3>
+    <h3 className="text-[30px] md:text-[3.5rem]" id="Feb">APRIL-<span>6</span>,<span>7</span>  2024</h3>
   </div>
 </div>
 
@@ -326,7 +326,7 @@ theme="dark"
                 <div className="flex w-full md:w-4/6 flex-col">
                 
                 <div className=" text-xl md:text-3xl">
-                "Welcome to SpectroSpect, the premier national event for engineering students, focusing on wireless communication and signal processing. Organized by IEEE FISAT SB, it stands as the flagship event under the IEEE SPS SBC FISAT on March 23 & 24. Over two days, attendees will participate in hands-on workshops, technical sessions, and engaging activities. Join us for a dynamic blend of theory and practical skills, fostering lasting connections in the exciting realm of signal processing."
+                "Welcome to SpectroSpect, the premier national event for engineering students, focusing on wireless communication and signal processing. Organized by IEEE FISAT SB, it stands as the flagship event under the IEEE SPS SBC FISAT on April 6,7 2024. Over two days, attendees will participate in hands-on workshops, technical sessions, and engaging activities. Join us for a dynamic blend of theory and practical skills, fostering lasting connections in the exciting realm of signal processing."
                 
                 </div>
                 <div className=" flex md:mb-0 mb-10 ">
