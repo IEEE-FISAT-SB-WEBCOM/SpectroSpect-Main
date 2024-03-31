@@ -3,64 +3,58 @@ import Footer from "./footer";
 import { MdArrowOutward } from "react-icons/md";
 import { useState } from "react";
 import { Tilt } from "react-tilt";
-import freen from "../assets/f3.png"
-import footerLogo from "../assets/Frame.png"
-import screen from "../assets/p1.png"
-import SP1 from "../assets/Frame 811755.png"
-
-import scrn from "../assets/p2.png"
+import freen from "../assets/f3.png";
+import footerLogo from "../assets/Frame.png";
+import screen from "../assets/p1.png";
+import SP1 from "../assets/Frame 811755.png";
+import Bro from "../assets/SpectroSpectFinal.pdf";
+import scrn from "../assets/p2.png";
 import { FaArrowDownLong } from "react-icons/fa6";
 import Workshop2 from "../Workshop2";
 import { useEffect } from "react";
 import Navbar from "./navbar";
-import { SpeakerContent } from "./DB"
-import gsap from 'gsap'
-import { ScrollTrigger } from 'gsap/all'
-gsap.registerPlugin(ScrollTrigger)
+import { SpeakerContent } from "./DB";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+gsap.registerPlugin(ScrollTrigger);
 import ThreeJSGlobe from "../Three/spectrospect";
 import post from "./wrkData";
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
 import firebase from "firebase/compat/app";
-import 'firebase/compat/database'
+import "firebase/compat/database";
 import validator from "email-validator";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import { animate, motion, useAnimation } from "framer-motion";
-import RAS from "../assets/wie-logo@2x.png"
-import WIE from "../assets/wie-logo_white.png"
-import SPS from "../assets/SPS_Logo_Color_RGB.png"
-import COM from "../assets/ieee-comsoc_white.png"
-import pdf from '../assets/SPECTROSPECT.pdf'
-import globee from "../assets/globevid-unscreen.gif"
-import pes from '../assets/pes_white.png'
-import cs from '../assets/cs.png'
+import RAS from "../assets/wie-logo@2x.png";
+import WIE from "../assets/wie-logo_white.png";
+import SPS from "../assets/SPS_Logo_Color_RGB.png";
+import COM from "../assets/ieee-comsoc_white.png";
+import pdf from "../assets/SPECTROSPECT.pdf";
+import globee from "../assets/globevid-unscreen.gif";
+import pes from "../assets/pes_white.png";
+import cs from "../assets/cs.png";
 import RegistrationCore from "./RegistrationCore";
-import './navbar.css';
-
+import "./navbar.css";
 
 // useEffect(async () =>{
 //   <ThreeJSGlobe/>
 // })
 
-
-
 const defaultOptions = {
-	reverse:        false,  // reverse the tilt direction
-	max:            25,     // max tilt rotation (degrees)
-	perspective:    2000,   // Transform perspective, the lower the more extreme the tilt gets.
-	scale:          1,    // 2 = 200%, 1.5 = 150%, etc..
-	speed:          1000,   // Speed of the enter/exit transition
-	transition:     true,   // Set a transition on enter/exit.
-	axis:           null,   // What axis should be disabled. Can be X or Y.
-	reset:          true,    // If the tilt effect has to be reset on exit.
-	easing:         "cubic-bezier(.03,.98,.52,.99)",    // Easing on enter/exit.
-}
-
+  reverse: false, // reverse the tilt direction
+  max: 25, // max tilt rotation (degrees)
+  perspective: 2000, // Transform perspective, the lower the more extreme the tilt gets.
+  scale: 1, // 2 = 200%, 1.5 = 150%, etc..
+  speed: 1000, // Speed of the enter/exit transition
+  transition: true, // Set a transition on enter/exit.
+  axis: null, // What axis should be disabled. Can be X or Y.
+  reset: true, // If the tilt effect has to be reset on exit.
+  easing: "cubic-bezier(.03,.98,.52,.99)", // Easing on enter/exit.
+};
 
 const LandingPage = () => {
-  
-
   const Anim = {
     initial: {
       opacity: 0,
@@ -72,7 +66,7 @@ const LandingPage = () => {
       transition: {
         type: "easeIn", // You can use other transition types like "tween", "easeInOut", etc.
         ease: "easeInOut",
-        duration:1,
+        duration: 1,
       },
     },
   };
@@ -84,16 +78,16 @@ const LandingPage = () => {
     storageBucket: import.meta.env.VITE_STORAGEBUCKET,
     messagingSenderId: import.meta.env.VITE_MSID,
     appId: import.meta.env.VITE_APPID,
-    measurementId: import.meta.env.VITE_MEASUREMENTID
+    measurementId: import.meta.env.VITE_MEASUREMENTID,
   };
   firebase.initializeApp(firebaseConfig);
-  
-  const dataref= firebase.database();
 
-  const [email, setemail] = useState('');
-  const handleClick=()=>{
-    if(email===''){
-      toast.warn('Enter Email Address', {
+  const dataref = firebase.database();
+
+  const [email, setemail] = useState("");
+  const handleClick = () => {
+    if (email === "") {
+      toast.warn("Enter Email Address", {
         position: "top-left",
         autoClose: 5000,
         hideProgressBar: false,
@@ -102,29 +96,28 @@ const LandingPage = () => {
         draggable: true,
         progress: undefined,
         theme: "dark",
-        });    }else{
-
-    
-    if(validator.validate(email)){
-
-      dataref.ref("mails").push(
-        {
-          mail:email,
-        }
-        ).catch((error)=>{
-          toast.error('Unexpected Error', {
-            position: "top-left",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: false,
-            draggable: true,
-            progress: undefined,
-            theme: "dark",
+      });
+    } else {
+      if (validator.validate(email)) {
+        dataref
+          .ref("mails")
+          .push({
+            mail: email,
+          })
+          .catch((error) => {
+            toast.error("Unexpected Error", {
+              position: "top-left",
+              autoClose: 5000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: false,
+              draggable: true,
+              progress: undefined,
+              theme: "dark",
             });
-        })
-        setemail('');
-        toast.success('Stay tuned for updates.', {
+          });
+        setemail("");
+        toast.success("Stay tuned for updates.", {
           position: "top-left",
           autoClose: 5000,
           hideProgressBar: false,
@@ -133,9 +126,9 @@ const LandingPage = () => {
           draggable: true,
           progress: undefined,
           theme: "dark",
-          });
-      }else{
-        toast.error('Invalid Email address', {
+        });
+      } else {
+        toast.error("Invalid Email address", {
           position: "top-left",
           autoClose: 5000,
           hideProgressBar: false,
@@ -144,146 +137,195 @@ const LandingPage = () => {
           draggable: true,
           progress: undefined,
           theme: "dark",
-          });
-      }
-  }}
-  
- 
-    const [workshops, setworkshops] = useState([
-        {
-            key:1,
-            title:"Workshop 1",
-            data: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, molestiae animi corporis perspiciatis, laudantium magnam, inventore minima provident voluptatem repellendus aperiam. Repellat enim ducimus, accusamus neque adipisci sint quae numquam?",
-            isOpen:false
-        },
-        {
-            key:1,
-            title:"Workshop 2",
-            data: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, molestiae animi corporis perspiciatis, laudantium magnam, inventore minima provident voluptatem repellendus aperiam. Repellat enim ducimus, accusamus neque adipisci sint quae numquam?",
-            isOpen:false
-        },
-        
-        {
-            key:1,
-            title:"Workshop 3",
-            data: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, molestiae animi corporis perspiciatis, laudantium magnam, inventore minima provident voluptatem repellendus aperiam. Repellat enim ducimus, accusamus neque adipisci sint quae numquam?",
-            isOpen:false
-        },
-        
-    ])
-
-    const toggle = (wrkKey)=>{
-        const update=workshops.map((workshop)=>{
-            if (workshop.key === wrkKey) { 
-                return { ...workshop, isOpen: !workshop.isOpen }; 
-            } else { 
-                return { ...workshop, isOpen: false }; 
-            } 
         });
-        setworkshops(update);
+      }
     }
+  };
 
-    useEffect(() => {
-      gsap.fromTo("#about div div div div",{
-        opacity:0,
-        x:-200
-      },{opacity:1,
-        x:0,
-        duration:2,
-        scrollTrigger:{trigger:"#about",toggleActions:"restart none restart none"}
-      })
-      
-      gsap.fromTo("#broSure",{
-        opacity:0,
-        y:100,
-        scale:0
-      },{opacity:1,
-        delay:1,
-        y:0,
-        duration:2,
-        scale:1,
-        scrollTrigger:{trigger:"#about",toggleActions:"restart none restart none"}
-      })
+  const [workshops, setworkshops] = useState([
+    {
+      key: 1,
+      title: "Workshop 1",
+      data: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, molestiae animi corporis perspiciatis, laudantium magnam, inventore minima provident voluptatem repellendus aperiam. Repellat enim ducimus, accusamus neque adipisci sint quae numquam?",
+      isOpen: false,
+    },
+    {
+      key: 1,
+      title: "Workshop 2",
+      data: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, molestiae animi corporis perspiciatis, laudantium magnam, inventore minima provident voluptatem repellendus aperiam. Repellat enim ducimus, accusamus neque adipisci sint quae numquam?",
+      isOpen: false,
+    },
 
-      gsap.fromTo("#IEEE_LOGOS",{
-        opacity:0,
-        x:500
-      },{opacity:1,
-        x:0,
-        duration:2,
-        stagger:0.2,
-        scrollTrigger:{trigger:"#about",toggleActions:"restart none restart none"}
-      })
+    {
+      key: 1,
+      title: "Workshop 3",
+      data: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, molestiae animi corporis perspiciatis, laudantium magnam, inventore minima provident voluptatem repellendus aperiam. Repellat enim ducimus, accusamus neque adipisci sint quae numquam?",
+      isOpen: false,
+    },
+  ]);
 
-      gsap.fromTo("#WorkshopIntelandingPg",{
-        opacity:0,
-        scale:0.5,
-        x:-200,
-      },{
-        opacity:1,
-        duration:3,
-        stagger:0.5,
-        scale:1,
-        x:0,
-        scrollTrigger:{trigger:"#Workshops",toggleActions:"restart none restart none"}
-      })
+  const toggle = (wrkKey) => {
+    const update = workshops.map((workshop) => {
+      if (workshop.key === wrkKey) {
+        return { ...workshop, isOpen: !workshop.isOpen };
+      } else {
+        return { ...workshop, isOpen: false };
+      }
+    });
+    setworkshops(update);
+  };
 
-      //"HeadingMainArrow"
+  useEffect(() => {
+    gsap.fromTo(
+      "#about div div div div",
+      {
+        opacity: 0,
+        x: -200,
+      },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 2,
+        scrollTrigger: {
+          trigger: "#about",
+          toggleActions: "restart none restart none",
+        },
+      }
+    );
 
-      gsap.fromTo("#HeadingMain h1",{
-        opacity:0,
-        y:100,
-      },{
-        opacity:1,
-        duration:2,
-        y:0,
-        scrollTrigger:{trigger:"#HeadingMain",toggleActions:"restart none restart none"}
-      })
+    gsap.fromTo(
+      "#broSure",
+      {
+        opacity: 0,
+        y: 100,
+        scale: 0,
+      },
+      {
+        opacity: 1,
+        delay: 1,
+        y: 0,
+        duration: 2,
+        scale: 1,
+        scrollTrigger: {
+          trigger: "#about",
+          toggleActions: "restart none restart none",
+        },
+      }
+    );
 
-      gsap.fromTo("#Feb",{
-        opacity:0,
-        y:100,
-      },{
-        opacity:1,
-        duration:2,
+    gsap.fromTo(
+      "#IEEE_LOGOS",
+      {
+        opacity: 0,
+        x: 500,
+      },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 2,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: "#about",
+          toggleActions: "restart none restart none",
+        },
+      }
+    );
+
+    gsap.fromTo(
+      "#WorkshopIntelandingPg",
+      {
+        opacity: 0,
+        scale: 0.5,
+        x: -200,
+      },
+      {
+        opacity: 1,
+        duration: 3,
+        stagger: 0.5,
+        scale: 1,
+        x: 0,
+        scrollTrigger: {
+          trigger: "#Workshops",
+          toggleActions: "restart none restart none",
+        },
+      }
+    );
+
+    //"HeadingMainArrow"
+
+    gsap.fromTo(
+      "#HeadingMain h1",
+      {
+        opacity: 0,
+        y: 100,
+      },
+      {
+        opacity: 1,
+        duration: 2,
+        y: 0,
+        scrollTrigger: {
+          trigger: "#HeadingMain",
+          toggleActions: "restart none restart none",
+        },
+      }
+    );
+
+    gsap.fromTo(
+      "#Feb",
+      {
+        opacity: 0,
+        y: 100,
+      },
+      {
+        opacity: 1,
+        duration: 2,
         // delay:0.3,
         // stagger:0.3,
-        y:0,
-        scrollTrigger:{trigger:"#Feb",toggleActions:"restart none restart none"}
-      })
+        y: 0,
+        scrollTrigger: {
+          trigger: "#Feb",
+          toggleActions: "restart none restart none",
+        },
+      }
+    );
 
-      gsap.fromTo("#HeadingMainArrow",{
-        opacity:0,
-        scale:0.5,
-      },{opacity:1,
-        duration:1,
-        delay:1.5,
-        scale:1,
-        scrollTrigger:{trigger:"#HeadingMainArrow",toggleActions:"restart none restart none"}
-      })
-  
-    },[])
-    
+    gsap.fromTo(
+      "#HeadingMainArrow",
+      {
+        opacity: 0,
+        scale: 0.5,
+      },
+      {
+        opacity: 1,
+        duration: 1,
+        delay: 1.5,
+        scale: 1,
+        scrollTrigger: {
+          trigger: "#HeadingMainArrow",
+          toggleActions: "restart none restart none",
+        },
+      }
+    );
+  }, []);
 
   return (
     <>
-  <ToastContainer
-position="top-left"
-autoClose={5000}
-hideProgressBar={false}
-newestOnTop={false}
-closeOnClick
-rtl={false}
-pauseOnFocusLoss
-draggable
-pauseOnHover
-theme="dark"
+      <ToastContainer
+        position="top-left"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
+      <img src={scrn} id="scrn"></img>
+      <img src={screen} id="screen"></img>
+      <Navbar setSticky={true} />
 
-/>
-<img src={scrn} id="scrn"></img>
-<img src={screen} id="screen"></img>
-    <Navbar setSticky={true}/>
- 
       {/* <h1>SPECTROSPECT🪫🔌</h1>
             <button>
                 <Link to="/Workshops">Workshops</Link>
@@ -298,58 +340,74 @@ theme="dark"
             <button>
                 <Link to="/Events">Events</Link>
             </button> */}
-        
-<div className="flex flex-col z-0 items-center min-w-full justify-center">
-  <img className="h-[600px] hidden md:flex mt-36" src={globee} />
-  <div id="spt" className="w-full sm:static md:absolute pb-40 flex flex-col bg-opacity-100 md:bg-gradient-to-b from-transparent to-black translate-y-28 md:translate-y-52 items-center align-middle justify-center">
 
-    <div className="flex items-center overflow-hidden" id="HeadingMain">
-      <h1 className="text-[42px] md:text-[12rem]">SpectroSpect</h1>
-      <MdArrowOutward className="text-green-400 text-[42px] md:text-[12rem] ml-3" id="HeadingMainArrow" />
-    </div>
+      <div className="flex flex-col z-0 items-center min-w-full justify-center">
+        <img className="h-[600px] hidden md:flex mt-36" src={globee} />
+        <div
+          id="spt"
+          className="w-full sm:static md:absolute pb-40 flex flex-col bg-opacity-100 md:bg-gradient-to-b from-transparent to-black translate-y-28 md:translate-y-52 items-center align-middle justify-center"
+        >
+          <div className="flex items-center overflow-hidden" id="HeadingMain">
+            <h1 className="text-[42px] md:text-[12rem]">SpectroSpect</h1>
+            <MdArrowOutward
+              className="text-green-400 text-[42px] md:text-[12rem] ml-3"
+              id="HeadingMainArrow"
+            />
+          </div>
 
-    <h3 className="text-[30px] md:text-[3.5rem]" id="Feb">APRIL-<span>6</span>,<span>7</span>  2024</h3>
-  </div>
-</div>
+          <h3 className="text-[30px] md:text-[3.5rem]" id="Feb">
+            APRIL-<span>6</span>,<span>7</span> 2024
+          </h3>
+        </div>
+      </div>
 
+      <img src={footerLogo} className="mt-20"></img>
 
-
-
-<img src={footerLogo} className="mt-20"></img>
-
-
-
-
-<div className="flex flex-col lg:flex-row bg-black items-center justify-center" id="about">
+      <div
+        className="flex flex-col lg:flex-row bg-black items-center justify-center"
+        id="about"
+      >
         <div className="md:w-3/4 flex flex-col  md:mt-32 lg:mr-8 px-3 py-3">
-            <div className="w-full flex flex-col md:flex-row ">
-                <div className="flex w-full md:w-4/6 flex-col">
-                
-                <div className=" text-xl md:text-3xl">
-                "Welcome to SpectroSpect, the premier national event for engineering students, focusing on wireless communication and signal processing. Organized by IEEE FISAT SB, it stands as the flagship event under the IEEE SPS SBC FISAT on April 6,7 2024. Over two days, attendees will participate in hands-on workshops, technical sessions, and engaging activities. Join us for a dynamic blend of theory and practical skills, fostering lasting connections in the exciting realm of signal processing."
-                
-                </div>
-                <div className=" flex md:mb-0 mb-10 ">
-                  <a         href={pdf}
-                    download="SpectroSpect"
-                    target="_blank"
-                    rel="noreferrer"
->
-                <button
-                href="#_"
-                className="relative mt-10 inline-flex items-center justify-start inline-block px-10 py-3 overflow-hidden font-bold rounded-full group" id="broSure"
-              >
-                <span className="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-[3%]"></span>
-                <span className="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-white opacity-100 group-hover:-translate-x-8"></span>
-                <span className="relative w-full flex items-center text-left text-white transition-colors duration-200 ease-in-out group-hover:text-gray-900">
-                <FaArrowDownLong className="" />Brochure
-                </span>
-                <span className="absolute inset-0 border-2 border-white rounded-full"></span>
-              </button></a>
-                </div>
-                </div>
+          <div className="w-full flex flex-col md:flex-row ">
+            <div className="flex w-full md:w-4/6 flex-col">
+              <div className=" text-xl md:text-3xl">
+                "Welcome to SpectroSpect, the premier national event for
+                engineering students, focusing on wireless communication and
+                signal processing. Organized by IEEE FISAT SB, it stands as the
+                flagship event under the IEEE SPS SBC FISAT on April 6,7 2024.
+                Over two days, attendees will participate in hands-on workshops,
+                technical sessions, and engaging activities. Join us for a
+                dynamic blend of theory and practical skills, fostering lasting
+                connections in the exciting realm of signal processing."
+              </div>
+              <div className=" flex md:mb-0 mb-10 ">
+                <a
+                  href={Bro}
+                  download="SpectroSpect"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <button
+                    href="#_"
+                    className="relative mt-10 inline-flex items-center justify-start inline-block px-10 py-3 overflow-hidden font-bold rounded-full group"
+                    id="broSure"
+                  >
+                    <span className="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-white opacity-[3%]"></span>
+                    <span className="absolute top-0 left-0 w-48 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-white opacity-100 group-hover:-translate-x-8"></span>
+                    <span className="relative w-full flex items-center text-left text-white transition-colors duration-200 ease-in-out group-hover:text-gray-900">
+                      <FaArrowDownLong className="" />
+                      Brochure
+                    </span>
+                    <span className="absolute inset-0 border-2 border-white rounded-full"></span>
+                  </button>
+                </a>
+              </div>
+            </div>
 
-              <div className="grid items-start md:gap-0 sm:gap-5 gap-y-28 mt-10 md:mt-0 md:pl-10 justify-center align-middle grid-cols-1 md:grid-cols-2 grid-rows-3 w-full md:px-0 pl-20  md:w-2/6 min-h-full text-black" id="IEEE_LOGOS">
+            <div
+              className="grid items-start md:gap-0 sm:gap-5 gap-y-28 mt-10 md:mt-0 md:pl-10 justify-center align-middle grid-cols-1 md:grid-cols-2 grid-rows-3 w-full md:px-0 pl-20  md:w-2/6 min-h-full text-black"
+              id="IEEE_LOGOS"
+            >
               <div className="w-2/3 flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
                 <img src={SPS}></img>
               </div>
@@ -368,162 +426,182 @@ theme="dark"
               <div className="w-2/3  flex mt-5 items-center align-middle justify-center rounded-2xl h-8">
                 <img src={COM} class="sb"></img>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.3724180250515!2d76.40665101478143!3d10.231517592692693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b08068aa17bd247%3A0xf048b9ebcbd2af28!2sFederal%20Institute%20of%20Science%20And%20Technology%20(FISAT)%C2%AE!5e0!3m2!1sen!2sin!4v1678482024451!5m2!1sen!2sin"
+        style={{ width: "76vw", marginLeft: "12vw", height: "40vh" }}
+      ></iframe>
+      <br />
+      <br />
+      <br />
 
-              </div>
-            </div>
-            </div>
-            </div>
-            <br/>
-            <br/>
-            <br/>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3926.3724180250515!2d76.40665101478143!3d10.231517592692693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b08068aa17bd247%3A0xf048b9ebcbd2af28!2sFederal%20Institute%20of%20Science%20And%20Technology%20(FISAT)%C2%AE!5e0!3m2!1sen!2sin!4v1678482024451!5m2!1sen!2sin" style={{width:"76vw",marginLeft:"12vw",height:"40vh"}}></iframe>
-            <br/>
-            <br/>
-            <br/>
-
-  <div className="flex flex-col lg:flex-row bg-black items-center justify-center" id="Workshops">
+      <div
+        className="flex flex-col lg:flex-row bg-black items-center justify-center"
+        id="Workshops"
+      >
         <div className="md:w-3/4 flex flex-col  md:mt-32 lg:mr-8 px-3 py-3">
-        <div className="flex text-3xl font-bold align-middle self-start items-center mb-10" id="WorkshopIntelandingPg">
+          <div
+            className="flex text-3xl font-bold align-middle self-start items-center mb-10"
+            id="WorkshopIntelandingPg"
+          >
             <MdArrowOutward className="text-green-400 text-5xl mr-3" />
             Workshops
           </div>
-             <Workshop2/>
-             <Link to="/Workshops">
-          <div className="mt-10 hover:bg-white hover:text-black font-bold transition duration-700 hover:cursor-pointer flex items-center w-full justify-center border border-gray-600 p-2 rounded-3xl" id="SpeakerIntelandingPgButton">View all
-          <MdArrowOutward className="text-green-400 text-2xl ml-3 mr-3" />
-          </div>
+          <Workshop2 />
+          <Link to="/Workshops">
+            <div
+              className="mt-10 hover:bg-white hover:text-black font-bold transition duration-700 hover:cursor-pointer flex items-center w-full justify-center border border-gray-600 p-2 rounded-3xl"
+              id="SpeakerIntelandingPgButton"
+            >
+              View all
+              <MdArrowOutward className="text-green-400 text-2xl ml-3 mr-3" />
+            </div>
           </Link>
-            </div>
-            </div>
+        </div>
+      </div>
       {/* <Workshop2/> */}
 
-
-{/* Speaker Section */}
-<div className="flex flex-col lg:flex-row bg-black items-center justify-center" id="Speakersss">
+      {/* Speaker Section */}
+      <div
+        className="flex flex-col lg:flex-row bg-black items-center justify-center"
+        id="Speakersss"
+      >
         <div className="md:w-3/4 flex w-full flex-col  md:mt-32 lg:mr-8 px-3 py-3">
-          <div className="flex w-full text-3xl font-bold align-middle self-start items-center" id="SpeakerIntelandingPg">
+          <div
+            className="flex w-full text-3xl font-bold align-middle self-start items-center"
+            id="SpeakerIntelandingPg"
+          >
             <MdArrowOutward className="text-green-400 sm:self-center text-5xl mr-3" />
             Speakers
           </div>
 
-         <div className="flex mt-10 w-full md:flex-row space-x-0  md:space-x-5 flex-col" >
+          <div className="flex mt-10 w-full md:flex-row space-x-0  md:space-x-5 flex-col">
             {/* Speaker */}
 
-{SpeakerContent.map(({item,ID,SImg,Speaker,Desig})=>{
-  return(
+            {SpeakerContent.map(({ item, ID, SImg, Speaker, Desig }) => {
+              return (
+                <motion.div
+                  className=" md:w-1/4 w-full"
+                  initial={{ opacity: 0, x: 100 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: 0 }}
+                  transition={{ duration: 1, delay: ID * 0.3 }}
+                  whileHover={{
+                    scale: 1,
+                    transition: { duration: 0.5, delay: 0 },
+                  }}
+                >
+                  <div className=" w-full hover:cursor-pointer  hover:scale-105 transition duration-300">
+                    <div href="#" className="block rounded-lg p-4">
+                      <img
+                        alt="Home"
+                        src={SImg}
+                        className="h-60 w-full rounded-md object-contain"
+                      />
 
- 
-            <motion.div className=" md:w-1/4 w-full"
-   initial={{ opacity: 0, x: 100 }}
-   whileInView={{ opacity: 1, x: 0 }}
-   exit={{ opacity: 0, x: 0 }}
-   transition={{ duration: 1,delay:ID*0.3}}
-   whileHover={{
-     scale: 1,
-     transition: { duration: 0.5, delay: 0 },
-   }}
- >
- <div  className=" w-full hover:cursor-pointer  hover:scale-105 transition duration-300"  >
-              <div href="#" className="block rounded-lg p-4">
-                <img
-                  alt="Home"
-                  src={SImg}
-                  className="h-60 w-full rounded-md object-contain"
-                />
-
-                <div className="mt-2">
-                  <dl>
-                    <div>
-                      <dd className="font-medium">{Speaker}</dd>
-                      <div>
-                        <dd className="text-sm text-gray-500">{Desig}</dd>
+                      <div className="mt-2">
+                        <dl>
+                          <div>
+                            <dd className="font-medium">{Speaker}</dd>
+                            <div>
+                              <dd className="text-sm text-gray-500">{Desig}</dd>
+                            </div>
+                          </div>
+                        </dl>
                       </div>
                     </div>
-                  </dl>
-                </div>
-              </div>
-            </div>
-       </motion.div>
- )
-})}
-
-          </div>        
+                  </div>
+                </motion.div>
+              );
+            })}
+          </div>
 
           <Link to="/Speakers">
-          <div className="mt-10 hover:bg-white hover:text-black font-bold transition duration-700 hover:cursor-pointer flex items-center w-full justify-center border border-gray-600 p-2 rounded-3xl" id="SpeakerIntelandingPgButton">View all
-          <MdArrowOutward className="text-green-400 text-2xl ml-3 mr-3" />
-          </div>
+            <div
+              className="mt-10 hover:bg-white hover:text-black font-bold transition duration-700 hover:cursor-pointer flex items-center w-full justify-center border border-gray-600 p-2 rounded-3xl"
+              id="SpeakerIntelandingPgButton"
+            >
+              View all
+              <MdArrowOutward className="text-green-400 text-2xl ml-3 mr-3" />
+            </div>
           </Link>
         </div>
       </div>
 
-
-
-
-
-
       {/* Insta */}
-  <div className="flex flex-col lg:flex-row bg-black text-white items-center justify-center" >
-    <div className="md:w-full lg:w-3/4 flex flex-col md:mt-32 lg:mr-8 px-3 py-3">
-      <div className="flex text-3xl mb-10 font-bold align-middle self-start items-center" >
-        <MdArrowOutward className="text-green-400 text-5xl mr-3" />
-          Latest Update
+      <div className="flex flex-col lg:flex-row bg-black text-white items-center justify-center">
+        <div className="md:w-full lg:w-3/4 flex flex-col md:mt-32 lg:mr-8 px-3 py-3">
+          <div className="flex text-3xl mb-10 font-bold align-middle self-start items-center">
+            <MdArrowOutward className="text-green-400 text-5xl mr-3" />
+            Latest Update
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {post.slice(0, 4).map((item, index) => (
+              <motion.div
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -50 }}
+                transition={{ duration: 0.5, delay: index * 0.3 }}
+                whileHover={{
+                  scale: 1,
+                  transition: { duration: 0.5, delay: 0 },
+                }}
+              >
+                <Tilt
+                  options={defaultOptions}
+                  className="hover:cursor-pointer mb-4 md:mb-0"
+                >
+                  <article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
+                    <img
+                      alt=""
+                      src={item.img}
+                      className="absolute inset-0 h-full p-0 pt-5 w-full object-cover"
+                    />
+
+                    <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
+                      <div className="p-4 sm:p-6">
+                        <p className="block text-xs font-bold text-white/90">
+                          {" "}
+                          {"12-5-23"}{" "}
+                        </p>
+
+                        <a href="#">
+                          <h3 className="mt-0.5 text-lg text-white">
+                            {item.Event}
+                          </h3>
+                        </a>
+
+                        <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
+                          {item.Caption}
+                        </p>
+                      </div>
+                    </div>
+                  </article>
+                </Tilt>
+              </motion.div>
+            ))}
+          </div>
+
+          <Link to="/Events">
+            <div
+              className="my-10 hover:bg-white hover:text-black font-bold transition duration-600 hover:cursor-pointer flex items-center w-full justify-center border border-gray-700 p-2 rounded-3xl"
+              id="InstaIntelandingPageButton"
+            >
+              View all
+              <MdArrowOutward className="text-green-400 text-2xl ml-3 mr-3" />
+            </div>
+          </Link>
+        </div>
       </div>
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-    
-{post.slice(0,4).map((item,index)=>(
-   <motion.div
-   initial={{ opacity: 0, y: 50 }}
-   whileInView={{ opacity: 1, y: 0 }}
-   exit={{ opacity: 0, y: -50 }}
-   transition={{ duration: 0.5, delay: index * 0.3 }}
-   whileHover={{
-     scale: 1,
-     transition: { duration: 0.5, delay: 0 },
-   }}
- >
+      <RegistrationCore />
 
-      <Tilt options={defaultOptions}  className="hover:cursor-pointer mb-4 md:mb-0">
-      
-<article className="relative overflow-hidden rounded-lg shadow transition hover:shadow-lg">
-  <img
-    alt=""
-    src={item.img}
-    className="absolute inset-0 h-full p-0 pt-5 w-full object-cover"
-  />
-
-  <div className="relative bg-gradient-to-t from-gray-900/50 to-gray-900/25 pt-32 sm:pt-48 lg:pt-64">
-    <div className="p-4 sm:p-6">
-      <p  className="block text-xs font-bold text-white/90"> {"12-5-23"} </p>
-
-      <a href="#">
-        <h3 className="mt-0.5 text-lg text-white">{item.Event}</h3>
-      </a>
-
-      <p className="mt-2 line-clamp-3 text-sm/relaxed text-white/95">
-       {item.Caption}
-      </p>
-    </div>
-  </div>
-</article>
-      </Tilt>
-      </motion.div>))}
-
-
-
-    </div>
-
-    <Link to="/Events">
-      <div className="my-10 hover:bg-white hover:text-black font-bold transition duration-600 hover:cursor-pointer flex items-center w-full justify-center border border-gray-700 p-2 rounded-3xl" id="InstaIntelandingPageButton">
-        View all
-        <MdArrowOutward className="text-green-400 text-2xl ml-3 mr-3" />
-      </div>
-    </Link>
-  </div>
-</div>
-<RegistrationCore/>
-
-{/* <div className="w-full flex flex-col items-center align-middle mt-16">
+      {/* <div className="w-full flex flex-col items-center align-middle mt-16">
 <div className="h-1/2">
 <div>
 <svg width="500" height="562" viewBox="0 0 648 562" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -576,12 +654,9 @@ theme="dark"
   </div>
 
 </div> */}
-<Footer/>
+      <Footer />
     </>
   );
 };
 
 export default LandingPage;
-
-
-
